@@ -59,6 +59,7 @@ app.get("/tsla", function (req, res, next) {
     res.json(test_json);
   });
 });
+
 const stock2 = require("./routes/stock2");
 app.use("/stock2", stock2);
 // error handler

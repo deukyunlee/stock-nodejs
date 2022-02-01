@@ -6,7 +6,6 @@ const router = require("express").Router();
 const API_KEY = "JDBVQUW2HL07WAGK";
 var db = require("../app.js");
 const axios = require("axios");
-const { userInfo } = require("os");
 var url;
 var List = []; //list to store symbols of company
 
@@ -22,7 +21,7 @@ router.get("/list", function (req, res) {
     start = (currentPage - 1) * size;
   }
   const skipSize = (currentPage - 1) * size;
-  const sql = "SELECT count(*) as `cnt` FROM daily";
+  const sql = `SELECT count(*) as 'cnt' FROM daily`;
   db.query(sql, (err, countResult) => {
     if (err) throw err;
     const totalCount = Number(countResult[0].cnt); // total num of contents
@@ -30,7 +29,7 @@ router.get("/list", function (req, res) {
     const symbolStart = (Math.ceil(currentPage / pnSize) - 1) * pnSize + 1;
     let symbolEnd = symbolStart + pnSize - 1;
     db.query(
-      `Select * FROM daily LIMIT ?, ?`,
+      `Select * FROM daily where name = 'aapl' LIMIT ?, ?`,
       [skipSize, size],
       (err, contentResult) => {
         if (err) throw err;
