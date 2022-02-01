@@ -9,8 +9,9 @@ const axios = require("axios");
 var url;
 var List = []; //list to store symbols of company
 
-router.get("/list", function (req, res) {
+router.get("/list/:id", function (req, res) {
   let currentPage = req.query.number;
+  let id = req.params.id;
   const size = 10; // 한 페이지에서 보여줄 데이터 수
   const pnSize = 10;
 
@@ -29,7 +30,7 @@ router.get("/list", function (req, res) {
     const symbolStart = (Math.ceil(currentPage / pnSize) - 1) * pnSize + 1;
     let symbolEnd = symbolStart + pnSize - 1;
     db.query(
-      `Select * FROM daily where name = 'aapl' LIMIT ?, ?`,
+      `Select * FROM daily where name = '${id}' LIMIT ?, ?`,
       [skipSize, size],
       (err, contentResult) => {
         if (err) throw err;
