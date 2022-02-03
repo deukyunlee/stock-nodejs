@@ -60,8 +60,10 @@ app.get("/tsla", function (req, res, next) {
   });
 });
 
-const stock2 = require("./routes/stock2");
+const stock2 = require("./routes/stock2.js");
+const stock3 = require("./routes/stock3.js");
 app.use("/stock2", stock2);
+app.use("/stock3", stock3);
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development

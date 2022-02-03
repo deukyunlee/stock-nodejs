@@ -1,11 +1,19 @@
 const request = require("request");
 const cheerio = require("cheerio");
 const fs = require("fs");
-const cron = require("node-cron");
 const router = require("express").Router();
-const API_KEY = "JDBVQUW2HL07WAGK";
-var db = require("../app.js");
 const axios = require("axios");
+var db = require("../app.js");
+const API_KEY = "JDBVQUW2HL07WAGK";
+
+// import { got } from "got";
+// import request from "request";
+// import cheerio from "cheerio";
+// import router from "router";
+// import axios from "axios";
+// import fs from "fs";
+// import db from "../app.js";
+
 var url;
 var List = []; //list to store symbols of company
 
