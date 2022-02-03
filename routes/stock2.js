@@ -48,6 +48,7 @@ router.get("/list/:id", function (req, res) {
   });
 });
 
+<<<<<<< HEAD
 router.get("/symbol/:name", function (req, res) {
   let name = req.params.name;
   db.query(
@@ -58,6 +59,8 @@ router.get("/symbol/:name", function (req, res) {
   );
 });
 
+=======
+>>>>>>> f3a52d7e7a505eb157802edf37fb65088dbd892b
 router.post("/", function (req, res) {
   function symbolCreator() {
     return new Promise(function (resolve, reject) {
