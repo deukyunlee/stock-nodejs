@@ -1,0 +1,604 @@
+{
+  "symbols": [
+    {
+      "title": "AAPL",
+      "company": "Apple Inc",
+      "price": "169.80",
+      "percent": "-1.89%"
+    },
+    {
+      "title": "MSFT",
+      "company": "Microsoft Corp.",
+      "price": "302.65",
+      "percent": "-2.43%"
+    },
+    {
+      "title": "GOOGL",
+      "company": "Alphabet Inc (Google) Class A",
+      "price": "2719.96",
+      "percent": "-2.50%"
+    },
+    {
+      "title": "GOOG",
+      "company": "Alphabet Inc (Google) Class C",
+      "price": "2725.81",
+      "percent": "-2.50%"
+    },
+    {
+      "title": "AMZN",
+      "company": "Amazon.com, Inc.",
+      "price": "3178.35",
+      "percent": "-1.99%"
+    },
+    {
+      "title": "TSLA",
+      "company": "Tesla, Inc.",
+      "price": "1030.51",
+      "percent": "-1.82%"
+    },
+    {
+      "title": "FB",
+      "company": "Meta Platforms, Inc.",
+      "price": "318.15",
+      "percent": "-4.14%"
+    },
+    {
+      "title": "BRK.A",
+      "company": "Berkshire Hathaway Inc.",
+      "price": "480081.00",
+      "percent": "-1.09%"
+    },
+    {
+      "title": "BRK.B",
+      "company": "Berkshire Hathaway Inc. New",
+      "price": "320.29",
+      "percent": "-1.18%"
+    },
+    {
+      "title": "NVDA",
+      "company": "NVIDIA Corporation",
+      "price": "259.03",
+      "percent": "-3.86%"
+    },
+    {
+      "title": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing Company Ltd.",
+      "price": "133.83",
+      "percent": "-4.86%"
+    },
+    {
+      "title": "V",
+      "company": "Visa Inc.",
+      "price": "215.71",
+      "percent": "+0.48%"
+    },
+    {
+      "title": "JPM",
+      "company": "JP Morgan Chase & Co.",
+      "price": "151.27",
+      "percent": "-4.19%"
+    },
+    {
+      "title": "JNJ",
+      "company": "Johnson & Johnson",
+      "price": "167.10",
+      "percent": "-0.44%"
+    },
+    {
+      "title": "UNH",
+      "company": "UnitedHealth Group Incorporated",
+      "price": "460.99",
+      "percent": "-1.64%"
+    },
+    {
+      "title": "WMT",
+      "company": "Walmart Inc.",
+      "price": "142.52",
+      "percent": "-1.75%"
+    },
+    {
+      "title": "HD",
+      "company": "Home Depot, Inc. (The)",
+      "price": "366.72",
+      "percent": "-1.42%"
+    },
+    {
+      "title": "PG",
+      "company": "Procter & Gamble Company (The)",
+      "price": "156.73",
+      "percent": "-1.93%"
+    },
+    {
+      "title": "BAC",
+      "company": "Bank of America Corporation",
+      "price": "46.26",
+      "percent": "-3.44%"
+    },
+    {
+      "title": "MA",
+      "company": "Mastercard Incorporated",
+      "price": "366.30",
+      "percent": "-1.57%"
+    },
+    {
+      "title": "BABA",
+      "company": "Alibaba Group Holdings Ltd.",
+      "price": "128.60",
+      "percent": "-2.26%"
+    },
+    {
+      "title": "XOM",
+      "company": "Exxon Mobil Corporation",
+      "price": "73.08",
+      "percent": "+1.68%"
+    },
+    {
+      "title": "PFE",
+      "company": "Pfizer, Inc.",
+      "price": "54.11",
+      "percent": "-1.53%"
+    },
+    {
+      "title": "ASML",
+      "company": "ASML Holding N.V. - New York Registry Shares",
+      "price": "715.23",
+      "percent": "-3.94%"
+    },
+    {
+      "title": "TM",
+      "company": "Toyota Motor Corporation",
+      "price": "207.47",
+      "percent": "-1.53%"
+    },
+    {
+      "title": "DIS",
+      "company": "Walt Disney Company (The)",
+      "price": "152.27",
+      "percent": "+0.22%"
+    },
+    {
+      "title": "KO",
+      "company": "Coca-Cola Company (The)",
+      "price": "60.90",
+      "percent": "-0.80%"
+    },
+    {
+      "title": "CSCO",
+      "company": "Cisco Systems, Inc.",
+      "price": "59.73",
+      "percent": "-2.66%"
+    },
+    {
+      "title": "CVX",
+      "company": "Chevron Corporation",
+      "price": "129.38",
+      "percent": "+0.33%"
+    },
+    {
+      "title": "ADBE",
+      "company": "Adobe Inc.",
+      "price": "513.34",
+      "percent": "-1.39%"
+    },
+    {
+      "title": "ABBV",
+      "company": "AbbVie Inc.",
+      "price": "136.78",
+      "percent": "+0.67%"
+    },
+    {
+      "title": "PEP",
+      "company": "PepsiCo, Inc.",
+      "price": "173.96",
+      "percent": "-0.96%"
+    },
+    {
+      "title": "AVGO",
+      "company": "Broadcom Inc.",
+      "price": "577.79",
+      "percent": "-3.12%"
+    },
+    {
+      "title": "LLY",
+      "company": "Eli Lilly and Company",
+      "price": "247.07",
+      "percent": "+1.21%"
+    },
+    {
+      "title": "TMO",
+      "company": "Thermo Fisher Scientific Inc",
+      "price": "590.10",
+      "percent": "-0.79%"
+    },
+    {
+      "title": "NKE",
+      "company": "Nike, Inc.",
+      "price": "146.95",
+      "percent": "-0.83%"
+    },
+    {
+      "title": "ACN",
+      "company": "Accenture plc",
+      "price": "348.28",
+      "percent": "-1.44%"
+    },
+    {
+      "title": "CMCSA",
+      "company": "Comcast Corporation",
+      "price": "50.18",
+      "percent": "-2.90%"
+    },
+    {
+      "title": "ORCL",
+      "company": "Oracle Corporation",
+      "price": "85.55",
+      "percent": "-2.44%"
+    },
+    {
+      "title": "NFLX",
+      "company": "Netflix, Inc.",
+      "price": "510.80",
+      "percent": "-2.83%"
+    },
+    {
+      "title": "ABT",
+      "company": "Abbott Laboratories",
+      "price": "126.57",
+      "percent": "-1.24%"
+    },
+    {
+      "title": "INTC",
+      "company": "Intel Corporation",
+      "price": "54.76",
+      "percent": "-1.69%"
+    },
+    {
+      "title": "CRM",
+      "company": "Salesforce.com Inc",
+      "price": "226.06",
+      "percent": "-2.24%"
+    },
+    {
+      "title": "NVO",
+      "company": "Novo Nordisk A/S",
+      "price": "96.39",
+      "percent": "+0.07%"
+    },
+    {
+      "title": "VZ",
+      "company": "Verizon Communications Inc.",
+      "price": "53.43",
+      "percent": "+0.28%"
+    },
+    {
+      "title": "WFC",
+      "company": "Wells Fargo & Company",
+      "price": "56.69",
+      "percent": "-2.36%"
+    },
+    {
+      "title": "COST",
+      "company": "Costco Wholesale Corporation",
+      "price": "488.07",
+      "percent": "-2.97%"
+    },
+    {
+      "title": "DHR",
+      "company": "Danaher Corporation",
+      "price": "288.40",
+      "percent": "-1.67%"
+    },
+    {
+      "title": "MRK",
+      "company": "Merck & Company, Inc.",
+      "price": "81.54",
+      "percent": "+0.20%"
+    },
+    {
+      "title": "PYPL",
+      "company": "PayPal Holdings, Inc.",
+      "price": "174.46",
+      "percent": "-2.22%"
+    },
+    {
+      "title": "QCOM",
+      "company": "QUALCOMM Incorporated",
+      "price": "178.86",
+      "percent": "-5.21%"
+    },
+    {
+      "title": "NVS",
+      "company": "Novartis AG",
+      "price": "89.54",
+      "percent": "-1.12%"
+    },
+    {
+      "title": "T",
+      "company": "AT&T Inc.",
+      "price": "27.31",
+      "percent": "+0.48%"
+    },
+    {
+      "title": "RDS.B",
+      "company": "Royal Dutch Shell PLC",
+      "price": "50.99",
+      "percent": "+1.82%"
+    },
+    {
+      "title": "RDS.A",
+      "company": "Royal Dutch Shell PLC Royal Dutch Shell",
+      "price": "50.95",
+      "percent": "+1.80%"
+    },
+    {
+      "title": "MCD",
+      "company": "McDonald's Corporation",
+      "price": "256.48",
+      "percent": "-0.48%"
+    },
+    {
+      "title": "AZN",
+      "company": "AstraZeneca PLC",
+      "price": "59.84",
+      "percent": "+1.68%"
+    },
+    {
+      "title": "UPS",
+      "company": "United Parcel Service, Inc.",
+      "price": "205.59",
+      "percent": "-0.46%"
+    },
+    {
+      "title": "SCHW",
+      "company": "Charles Schwab Corporation (The)",
+      "price": "92.16",
+      "percent": "-3.53%"
+    },
+    {
+      "title": "RY",
+      "company": "Royal Bank Of Canada",
+      "price": "118.79",
+      "percent": "+1.24%"
+    },
+    {
+      "title": "MS",
+      "company": "Morgan Stanley",
+      "price": "94.01",
+      "percent": "-4.93%"
+    },
+    {
+      "title": "TXN",
+      "company": "Texas Instruments Incorporated",
+      "price": "182.28",
+      "percent": "-2.53%"
+    },
+    {
+      "title": "BHP",
+      "company": "BHP Group Limited",
+      "price": "66.45",
+      "percent": "-0.78%"
+    },
+    {
+      "title": "BBL",
+      "company": "BHP Group PlcSponsored",
+      "price": "66.05",
+      "percent": "-0.03%"
+    },
+    {
+      "title": "LIN",
+      "company": "Linde plc",
+      "price": "321.16",
+      "percent": "-2.27%"
+    },
+    {
+      "title": "SAP",
+      "company": "SAP SE",
+      "price": "136.10",
+      "percent": "-2.02%"
+    },
+    {
+      "title": "LOW",
+      "company": "Lowe's Companies, Inc.",
+      "price": "238.41",
+      "percent": "-2.05%"
+    },
+    {
+      "title": "NEE",
+      "company": "NextEra Energy, Inc.",
+      "price": "81.25",
+      "percent": "-2.34%"
+    },
+    {
+      "title": "AMD",
+      "company": "Advanced Micro Devices Inc",
+      "price": "131.93",
+      "percent": "-3.62%"
+    },
+    {
+      "title": "PM",
+      "company": "Philip Morris International Inc",
+      "price": "101.73",
+      "percent": "-1.60%"
+    },
+    {
+      "title": "SONY",
+      "company": "Sony Group Corporation",
+      "price": "115.84",
+      "percent": "-7.17%"
+    },
+    {
+      "title": "UNP",
+      "company": "Union Pacific Corporation",
+      "price": "238.04",
+      "percent": "-3.34%"
+    },
+    {
+      "title": "INTU",
+      "company": "Intuit Inc.",
+      "price": "537.82",
+      "percent": "-2.35%"
+    },
+    {
+      "title": "TD",
+      "company": "Toronto Dominion Bank (The)",
+      "price": "82.52",
+      "percent": "+1.08%"
+    },
+    {
+      "title": "TTE",
+      "company": "TotalEnergies SE",
+      "price": "57.68",
+      "percent": "+1.02%"
+    },
+    {
+      "title": "HON",
+      "company": "Honeywell International Inc.",
+      "price": "213.59",
+      "percent": "-1.87%"
+    },
+    {
+      "title": "PTR",
+      "company": "PetroChina Company Limited",
+      "price": "51.62",
+      "percent": "+1.94%"
+    },
+    {
+      "title": "MDT",
+      "company": "Medtronic plc.",
+      "price": "107.49",
+      "percent": "-0.98%"
+    },
+    {
+      "title": "BMY",
+      "company": "Bristol-Myers Squibb Company",
+      "price": "64.89",
+      "percent": "-0.06%"
+    },
+    {
+      "title": "HSBC",
+      "company": "HSBC Holdings, plc.",
+      "price": "35.03",
+      "percent": "-0.91%"
+    },
+    {
+      "title": "CVS",
+      "company": "CVS Health Corporation",
+      "price": "104.51",
+      "percent": "-1.61%"
+    },
+    {
+      "title": "BX",
+      "company": "Blackstone Inc.",
+      "price": "113.92",
+      "percent": "-1.89%"
+    },
+    {
+      "title": "BUD",
+      "company": "Anheuser-Busch Inbev SA Sponsored",
+      "price": "66.87",
+      "percent": "-1.37%"
+    },
+    {
+      "title": "RTX",
+      "company": "Raytheon Technologies Corporation",
+      "price": "90.75",
+      "percent": "-1.71%"
+    },
+    {
+      "title": "AMAT",
+      "company": "Applied Materials, Inc.",
+      "price": "152.36",
+      "percent": "-8.77%"
+    },
+    {
+      "title": "TMUS",
+      "company": "T-Mobile US, Inc.",
+      "price": "106.91",
+      "percent": "-1.48%"
+    },
+    {
+      "title": "SHOP",
+      "company": "Shopify Inc.",
+      "price": "1054.66",
+      "percent": "-4.37%"
+    },
+    {
+      "title": "BA",
+      "company": "Boeing Company (The)",
+      "price": "225.01",
+      "percent": "-0.42%"
+    },
+    {
+      "title": "AMGN",
+      "company": "Amgen Inc.",
+      "price": "233.83",
+      "percent": "-0.65%"
+    },
+    {
+      "title": "SNY",
+      "company": "Sanofi",
+      "price": "52.17",
+      "percent": "+0.46%"
+    },
+    {
+      "title": "C",
+      "company": "Citigroup, Inc.",
+      "price": "65.30",
+      "percent": "-2.44%"
+    },
+    {
+      "title": "AXP",
+      "company": "American Express Company",
+      "price": "166.17",
+      "percent": "-1.32%"
+    },
+    {
+      "title": "UL",
+      "company": "Unilever PLC",
+      "price": "46.45",
+      "percent": "-14.44%"
+    },
+    {
+      "title": "BLK",
+      "company": "BlackRock, Inc.",
+      "price": "832.00",
+      "percent": "-1.96%"
+    },
+    {
+      "title": "CAT",
+      "company": "Caterpillar, Inc.",
+      "price": "229.87",
+      "percent": "+0.41%"
+    },
+    {
+      "title": "RIO",
+      "company": "Rio Tinto Plc",
+      "price": "75.73",
+      "percent": "+0.44%"
+    },
+    {
+      "title": "IBM",
+      "company": "International Business Machines Corporation",
+      "price": "132.94",
+      "percent": "-0.95%"
+    },
+    {
+      "title": "GS",
+      "company": "Goldman Sachs Group, Inc. (The)",
+      "price": "354.40",
+      "percent": "-6.97%"
+    },
+    {
+      "title": "DE",
+      "company": "Deere & Company",
+      "price": "383.91",
+      "percent": "+1.15%"
+    },
+    {
+      "title": "DEO",
+      "company": "Diageo plc",
+      "price": "203.00",
+      "percent": "-1.59%"
+    }
+  ]
+}
