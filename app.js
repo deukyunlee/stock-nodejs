@@ -59,6 +59,7 @@ app.get("/symbol", function (req, res, next) {
 const stock2 = require("./routes/stock2");
 const getDailyData = require("./routes/getDailyData");
 const kakaoAuth = require("./routes/kakao/auth");
+
 app.use("/stock2", stock2);
 app.use("/getDailyData", getDailyData);
 app.use("/auth", kakaoAuth);
