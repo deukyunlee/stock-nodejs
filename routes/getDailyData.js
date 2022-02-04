@@ -3,9 +3,9 @@ const db = require("../app.js");
 const cheerio = require("cheerio");
 const fs = require("fs");
 const axios = require("axios");
-const { json } = require("express");
-const API_KEY = "JDBVQUW2HL07WAGK";
+const request = require("request");
 
+const API_KEY = process.env.ALPHAVANTAGEAPI;
 let count = 100;
 let symbol;
 

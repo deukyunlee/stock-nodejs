@@ -17,12 +17,18 @@ app.set("view engine", "pug");
 
 require("dotenv").config();
 
+const dbHost = process.env.DBHOST;
+const dbUser = process.env.DBUSER;
+const dbPassword = process.env.DBPASSWORD;
+const dbName = process.env.DBNAME;
+const dbPort = process.env.DBPORT;
+
 const db = mysql.createConnection({
-  host: "127.0.0.1",
-  user: "root", // e.g. 'my-db-user'
-  password: "111111", // e.g. 'my-db-password'
-  database: "capstone", // e.g. 'my-database'
-  port: "3306",
+  host: dbHost,
+  user: dbUser, // e.g. 'my-db-user'
+  password: dbPassword, // e.g. 'my-db-password'
+  database: dbName, // e.g. 'my-database'
+  port: dbPort,
   multipleStatements: true,
   //socketPath: socket_path,
 });

@@ -2,7 +2,6 @@ const fs = require("fs");
 const router = require("express").Router();
 const axios = require("axios");
 var db = require("../app.js");
-const API_KEY = "JDBVQUW2HL07WAGK";
 
 var url;
 var List = []; //list to store symbols of company
