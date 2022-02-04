@@ -1,18 +1,8 @@
-const request = require("request");
-const cheerio = require("cheerio");
 const fs = require("fs");
 const router = require("express").Router();
 const axios = require("axios");
 var db = require("../app.js");
 const API_KEY = "JDBVQUW2HL07WAGK";
-
-// import { got } from "got";
-// import request from "request";
-// import cheerio from "cheerio";
-// import router from "router";
-// import axios from "axios";
-// import fs from "fs";
-// import db from "../app.js";
 
 var url;
 var List = []; //list to store symbols of company
@@ -66,84 +56,84 @@ router.get("/symbol/:name", function (req, res) {
   );
 });
 
-router.post("/", function (req, res) {
-  function symbolCreator() {
-    return new Promise(function (resolve, reject) {
-      request(
-        "https://www.tradingview.com/markets/stocks-usa/market-movers-large-cap/",
-        (error, response, html) => {
-          if (!error && response.statusCode === 200) {
-            const $ = cheerio.load(html);
-            const $symbolResults = $(
-              ".tv-data-table__row.tv-data-table__stroke.tv-screener-table__result-row"
-            );
-            $symbolResults.each(function (i, result) {
-              List[i] = {
-                title: $(this).find("div").find("div").find("a").text(),
-                company: $(this)
-                  .find("div")
-                  .find("div")
-                  .find("span")
-                  .text()
-                  .replace(/[\n\t\r]/g, ""),
-                price: $(this).find("td:nth-of-type(2)").text(),
-                percent: $(this).find("td:nth-of-type(3)").text(),
-              };
-              if (List[i].percent !== "0.00%" && List[i].percent[0] !== "-") {
-                List[i].percent = "+" + List[i].percent;
-              }
-            });
-            const data = List.filter((n) => n.title); // 같이 바꾸기
-            // console.log(data)
-            const jsonData = JSON.stringify(data);
-            jsonData2 = "{" + '"' + "symbols" + '"' + ":" + jsonData + "}";
-            fs.writeFileSync("./symbol.json", jsonData2);
-            console.log("JSON created");
-            resolve(data);
-          } else {
-            reject(error);
-          }
-          // console.log($.text())
-        }
-      );
-    });
-  }
+// router.post("/", function (req, res) {
+//   function symbolCreator() {
+//     return new Promise(function (resolve, reject) {
+//       request(
+//         "https://www.tradingview.com/markets/stocks-usa/market-movers-large-cap/",
+//         (error, response, html) => {
+//           if (!error && response.statusCode === 200) {
+//             const $ = cheerio.load(html);
+//             const $symbolResults = $(
+//               ".tv-data-table__row.tv-data-table__stroke.tv-screener-table__result-row"
+//             );
+//             $symbolResults.each(function (i, result) {
+//               List[i] = {
+//                 title: $(this).find("div").find("div").find("a").text(),
+//                 company: $(this)
+//                   .find("div")
+//                   .find("div")
+//                   .find("span")
+//                   .text()
+//                   .replace(/[\n\t\r]/g, ""),
+//                 price: $(this).find("td:nth-of-type(2)").text(),
+//                 percent: $(this).find("td:nth-of-type(3)").text(),
+//               };
+//               if (List[i].percent !== "0.00%" && List[i].percent[0] !== "-") {
+//                 List[i].percent = "+" + List[i].percent;
+//               }
+//             });
+//             const data = List.filter((n) => n.title); // 같이 바꾸기
+//             // console.log(data)
+//             const jsonData = JSON.stringify(data);
+//             jsonData2 = "{" + '"' + "symbols" + '"' + ":" + jsonData + "}";
+//             fs.writeFileSync("./symbol.json", jsonData2);
+//             console.log("JSON created");
+//             resolve(data);
+//           } else {
+//             reject(error);
+//           }
+//           // console.log($.text())
+//         }
+//       );
+//     });
+//   }
 
-  // cron.schedule("0 * * * *", symbolCreator)
-  async function getSymbol() {
-    url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&outputsize=compact&apikey=${API_KEY}`;
-    var symbol = "AAPL";
-    request(url, function (error, response, body) {
-      // console.log(url[key])
-      // console.log("here")
-      const data = JSON.parse(body);
-      content = data["Time Series (Daily)"];
+//   // cron.schedule("0 * * * *", symbolCreator)
+//   async function getSymbol() {
+//     url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&outputsize=compact&apikey=${API_KEY}`;
+//     var symbol = "AAPL";
+//     request(url, function (error, response, body) {
+//       // console.log(url[key])
+//       // console.log("here")
+//       const data = JSON.parse(body);
+//       content = data["Time Series (Daily)"];
 
-      if (content) {
-        // get key for date
-        const keys = Object.keys(content);
-        // console.log(keys)
+//       if (content) {
+//         // get key for date
+//         const keys = Object.keys(content);
+//         // console.log(keys)
 
-        const sql = `insert IGNORE into daily(name, timestamp, open, high,low,close,volume) values (?)`;
-        console.log("1");
+//         const sql = `insert IGNORE into daily(name, timestamp, open, high,low,close,volume) values (?)`;
+//         console.log("1");
 
-        // extract and insert data from API into mysql DB
-        keys.forEach(function (key, index) {
-          const row = content[key];
-          const date = keys[index];
-          const open = parseFloat(row["1. open"]);
-          const high = parseFloat(row["2. high"]);
-          const low = parseFloat(row["3. low"]);
-          const close = parseFloat(row["4. close"]);
-          const volume = parseInt(row["5. volume"]);
-          const array = [symbol, date, open, high, low, close, volume];
-          db.query(sql, [array], function (err, rows, fields) {
-            // console.log(symbol)
-          });
-        });
-      }
-    });
-  }
-  getSymbol();
-});
+//         // extract and insert data from API into mysql DB
+//         keys.forEach(function (key, index) {
+//           const row = content[key];
+//           const date = keys[index];
+//           const open = parseFloat(row["1. open"]);
+//           const high = parseFloat(row["2. high"]);
+//           const low = parseFloat(row["3. low"]);
+//           const close = parseFloat(row["4. close"]);
+//           const volume = parseInt(row["5. volume"]);
+//           const array = [symbol, date, open, high, low, close, volume];
+//           db.query(sql, [array], function (err, rows, fields) {
+//             // console.log(symbol)
+//           });
+//         });
+//       }
+//     });
+//   }
+//   getSymbol();
+// });
 module.exports = router;

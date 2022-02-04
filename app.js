@@ -15,6 +15,8 @@ var app = express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
+require("dotenv").config();
+
 const db = mysql.createConnection({
   host: "127.0.0.1",
   user: "root", // e.g. 'my-db-user'
@@ -47,23 +49,13 @@ app.get("/symbol", function (req, res, next) {
     res.json(test_json);
   });
 });
-app.get("/temp", function (req, res, next) {
-  fs.readFile("./temporary.json", function (err, data) {
-    var test_json = JSON.parse(data);
-    res.json(test_json);
-  });
-});
-app.get("/tsla", function (req, res, next) {
-  fs.readFile("./tsla.json", function (err, data) {
-    var test_json = JSON.parse(data);
-    res.json(test_json);
-  });
-});
 
-const stock2 = require("./routes/stock2.js");
-const stock3 = require("./routes/stock3.js");
+const stock2 = require("./routes/stock2");
+const getDailyData = require("./routes/getDailyData");
+const kakaoAuth = require("./routes/kakao/auth");
 app.use("/stock2", stock2);
-app.use("/stock3", stock3);
+app.use("/getDailyData", getDailyData);
+app.use("/auth", kakaoAuth);
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development

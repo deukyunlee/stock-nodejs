@@ -1,22 +1,15 @@
 const router = require("express").Router();
-// import router from "express";
-// import request from "request";
-// import cheerio from "cheerio";
-// import fs from "fs";
-// import got from "got";
-// router = router.Router();
-const request = require("request");
-var db = require("../app.js");
+const db = require("../app.js");
 const cheerio = require("cheerio");
 const fs = require("fs");
 const axios = require("axios");
 const { json } = require("express");
 const API_KEY = "JDBVQUW2HL07WAGK";
-let symbol;
-// import got from "got";
 
-// const got = require("got");
-var List = []; //list to store symbols of company
+let count = 100;
+let symbol;
+
+var List = [];
 router.post("/", function (req, res) {
   function symbolCreator() {
     return new Promise(function (resolve, reject) {
@@ -45,7 +38,6 @@ router.post("/", function (req, res) {
               }
             });
             const data = List.filter((n) => n.title); // 같이 바꾸기
-            // console.log(data)
             const jsonData = JSON.stringify(data);
             jsonData2 = "{" + '"' + "symbols" + '"' + ":" + jsonData + "}";
             fs.writeFileSync("./symbol.json", jsonData2);
@@ -54,7 +46,6 @@ router.post("/", function (req, res) {
           } else {
             reject(error);
           }
-          // console.log($.text())
         }
       );
     });
@@ -80,7 +71,6 @@ router.post("/", function (req, res) {
       url[
         key
       ] = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&outputsize=compact&apikey=${API_KEY}`;
-      //console.log(url[key]);
 
       //   console.log(url[key]);
       await sleep(15000).then(() =>
@@ -91,15 +81,18 @@ router.post("/", function (req, res) {
           //   console.log(res.data);
           var res2 = res.data;
           var content = res2["Time Series (Daily)"];
-          console.log(content);
 
           if (content) {
-            // get key for date
             const keys = Object.keys(content);
             // console.log(keys)
 
             const sql = `insert IGNORE into daily(name, timestamp, open, high,low,close,volume) values (?)`;
-            console.log("1");
+            count -= 1;
+            console.log(
+              symbol + " inserted into database : " + count + " symbols left"
+            );
+            if (count === 0)
+              console.log("all the pieces of daily data are inserted!");
 
             // extract and insert data from API into mysql DB
             keys.forEach(function (key, index) {
@@ -111,23 +104,13 @@ router.post("/", function (req, res) {
               const close = parseFloat(row["4. close"]);
               const volume = parseInt(row["5. volume"]);
               const array = [symbol, date, open, high, low, close, volume];
-              db.query(sql, [array], function (err, rows, fields) {
-                // console.log(symbol)
-              });
+              db.query(sql, [array], function (err, rows, fields) {});
             });
           }
-          //   res2 = JSON.parse(res);
-          //   res2 = JSON.parse(res);
-          //   res2 = JSON.stringify(res);
-          //   console.log(res2.data);
-          //   content = res2["data"]["Time Series (Daily)"];
-          //   console.log(content);
         })
       );
-      //   console.log(data2);
     }
   }
-
   getSymbol();
 });
 module.exports = router;
