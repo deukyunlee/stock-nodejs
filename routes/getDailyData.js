@@ -1,69 +1,25 @@
 const router = require("express").Router();
 const db = require("../app.js");
-const cheerio = require("cheerio");
-const fs = require("fs");
+const crawling = require("./crawling");
 const axios = require("axios");
-const request = require("request");
-
+const delayFunc = require("./delayFuncs");
 const API_KEY = process.env.ALPHAVANTAGEAPI;
 let count = 100;
 let symbol;
 
-var List = [];
+// const delay = function () {
+//   const randomDelay = Math.floor(Math.random() * 4) * 100;
+//   return new Promise((resolve) => setTimeout(resolve, randomDelay));
+// };
 
-const delay = () => {
-  const randomDelay = Math.floor(Math.random() * 4) * 100;
-  return new Promise((resolve) => setTimeout(resolve, randomDelay));
-};
-
-function sleep(ms) {
-  return new Promise((r) => setTimeout(r, ms));
-}
-
-function symbolCreator() {
-  return new Promise(function (resolve, reject) {
-    request(
-      "https://www.tradingview.com/markets/stocks-usa/market-movers-large-cap/",
-      (error, response, html) => {
-        if (!error && response.statusCode === 200) {
-          const $ = cheerio.load(html);
-          const $symbolResults = $(
-            ".tv-data-table__row.tv-data-table__stroke.tv-screener-table__result-row"
-          );
-          $symbolResults.each(function (i, result) {
-            List[i] = {
-              title: $(this).find("div").find("div").find("a").text(),
-              company: $(this)
-                .find("div")
-                .find("div")
-                .find("span")
-                .text()
-                .replace(/[\n\t\r]/g, ""),
-              price: $(this).find("td:nth-of-type(2)").text(),
-              percent: $(this).find("td:nth-of-type(3)").text(),
-            };
-            if (List[i].percent !== "0.00%" && List[i].percent[0] !== "-") {
-              List[i].percent = "+" + List[i].percent;
-            }
-          });
-          const data = List.filter((n) => n.title); // 같이 바꾸기
-          const jsonData = JSON.stringify(data);
-          jsonData2 = "{" + '"' + "symbols" + '"' + ":" + jsonData + "}";
-          fs.writeFileSync("./symbol.json", jsonData2);
-          console.log("JSON created");
-          resolve(data);
-        } else {
-          reject(error);
-        }
-      }
-    );
-  });
-}
+// const sleep = function (ms) {
+//   return new Promise((r) => setTimeout(r, ms));
+// };
 
 router.post("/minute", function (req, res) {
   // cron.schedule("0 * * * *", symbolCreator)
   async function getSymbol() {
-    var data = await symbolCreator();
+    var data = await crawling.crawlSymbol();
     // data2 = fs.readFileSync("./symbol.json")
     // parsedData = JSON.stringify(parsedData)
     for (var key in data) {
@@ -76,7 +32,7 @@ router.post("/minute", function (req, res) {
       ] = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=5min&outputsize=full&apikey=${API_KEY}`;
 
       //   console.log(url[key]);
-      await sleep(15000).then(() =>
+      await delayFunc.sleep(15000).then(() =>
         axios({
           method: "get",
           url: url[key],
@@ -120,7 +76,7 @@ router.post("/minute", function (req, res) {
 router.post("/", function (req, res) {
   // cron.schedule("0 * * * *", symbolCreator)
   async function getSymbol() {
-    var data = await symbolCreator();
+    var data = await crawling.crawlSymbol();
     // data2 = fs.readFileSync("./symbol.json")
     // parsedData = JSON.stringify(parsedData)
     for (var key in data) {
@@ -133,7 +89,7 @@ router.post("/", function (req, res) {
       ] = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&outputsize=compact&apikey=${API_KEY}`;
 
       //   console.log(url[key]);
-      await sleep(15000).then(() =>
+      await delayFunc.sleep(15000).then(() =>
         axios({
           method: "get",
           url: url[key],
