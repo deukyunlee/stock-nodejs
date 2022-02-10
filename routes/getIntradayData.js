@@ -20,7 +20,7 @@ router.post("/", function (req, res) {
       symbol = data[key].title;
       url[
         key
-      ] = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&outputsize=compact&apikey=${API_KEY}`;
+      ] = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=5min&outputsize=full&apikey=${API_KEY}`;
 
       //   console.log(url[key]);
       await delayFunc.sleep(15000).then(() =>
@@ -30,13 +30,13 @@ router.post("/", function (req, res) {
         }).then((res) => {
           //   console.log(res.data);
           var res2 = res.data;
-          var content = res2["Time Series (Daily)"];
+          var content = res2["Time Series (5min)"];
 
           if (content) {
             const keys = Object.keys(content);
-            // console.log(keys)
+            // console.log(keys);
 
-            const sql = `insert IGNORE into daily(name, timestamp, open, high,low,close,volume) values (?)`;
+            const sql = `insert IGNORE into intraday(name, timestamp, open, high,low,close,volume) values (?)`;
             count -= 1;
             console.log(
               symbol + " inserted into database : " + count + " symbols left"

@@ -58,10 +58,12 @@ app.get("/symbol", function (req, res, next) {
 
 const searchData = require("./routes/searchData");
 const getDailyData = require("./routes/getDailyData");
+const getIntradayData = require("./routes/getIntradayData");
 const kakaoAuth = require("./routes/kakao/auth");
 
 app.use("/searchData", searchData);
 app.use("/getDailyData", getDailyData);
+app.use("/getIntradayData", getIntradayData);
 app.use("/auth", kakaoAuth);
 // error handler
 app.use(function (err, req, res, next) {
