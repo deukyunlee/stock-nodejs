@@ -25,9 +25,9 @@ const dbPort = process.env.DBPORT;
 
 const db = mysql.createConnection({
   host: dbHost,
-  user: dbUser, // e.g. 'my-db-user'
-  password: dbPassword, // e.g. 'my-db-password'
-  database: dbName, // e.g. 'my-database'
+  user: dbUser,
+  password: dbPassword,
+  database: dbName,
   port: dbPort,
   multipleStatements: true,
   //socketPath: socket_path,
@@ -56,11 +56,11 @@ app.get("/symbol", function (req, res, next) {
   });
 });
 
-const stock2 = require("./routes/stock2");
+const searchData = require("./routes/searchData");
 const getDailyData = require("./routes/getDailyData");
 const kakaoAuth = require("./routes/kakao/auth");
 
-app.use("/stock2", stock2);
+app.use("/searchData", searchData);
 app.use("/getDailyData", getDailyData);
 app.use("/auth", kakaoAuth);
 // error handler

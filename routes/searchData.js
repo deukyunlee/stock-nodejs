@@ -7,13 +7,12 @@ var url;
 var List = []; //list to store symbols of company
 
 router.get("/list/:id", function (req, res) {
-  let currentPage = req.query.number;
+  let currentPage = req.query.offset;
   let id = req.params.id;
-  const size = 10; // 한 페이지에서 보여줄 데이터 수
-  const pnSize = 10;
+  const size = Number(req.query.limit); // 한 페이지에서 보여줄 데이터 수
+  const pnSize = 10; // 페이지 네이션 할 갯수
 
   if (currentPage <= 0) {
-    // if request pageNum which is smaller than 0 or equal, goto page 1
     currentPage = 1;
   } else {
     start = (currentPage - 1) * size;
@@ -31,12 +30,12 @@ router.get("/list/:id", function (req, res) {
       [skipSize, size],
       (err, contentResult) => {
         if (err) throw err;
-        if (symbolEnd > totalPage) symbolEnd = totalPage; // NOTE: 페이지네이션의 끝 번호가 페이지네이션 전체 카운트보다 높을 경우.
+        if (symbolEnd > totalPage) symbolEnd = totalPage;
         const result = {
           currentPage,
           symbolStart,
-          symbolEnd,
-          totalPage,
+          // symbolEnd,
+          // totalPage,
           contents: contentResult,
         };
         res.send(result);
