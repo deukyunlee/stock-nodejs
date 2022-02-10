@@ -4,7 +4,6 @@ const axios = require("axios");
 var db = require("../app.js");
 
 var url;
-var List = []; //list to store symbols of company
 
 router.get("/list/:id", function (req, res) {
   let currentPage = req.query.offset;
