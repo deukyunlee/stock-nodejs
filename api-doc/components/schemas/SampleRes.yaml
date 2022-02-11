@@ -1,0 +1,13 @@
+components:
+  schemas:
+    SampleRes:
+      type: object
+      required:
+        - anyString
+        - anyNumber
+      properties:
+        anyString:
+          type: string
+        anyNumber:
+          type: number
+          format: double

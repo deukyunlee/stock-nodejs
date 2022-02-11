@@ -24,7 +24,9 @@
     "passport-kakao": "^1.0.1",
     "pug": "^3.0.2",
     "puppeteer": "^13.0.1",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",

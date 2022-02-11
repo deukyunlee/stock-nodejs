@@ -1,0 +1,14 @@
+components:
+  schemas:
+    SampleReq:
+      type: object
+      required:
+        - param1
+        - param2
+      properties:
+        param1:
+          type: string
+        param2:
+          type: string
+          minLength: 6
+          maxLength: 20

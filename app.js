@@ -8,12 +8,31 @@ const mysql = require("mysql");
 var bodyparser = require("body-parser");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+const swaggerUI = require("swagger-ui-express");
+const swaggerJSDoc = require("swagger-jsdoc");
+
 var app = express();
 // const stockCron = require("./routes/stock2")
 // stockCron
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
+
+const swaggerSpec = swaggerJSDoc({
+  swaggerDefinition: {
+    openapi: "3.0.2",
+    info: {
+      title: "swagger-example API 문서",
+      version: "1.0",
+    },
+    servers: [
+      {
+        url: "http://localhost:8080",
+      },
+    ],
+  },
+  apis: ["./api-doc/**/*.yaml"],
+});
 
 require("dotenv").config();
 
@@ -67,6 +86,9 @@ app.use("/getDailyData", getDailyData);
 app.use("/getIntradayData", getIntradayData);
 app.use("/getCompanyInfo", getCompanyInfo);
 app.use("/auth", kakaoAuth);
+
+app.use("/swagger", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
