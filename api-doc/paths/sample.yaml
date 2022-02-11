@@ -62,9 +62,9 @@ paths:
 
   /getIntradayData:
     post:
-      summary: 일일 데이터 추가
+      summary: 시간/분 데이터 추가
       tags:
-        - 일일 데이터
+        - 시간/분 데이터
       requestBody:
         required: true
         content:
@@ -92,9 +92,9 @@ paths:
                 $ref: "#/components/schemas/Error"
 
     get:
-      summary: 일일 데이터 조회
+      summary: 시간/분 데이터 조회
       tags:
-        - 일일 데이터
+        - 시간/분 데이터
       requestBody:
         required: true
         content:
@@ -123,9 +123,9 @@ paths:
 
   /getCompanyInfo:
     post:
-      summary: 일일 데이터 추가
+      summary: 회사 정보 추가
       tags:
-        - 일일 데이터
+        - 회사 정보
       requestBody:
         required: true
         content:
@@ -153,9 +153,9 @@ paths:
                 $ref: "#/components/schemas/Error"
 
     get:
-      summary: 일일 데이터 조회
+      summary: 회사 정보 조회
       tags:
-        - 일일 데이터
+        - 회사 정보
       requestBody:
         required: true
         content:
