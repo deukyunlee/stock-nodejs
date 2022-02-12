@@ -1,0 +1,61 @@
+paths:
+  /getIntradayData:
+    post:
+      summary: 시간/분 데이터 추가
+      tags:
+        - 시간/분 데이터
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SampleReq"
+            example:
+              param1: "parameter1"
+              param2: "parameter2"
+      responses:
+        201:
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SampleRes"
+              example:
+                anyString: "스트링"
+                anyNumber: 100000.001
+        400:
+          description: error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+    get:
+      summary: 시간/분 데이터 조회
+      tags:
+        - 시간/분 데이터
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SampleReq"
+            example:
+              param1: "parameter1"
+              param2: "parameter2"
+      responses:
+        201:
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SampleRes"
+              example:
+                anyString: "스트링"
+                anyNumber: 100000.001
+        400:
+          description: error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"

@@ -29,13 +29,10 @@ router.post("/", function (req, res) {
         }).then((res) => {
           //   console.log(res.data);
           var res2 = res.data;
-          var content = res2["Description"];
-
-          if (content) {
-            const keys = Object.keys(content);
-            // console.log(keys)
-            console.log(content);
-            const sql = `insert IGNORE into company_info(name, description) values (?)`;
+          const description = res2["Description"];
+          const marketCap = res2["MarketCapitalization"];
+          if (description && marketCap) {
+            const sql = `insert IGNORE into company_info(name, description, cap) values (?)`;
             count -= 1;
             console.log(
               symbol + " inserted into database : " + count + " symbols left"
@@ -43,7 +40,7 @@ router.post("/", function (req, res) {
             if (count === 0)
               console.log("all the pieces of daily data are inserted!");
 
-            const array = [symbol, content];
+            const array = [symbol, description, marketCap];
             db.query(sql, [array], function (err, rows, fields) {});
           }
         })
