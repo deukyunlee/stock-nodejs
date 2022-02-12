@@ -50,4 +50,12 @@ router.post("/", function (req, res) {
   getSymbol();
 });
 
+router.get("/:symbol", function (req, res) {
+  symbol = req.params.symbol;
+  const sql = `SELECT * from company_info where name = ?`;
+  db.query(sql, symbol, function (err, rows, fields) {
+    res.json(rows);
+  });
+});
+
 module.exports = router;
