@@ -82,9 +82,9 @@ const getCompanyInfo = require("./routes/getCompanyInfo");
 const kakaoAuth = require("./routes/kakao/auth");
 
 app.use("/searchData", searchData);
-app.use("/getDailyData", getDailyData);
-app.use("/getIntradayData", getIntradayData);
-app.use("/getCompanyInfo", getCompanyInfo);
+app.use("/daily", getDailyData);
+app.use("/intraday", getIntradayData);
+app.use("/company-info", getCompanyInfo);
 app.use("/auth", kakaoAuth);
 
 app.use("/swagger", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
