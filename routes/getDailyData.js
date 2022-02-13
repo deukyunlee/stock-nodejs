@@ -64,11 +64,37 @@ router.post("/", function (req, res) {
   getSymbol();
 });
 
-router.get("/:symbol", function (req, res) {
+router.get("/full-data/:symbol", function (req, res) {
   symbol = req.params.symbol;
   const sql = `SELECT * from daily where name = ?`;
   db.query(sql, symbol, function (err, rows, fields) {
     res.json(rows);
+  });
+});
+
+router.get("/interval/:symbol", (req, res) => {
+  symbol = req.params.symbol;
+  const period = req.query.period;
+  const startDate = req.query.startDate;
+  const endDate = req.query.endDate;
+  let interval = "";
+  let date_notYear = "";
+  let sql = "";
+
+  if (req.query.interval > 0) interval = "/" + req.query.interval;
+
+  if (period != "year") date_notYear = 'DATE_FORMAT(timestamp, "%y"), ';
+
+  /* high: highest, low: lowest volume: sum other than that is as it is*/
+  sql = `SELECT name, DATE_FORMAT(timestamp,'%Y-%m-%d') as date, open,
+         max(high) as high, min(low) as low, close, sum(volume)
+         FROM daily WHERE name = '${symbol}' AND timestamp BETWEEN '${startDate}' AND '${endDate}' GROUP BY ${date_notYear}
+         FLOOR(${period}(timestamp)${interval}) ORDER BY date;`;
+
+  db.query(sql, function (err, rows, fields) {
+    if (err) throw err;
+    res.json(rows);
+    // console.log(rows);
   });
 });
 
