@@ -4,15 +4,10 @@ paths:
       summary: 일일 데이터 추가
       tags:
         - 일일 데이터
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/SampleReq"
-            example:
-              param1: "parameter1"
-              param2: "parameter2"
+      produces:
+        - application/json
+      schema:
+        $ref: "#/components/schemas/SampleReq"
       responses:
         201:
           description: Ok
