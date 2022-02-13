@@ -1,14 +1,7 @@
 components:
   schemas:
     SampleReq:
-      type: object
-      required:
-        - param1
-        - param2
       properties:
-        param1:
+        symbol:
           type: string
-        param2:
-          type: string
-          minLength: 6
-          maxLength: 20
+          description: stock symbol
