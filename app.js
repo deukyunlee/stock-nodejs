@@ -68,24 +68,19 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 
-app.get("/symbol", function (req, res, next) {
-  fs.readFile("./symbol.json", function (err, data) {
-    var test_json = JSON.parse(data);
-    res.json(test_json);
-  });
-});
-
 const searchData = require("./routes/searchData");
 const getDailyData = require("./routes/getDailyData");
 const getIntradayData = require("./routes/getIntradayData");
 const getCompanyInfo = require("./routes/getCompanyInfo");
 const kakaoAuth = require("./routes/kakao/auth");
+const realtime = require("./routes/realtimeData");
 
 app.use("/searchData", searchData);
 app.use("/daily", getDailyData);
 app.use("/intraday", getIntradayData);
 app.use("/company-info", getCompanyInfo);
 app.use("/auth", kakaoAuth);
+app.use("/realtime", realtime);
 
 app.use("/swagger", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 

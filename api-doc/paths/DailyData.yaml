@@ -25,7 +25,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/Error"
 
-  /daily/{symbol}:
+  /daily/full-data/{symbol}:
     get:
       summary: 일일 데이터 조회
       tags:
