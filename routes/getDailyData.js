@@ -72,8 +72,8 @@ router.get("/full-data/:symbol", function (req, res) {
   });
 });
 
-router.get("/interval/:symbol", (req, res) => {
-  symbol = req.params.symbol;
+router.get("/interval", (req, res) => {
+  symbol = req.query.symbol;
   const period = req.query.period;
   const startDate = req.query.startDate;
   const endDate = req.query.endDate;
@@ -91,7 +91,7 @@ router.get("/interval/:symbol", (req, res) => {
          FROM daily WHERE name = '${symbol}' AND timestamp BETWEEN '${startDate}' AND '${endDate}' GROUP BY ${date_notYear}
          FLOOR(${period}(timestamp)${interval}) ORDER BY date;`;
 
-         /*select name, timestamp, open, max(high) as high, min(low) as low, close, sum(volume) as volume from daily where name = 'aapl' and timestamp between '2020-01-01' and '2022-01-01' group by date_format(timestamp, "%y"), FLOOR(month(timestamp)/1) order by timestamp;*/
+  /*select name, timestamp, open, max(high) as high, min(low) as low, close, sum(volume) as volume from daily where name = 'aapl' and timestamp between '2020-01-01' and '2022-01-01' group by date_format(timestamp, "%y"), FLOOR(month(timestamp)/1) order by timestamp;*/
   db.query(sql, function (err, rows, fields) {
     if (err) throw err;
     res.json(rows);
