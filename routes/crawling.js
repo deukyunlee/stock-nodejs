@@ -14,7 +14,7 @@ const crawlSymbol = function () {
           );
           $symbolResults.each(function (i, result) {
             List[i] = {
-              title: $(this).find("div").find("div").find("a").text(),
+              symbol: $(this).find("div").find("div").find("a").text(),
               company: $(this)
                 .find("div")
                 .find("div")
@@ -28,7 +28,7 @@ const crawlSymbol = function () {
               List[i].percent = "+" + List[i].percent;
             }
           });
-          const data = List.filter((n) => n.title); // 같이 바꾸기
+          const data = List.filter((n) => n.symbol); // 같이 바꾸기
           const jsonData = JSON.stringify(data);
           jsonData2 = "{" + '"' + "symbols" + '"' + ":" + jsonData + "}";
           fs.writeFileSync("./symbol.json", jsonData2);

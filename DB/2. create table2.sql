@@ -112,3 +112,4 @@ UPDATE company_info SET kr_name = '넷플릭스', kr_desc = "넷플릭스(Netfli
 UPDATE company_info SET kr_name = '필립 모리스 인터내셔널', kr_desc = "필립 모리스 인터내셔널(PMI)은 스위스계 미국인 다국적 담배 및 담배 제조 회사로 180여 개국에 판매되고 있다. 그 회사의 가장 인정받고 가장 잘 팔리는 제품은 말보로이다." WHERE symbol = 'pm';
 
 UPDATE company_info SET kr_name = 'AT&T', kr_desc = "AT&T는 미국 델라웨어주의 다국적 지주회사이다. 세계에서 가장 큰 통신 회사이며, 휴대 전화 서비스 제공 업체 중 두 번째로 크다." WHERE symbol = 't';
+
