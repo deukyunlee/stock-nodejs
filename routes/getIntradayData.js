@@ -36,7 +36,7 @@ router.post("/", function (req, res) {
             const keys = Object.keys(content);
             // console.log(keys);
 
-            const sql = `insert IGNORE into intraday(name, timestamp, open, high,low,close,volume) values (?)`;
+            const sql = `insert IGNORE into intraday(symbol, timestamp, open, high,low,close,volume) values (?)`;
             count -= 1;
             console.log(
               symbol + " inserted into database : " + count + " symbols left"
@@ -66,7 +66,7 @@ router.post("/", function (req, res) {
 
 router.get("/:symbol", function (req, res) {
   symbol = req.params.symbol;
-  const sql = `SELECT * from intraday where name = ?`;
+  const sql = `SELECT * from intraday where symbol= ?`;
   db.query(sql, symbol, function (err, rows, fields) {
     res.json(rows);
   });

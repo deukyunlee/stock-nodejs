@@ -25,7 +25,7 @@ router.get("/list/:id", function (req, res) {
     const symbolStart = (Math.ceil(currentPage / pnSize) - 1) * pnSize + 1;
     let symbolEnd = symbolStart + pnSize - 1;
     db.query(
-      `Select * FROM daily where name = '${id}' LIMIT ?, ?`,
+      `Select * FROM daily where symbol = '${id}' LIMIT ?, ?`,
       [skipSize, size],
       (err, contentResult) => {
         if (err) throw err;
