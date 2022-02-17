@@ -1,7 +1,7 @@
 const fs = require("fs");
 const router = require("express").Router();
 const axios = require("axios");
-var db = require("../app.js");
+const db = require("../app.js");
 
 var url;
 

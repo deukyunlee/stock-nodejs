@@ -31,8 +31,9 @@ router.post("/", function (req, res) {
           var res2 = res.data;
           const description = res2["Description"];
           const marketCap = res2["MarketCapitalization"];
-          if (description && marketCap) {
-            const sql = `insert IGNORE into company_info(name, description, cap) values (?)`;
+          const name = res2["Name"];
+          if (marketCap) {
+            const sql = `insert IGNORE into company_info(symbol, name, description, cap) values (?)`;
             count -= 1;
             console.log(
               symbol + " inserted into database : " + count + " symbols left"
@@ -40,7 +41,7 @@ router.post("/", function (req, res) {
             if (count === 0)
               console.log("all the pieces of daily data are inserted!");
 
-            const array = [symbol, description, marketCap];
+            const array = [symbol, name, description, marketCap];
             db.query(sql, [array], function (err, rows, fields) {});
           }
         })
