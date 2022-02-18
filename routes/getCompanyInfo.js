@@ -17,12 +17,12 @@ router.post("/", function (req, res) {
       //console.log(data);
       url = new Array();
       //   console.log(data[key].title);
-      symbol = data[key].title;
+      symbol = data[key].symbol;
       url[
         key
       ] = `https://www.alphavantage.co/query?function=OVERVIEW&symbol=${symbol}&apikey=${API_KEY}`;
       //   console.log(url[key]);
-      await delayFunc.sleep(15000).then(() =>
+      await delayFunc.sleep(12050).then(() =>
         axios({
           method: "get",
           url: url[key],
