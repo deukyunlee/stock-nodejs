@@ -27,41 +27,45 @@ router.post("/", function (req, res) {
         axios({
           method: "get",
           url: url[key],
-        }).then((res) => {
-          //   console.log(res.data);
-          var res2 = res.data;
-          var content = res2["Time Series (Daily)"];
-
-          if (content) {
-            const keys = Object.keys(content);
-            // console.log(keys)
-
-            const sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
-            count -= 1;
-            console.log(
-              symbol + " inserted into database : " + count + " symbols left"
-            );
-            if (count === 0)
-              console.log("all the pieces of daily data are inserted!");
-
-            // extract and insert data from API into mysql DB
-            keys.forEach(function (key, index) {
-              const row = content[key];
-              const date = keys[index];
-              const open = parseFloat(row["1. open"]);
-              const high = parseFloat(row["2. high"]);
-              const low = parseFloat(row["3. low"]);
-              const close = parseFloat(row["4. close"]);
-              const volume = parseInt(row["5. volume"]);
-              const array = [symbol, date, open, high, low, close, volume];
-              db.query(sql, [array], function (err, rows, fields) {});
-            });
-          }
         })
+          .then((res) => {
+            //   console.log(res.data);
+            var res2 = res.data;
+            var content = res2["Time Series (Daily)"];
+
+            if (content) {
+              const keys = Object.keys(content);
+              // console.log(keys)
+
+              const sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
+              count -= 1;
+              console.log(
+                symbol + " inserted into database : " + count + " symbols left"
+              );
+
+              // extract and insert data from API into mysql DB
+              keys.forEach(function (key, index) {
+                const row = content[key];
+                const date = keys[index];
+                const open = parseFloat(row["1. open"]);
+                const high = parseFloat(row["2. high"]);
+                const low = parseFloat(row["3. low"]);
+                const close = parseFloat(row["4. close"]);
+                const volume = parseInt(row["5. volume"]);
+                const array = [symbol, date, open, high, low, close, volume];
+                db.query(sql, [array], function (err, rows, fields) {});
+              });
+            }
+          })
+          .catch(() => {
+            console.log("rejected");
+          })
       );
     }
   }
-  getSymbol();
+  getSymbol().then(() => {
+    console.log("-----all the pieces of daily data are inserted!-----");
+  });
 });
 
 router.get("/full-data/:symbol", function (req, res) {

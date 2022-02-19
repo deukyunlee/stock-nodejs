@@ -26,29 +26,33 @@ router.post("/", function (req, res) {
         axios({
           method: "get",
           url: url[key],
-        }).then((res) => {
-          //   console.log(res.data);
-          var res2 = res.data;
-          const description = res2["Description"];
-          const marketCap = res2["MarketCapitalization"];
-          const name = res2["Name"];
-          if (marketCap) {
-            const sql = `insert IGNORE into company_info(symbol, name, description, cap) values (?)`;
-            count -= 1;
-            console.log(
-              symbol + " inserted into database : " + count + " symbols left"
-            );
-            if (count === 0)
-              console.log("all the pieces of daily data are inserted!");
-
-            const array = [symbol, name, description, marketCap];
-            db.query(sql, [array], function (err, rows, fields) {});
-          }
         })
+          .then((res) => {
+            //   console.log(res.data);
+            var res2 = res.data;
+            const description = res2["Description"];
+            const marketCap = res2["MarketCapitalization"];
+            const name = res2["Name"];
+            if (marketCap) {
+              const sql = `insert IGNORE into company_info(symbol, name, description, cap) values (?)`;
+              count -= 1;
+              console.log(
+                symbol + " inserted into database : " + count + " symbols left"
+              );
+
+              const array = [symbol, name, description, marketCap];
+              db.query(sql, [array], function (err, rows, fields) {});
+            }
+          })
+          .catch(() => {
+            console.log("rejected");
+          })
       );
     }
   }
-  getSymbol();
+  getSymbol().then(() => {
+    console.log("-----all the pieces of daily data are inserted!-----");
+  });
 });
 
 router.get("/:symbol", function (req, res) {
