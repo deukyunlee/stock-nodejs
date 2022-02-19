@@ -1,0 +1,24 @@
+paths:
+  /realtime:
+    get:
+      summary: 실시간 등락율 조회
+      tags:
+        - 실시간 등락율 조회
+      produces:
+        - application/json
+
+      responses:
+        201:
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SampleRes"
+              example:
+                symbol: "aapl"
+        400:
+          description: error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"

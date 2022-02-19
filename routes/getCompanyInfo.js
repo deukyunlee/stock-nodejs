@@ -51,7 +51,7 @@ router.post("/", function (req, res) {
     }
   }
   getSymbol().then(() => {
-    console.log("-----all the pieces of daily data are inserted!-----");
+    console.log("-----all the pieces of data are inserted!-----");
   });
 });
 
