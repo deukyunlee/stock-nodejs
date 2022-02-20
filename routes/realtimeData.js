@@ -8,7 +8,7 @@ router.get("/", function (req, res, next) {
     await crawling.crawlSymbol();
 
     const data2 = fs.readFileSync(path.resolve(__dirname, "../symbol.json"));
-    var test_json = JSON.parse(data2);
+    const test_json = JSON.parse(data2);
     res.json(test_json);
   }
   crawl();

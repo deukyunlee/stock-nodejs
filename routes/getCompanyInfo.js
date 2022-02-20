@@ -10,7 +10,7 @@ router.post("/", function (req, res) {
   async function getSymbol() {
     let symbol;
     let count = 100;
-    var data = await crawling.crawlSymbol();
+    const data = await crawling.crawlSymbol();
     // data2 = fs.readFileSync("./symbol.json")
     // parsedData = JSON.stringify(parsedData)
     for (var key in data) {
@@ -29,7 +29,7 @@ router.post("/", function (req, res) {
         })
           .then((res) => {
             //   console.log(res.data);
-            var res2 = res.data;
+            let res2 = res.data;
             const description = res2["Description"];
             const marketCap = res2["MarketCapitalization"];
             const name = res2["Name"];
@@ -56,8 +56,7 @@ router.post("/", function (req, res) {
 });
 
 router.get("/:symbol", function (req, res) {
-  const symbol;
-  symbol = req.params.symbol;
+  const symbol = req.params.symbol;
   const sql = `SELECT * from company_info where symbol = ?`;
   db.query(sql, symbol, function (err, rows, fields) {
     res.json(rows);

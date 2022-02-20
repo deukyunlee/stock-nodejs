@@ -10,7 +10,7 @@ router.post("/", function (req, res) {
   async function getSymbol() {
     let count = 100;
     let symbol;
-    var data = await crawling.crawlSymbol();
+    const data = await crawling.crawlSymbol();
     // data2 = fs.readFileSync("./symbol.json")
     // parsedData = JSON.stringify(parsedData)
     for (var key in data) {
