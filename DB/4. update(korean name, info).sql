@@ -111,7 +111,7 @@ UPDATE company_info SET kr_name = 'AT&T', kr_desc = "AT&T는 미국 델라웨어
 
 
 
--- 상위 50개 종목 한글 회사명 및 회사설명
+-- 하위 50개 종목 한글 회사명 및 회사설명
 
 
 
