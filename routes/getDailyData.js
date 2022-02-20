@@ -4,12 +4,12 @@ const crawling = require("./crawling");
 const axios = require("axios");
 const delayFunc = require("./delayFuncs");
 const API_KEY = process.env.ALPHAVANTAGEAPI;
-let count = 100;
-let symbol;
 
 router.post("/", function (req, res) {
   // cron.schedule("0 * * * *", symbolCreator)
   async function getSymbol() {
+    let count = 100;
+    let symbol;
     var data = await crawling.crawlSymbol();
     // data2 = fs.readFileSync("./symbol.json")
     // parsedData = JSON.stringify(parsedData)
@@ -69,7 +69,7 @@ router.post("/", function (req, res) {
 });
 
 router.get("/full-data/:symbol", function (req, res) {
-  symbol = req.params.symbol;
+  const symbol = req.params.symbol;
   const sql = `SELECT * from daily where symbol = ?`;
   db.query(sql, symbol, function (err, rows, fields) {
     res.json(rows);
@@ -77,7 +77,7 @@ router.get("/full-data/:symbol", function (req, res) {
 });
 
 router.get("/interval", (req, res) => {
-  symbol = req.query.symbol;
+  const symbol = req.query.symbol;
   const period = req.query.period;
   const startDate = req.query.startDate;
   const endDate = req.query.endDate;

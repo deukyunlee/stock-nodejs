@@ -4,12 +4,12 @@ const crawling = require("./crawling");
 const axios = require("axios");
 const delayFunc = require("./delayFuncs");
 const API_KEY = process.env.ALPHAVANTAGEAPI;
-let count = 100;
-let symbol;
 
 router.post("/", function (req, res) {
   // cron.schedule("0 * * * *", symbolCreator)
   async function getSymbol() {
+    let symbol;
+    let count = 100;
     var data = await crawling.crawlSymbol();
     // data2 = fs.readFileSync("./symbol.json")
     // parsedData = JSON.stringify(parsedData)
@@ -56,6 +56,7 @@ router.post("/", function (req, res) {
 });
 
 router.get("/:symbol", function (req, res) {
+  const symbol;
   symbol = req.params.symbol;
   const sql = `SELECT * from company_info where symbol = ?`;
   db.query(sql, symbol, function (err, rows, fields) {

@@ -1,9 +1,6 @@
 const fs = require("fs");
 const router = require("express").Router();
-const axios = require("axios");
 const db = require("../app.js");
-
-var url;
 
 router.get("/list/:id", function (req, res) {
   let currentPage = req.query.offset;
