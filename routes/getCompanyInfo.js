@@ -9,7 +9,7 @@ router.post("/", function (req, res) {
   // cron.schedule("0 * * * *", symbolCreator)
   async function getSymbol() {
     let symbol;
-    let count = 100;
+    let count = 500;
     const data = await crawling.crawlSymbol();
     // data2 = fs.readFileSync("./symbol.json")
     // parsedData = JSON.stringify(parsedData)
@@ -55,10 +55,17 @@ router.post("/", function (req, res) {
   });
 });
 
-router.get("/:symbol", function (req, res) {
+router.get("/list/:symbol", function (req, res) {
   const symbol = req.params.symbol;
   const sql = `SELECT * from company_info where symbol = ?`;
   db.query(sql, symbol, function (err, rows, fields) {
+    res.json(rows);
+  });
+});
+
+router.get("/full-data", function (req, res) {
+  const sql = `SELECT rank() over (order by cap DESC) as number, symbol, name, description from company_info`;
+  db.query(sql, function (err, rows, fields) {
     res.json(rows);
   });
 });

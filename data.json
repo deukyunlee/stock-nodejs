@@ -1,0 +1,2984 @@
+[
+  {
+    "number": 1,
+    "symbol": "AAPL",
+    "name": "Apple Inc",
+    "description": "Apple Inc. is an American multinational technology company that specializes in consumer electronics, computer software, and online services. Apple is the world's largest technology company by revenue (totalling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. As of 2021, Apple is the world's fourth-largest PC vendor by unit sales, and fourth-largest smartphone manufacturer. It is one of the Big Five American information technology companies, along with Amazon, Google, Microsoft, and Facebook."
+  },
+  {
+    "number": 2,
+    "symbol": "MSFT",
+    "name": "Microsoft Corporation",
+    "description": "Microsoft Corporation is an American multinational technology company which produces computer software, consumer electronics, personal computers, and related services. Its best known software products are the Microsoft Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers. Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface lineup of touchscreen personal computers. Microsoft ranked No. 21 in the 2020 Fortune 500 rankings of the largest United States corporations by total revenue; it was the world's largest software maker by revenue as of 2016. It is considered one of the Big Five companies in the U.S. information technology industry, along with Google, Apple, Amazon, and Facebook."
+  },
+  {
+    "number": 3,
+    "symbol": "GOOG",
+    "name": "Alphabet Inc",
+    "description": "Alphabet Inc. is an American multinational conglomerate headquartered in Mountain View, California. It was created through a restructuring of Google on October 2, 2015, and became the parent company of Google and several former Google subsidiaries. The two co-founders of Google remained as controlling shareholders, board members, and employees at Alphabet. Alphabet is the world's fourth-largest technology company by revenue and one of the world's most valuable companies."
+  },
+  {
+    "number": 4,
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc",
+    "description": "Alphabet Inc. is an American multinational conglomerate headquartered in Mountain View, California. It was created through a restructuring of Google on October 2, 2015, and became the parent company of Google and several former Google subsidiaries. The two co-founders of Google remained as controlling shareholders, board members, and employees at Alphabet. Alphabet is the world's fourth-largest technology company by revenue and one of the world's most valuable companies."
+  },
+  {
+    "number": 5,
+    "symbol": "AMZN",
+    "name": "Amazon.com Inc",
+    "description": "Amazon.com, Inc. is an American multinational technology company which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. It is one of the Big Five companies in the U.S. information technology industry, along with Google, Apple, Microsoft, and Facebook. The company has been referred to as one of the most influential economic and cultural forces in the world, as well as the world's most valuable brand."
+  },
+  {
+    "number": 6,
+    "symbol": "TSLA",
+    "name": "Tesla Inc",
+    "description": "Tesla, Inc. is an American electric vehicle and clean energy company based in Palo Alto, California. Tesla's current products include electric cars, battery energy storage from home to grid-scale, solar panels and solar roof tiles, as well as other related products and services. In 2020, Tesla had the highest sales in the plug-in and battery electric passenger car segments, capturing 16% of the plug-in market (which includes plug-in hybrids) and 23% of the battery-electric (purely electric) market. Through its subsidiary Tesla Energy, the company develops and is a major installer of solar photovoltaic energy generation systems in the United States. Tesla Energy is also one of the largest global suppliers of battery energy storage systems, with 3 GWh of battery storage supplied in 2020."
+  },
+  {
+    "number": 7,
+    "symbol": "NVDA",
+    "name": "NVIDIA Corporation",
+    "description": "Nvidia Corporation is an American multinational technology company incorporated in Delaware and based in Santa Clara, California. It designs graphics processing units (GPUs) for the gaming and professional markets, as well as system on a chip units (SoCs) for the mobile computing and automotive market."
+  },
+  {
+    "number": 8,
+    "symbol": "FB",
+    "name": "Meta Platforms Inc.",
+    "description": "Facebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. It is one of the world's most valuable companies. It is considered one of the Big Five companies in U.S. information technology, with Google, Apple, Microsoft and Amazon. Facebook offers other products and services beyond its social networking platform, including Facebook Messenger, Facebook Watch, and Facebook Portal. It also has acquired Instagram, WhatsApp, Oculus, Giphy and Mapillary, and has a 9.9% stake in Jio Platforms."
+  },
+  {
+    "number": 9,
+    "symbol": "V",
+    "name": "Visa Inc",
+    "description": "Visa Inc. is an American multinational financial services corporation headquartered in Foster City, California, United States. It facilitates electronic funds transfers throughout the world, most commonly through Visa-branded credit cards, debit cards and prepaid cards. Visa is one of the world's most valuable companies."
+  },
+  {
+    "number": 10,
+    "symbol": "JPM",
+    "name": "JPMorgan Chase & Co",
+    "description": "JPMorgan Chase & Co. is an American multinational investment bank and financial services holding company headquartered in New York City. JPMorgan Chase is incorporated in Delaware. As a Bulge Bracket bank, it is a major provider of various investment banking and financial services. It is one of America's Big Four banks, along with Bank of America, Citigroup, and Wells Fargo. JPMorgan Chase is considered to be a universal bank and a custodian bank. The J.P. Morgan brand is used by the investment banking, asset management, private banking, private wealth management, and treasury services divisions."
+  },
+  {
+    "number": 11,
+    "symbol": "UNH",
+    "name": "UnitedHealth Group Incorporated",
+    "description": "UnitedHealth Group Incorporated is an American for-profit multinational managed healthcare and insurance company based in Minnetonka, Minnesota. It offers health care products and insurance services. In 2020, it was the second-largest healthcare company (behind CVS Health) by revenue with $257.1 billion, and the largest insurance company by net premiums. UnitedHealthcare revenues comprise 80% of the Group's overall revenue."
+  },
+  {
+    "number": 12,
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson",
+    "description": "Johnson & Johnson (J&J) is an American multinational corporation founded in 1886 that develops medical devices, pharmaceuticals, and consumer packaged goods. Its common stock is a component of the Dow Jones Industrial Average and the company is ranked No. 36 on the 2021 Fortune 500 list of the largest United States corporations by total revenue. Johnson & Johnson is one of the world's most valuable companies, and is one of only two U.S.-based companies that has a prime credit rating of AAA, higher than that of the United States government."
+  },
+  {
+    "number": 13,
+    "symbol": "PG",
+    "name": "The Procter & Gamble Company",
+    "description": "The Procter & Gamble Company (P&G) is an American multinational consumer goods corporation headquartered in Cincinnati, Ohio, founded in 1837 by William Procter and James Gamble. It specializes in a wide range of personal health, consumer health, personal care, and hygiene products; these products are organized into several segments including Beauty; Grooming; Health Care; Fabric & Home Care; and Baby, Feminine, & Family Care. Before the sale of Pringles to Kellogg's, its product portfolio also included food, snacks, and beverages."
+  },
+  {
+    "number": 14,
+    "symbol": "WMT",
+    "name": "Walmart Inc",
+    "description": "Walmart Inc. is an American multinational retail corporation that operates a chain of hypermarkets, discount department stores, and grocery stores from the United States, headquartered in Bentonville, Arkansas. It also owns and operates Sam's Club retail warehouses."
+  },
+  {
+    "number": 15,
+    "symbol": "BAC",
+    "name": "Bank of America Corporation",
+    "description": "The Bank of America Corporation is an American multinational investment bank and financial services holding company headquartered in Charlotte, North Carolina. Founded in San Francisco, Bank of America was formed through NationsBank's acquisition of BankAmerica in 1998. It is the second largest banking institution in the United States, after JPMorgan Chase, and the eighth largest bank in the world. Bank of America is one of the Big Four banking institutions of the United States. It services approximately 10 percent of all American bank deposits, in direct competition with JPMorgan Chase, Citigroup and Wells Fargo. Its primary financial services revolve around commercial banking, wealth management, and investment banking."
+  },
+  {
+    "number": 16,
+    "symbol": "MA",
+    "name": "Mastercard Incorporated",
+    "description": "Mastercard Incorporated is an American multinational financial services corporation headquartered in the Mastercard International Global Headquarters in Purchase, New York. The Global Operations Headquarters is located in O'Fallon, Missouri, a municipality of St. Charles County, Missouri. Throughout the world, its principal business is to process payments between the banks of merchants and the card-issuing banks or credit unions of the purchasers who use the Mastercard brand debit, credit and prepaid cards to make purchases. Mastercard Worldwide has been a publicly traded company since 2006."
+  },
+  {
+    "number": 17,
+    "symbol": "HD",
+    "name": "The Home Depot Inc",
+    "description": "The Home Depot, Inc., commonly known as Home Depot, is the largest home improvement retailer in the United States, supplying tools, construction products, and services. The company is headquartered in incorporated Cobb County, Georgia, with an Atlanta mailing address."
+  },
+  {
+    "number": 18,
+    "symbol": "XOM",
+    "name": "Exxon Mobil Corporation",
+    "description": "Exxon Mobil Corporation, stylized as ExxonMobil, is an American multinational oil and gas corporation headquartered in Irving, Texas. It is the largest direct descendant of John D. Rockefeller's Standard Oil, and was formed on November 30, 1999 by the merger of Exxon (formerly the Standard Oil Company of New Jersey) and Mobil (formerly the Standard Oil Company of New York). ExxonMobil's primary brands are Exxon, Mobil, Esso, and ExxonMobil Chemical. ExxonMobil is incorporated in New Jersey."
+  },
+  {
+    "number": 19,
+    "symbol": "DIS",
+    "name": "The Walt Disney Company",
+    "description": "The Walt Disney Company, commonly known as Disney, is an American diversified multinational mass media and entertainment conglomerate headquartered at the Walt Disney Studios complex in Burbank, California."
+  },
+  {
+    "number": 20,
+    "symbol": "PFE",
+    "name": "Pfizer Inc",
+    "description": "Pfizer Inc. is an American multinational pharmaceutical and biotechnology corporation headquartered on 42nd Street in Manhattan, New York City. The name of the company commemorates its co-founder, Charles Pfizer (1824-1906). Pfizer develops and produces medicines and vaccines for immunology, oncology, cardiology, endocrinology, and neurology. The company has several blockbuster drugs or products that each generate more than 1 billion USD in annual revenues."
+  },
+  {
+    "number": 21,
+    "symbol": "KO",
+    "name": "The Coca-Cola Company",
+    "description": "The Coca-Cola Company is an American multinational beverage corporation incorporated under Delaware's General Corporation Law and headquartered in Atlanta, Georgia. The Coca-Cola Company has interests in the manufacturing, retailing, and marketing of nonalcoholic beverage concentrates and syrups."
+  },
+  {
+    "number": 22,
+    "symbol": "CVX",
+    "name": "Chevron Corporation",
+    "description": "Chevron Corporation is an American multinational energy corporation. One of the successor companies of Standard Oil, it is headquartered in San Ramon, California, and active in more than 180 countries. Chevron is engaged in every aspect of the oil and natural gas industries, including hydrocarbon exploration and production; refining, marketing and transport; chemicals manufacturing and sales; and power generation."
+  },
+  {
+    "number": 23,
+    "symbol": "ABBV",
+    "name": "AbbVie Inc",
+    "description": "AbbVie is an American publicly traded biopharmaceutical company founded in 2013. It originated as a spin-off of Abbott Laboratories."
+  },
+  {
+    "number": 24,
+    "symbol": "CSCO",
+    "name": "Cisco Systems Inc",
+    "description": "Cisco Systems, Inc. is an American multinational technology conglomerate headquartered in San Jose, California, in the center of Silicon Valley. Cisco develops, manufactures and sells networking hardware, software, telecommunications equipment and other high-technology services and products. Through its numerous acquired subsidiaries, such as OpenDNS, Webex, Jabber and Jasper, Cisco specializes in specific tech markets, such as the Internet of Things (IoT), domain security and energy management. On January 25, 2021, Cisco reincorporated in Delaware."
+  },
+  {
+    "number": 25,
+    "symbol": "AVGO",
+    "name": "Broadcom Inc",
+    "description": "Broadcom Inc. is an American designer, developer, manufacturer and global supplier of a wide range of semiconductor and infrastructure software products. Broadcom's product offerings serve the data center, networking, software, broadband, wireless, and storage and industrial markets."
+  },
+  {
+    "number": 26,
+    "symbol": "PEP",
+    "name": "PepsiCo Inc",
+    "description": "PepsiCo, Inc. is an American based multinational food, snack, and beverage corporation headquartered in Harrison, New York, in the hamlet of Purchase. PepsiCo's business encompasses all aspects of the food and beverage market. It oversees the manufacturing, distribution, and marketing of its products."
+  },
+  {
+    "number": 27,
+    "symbol": "LLY",
+    "name": "Eli Lilly and Company",
+    "description": "Eli Lilly and Company is an American pharmaceutical company headquartered in Indianapolis, Indiana, with offices in 18 countries. Its products are sold in approximately 125 countries."
+  },
+  {
+    "number": 28,
+    "symbol": "COST",
+    "name": "Costco Wholesale Corporation",
+    "description": "Costco Wholesale Corporation (doing business as Costco Wholesale and also known simply as Costco) is an American multinational corporation which operates a chain of membership-only (needing a membership to shop there) big-box retail stores. As of 2020, Costco was the fifth largest retailer in the world, and the world's largest retailer of choice and prime beef, organic foods, rotisserie chicken, and wine as of 2016."
+  },
+  {
+    "number": 29,
+    "symbol": "NKE",
+    "name": "NIKE Inc",
+    "description": "Nike, Inc. is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services. The company is headquartered near Beaverton, Oregon, in the Portland metropolitan area. It is the world's largest supplier of athletic shoes and apparel and a major manufacturer of sports equipment."
+  },
+  {
+    "number": 30,
+    "symbol": "VZ",
+    "name": "Verizon Communications Inc",
+    "description": "Verizon Communications Inc. is an American multinational telecommunications conglomerate and a corporate component of the Dow Jones Industrial Average. The company is headquartered at 1095 Avenue of the Americas in Midtown Manhattan, New York City, but is incorporated in Delaware."
+  },
+  {
+    "number": 31,
+    "symbol": "WFC",
+    "name": "Wells Fargo & Company",
+    "description": "Wells Fargo & Company is an American multinational financial services company with corporate headquarters in San Francisco, California, operational headquarters in Manhattan, and managerial offices throughout the United States and overseas."
+  },
+  {
+    "number": 32,
+    "symbol": "TMO",
+    "name": "Thermo Fisher Scientific Inc",
+    "description": "Thermo Fisher Scientific is an American provisioner of scientific instrumentation, reagents and consumables, and software and services to healthcare, life science, and other laboratories in academia, government, and industry (including in the biotechnology and pharmaceutical sectors). Based in Waltham, Massachusetts, Thermo Fisher was created in 2006 by the merger of Thermo Electron and Fisher Scientific, to form a company with US$ 9 billion in combined revenues."
+  },
+  {
+    "number": 33,
+    "symbol": "CMCSA",
+    "name": "Comcast Corporation",
+    "description": "Comcast Corporation is an American telecommunications conglomerate headquartered in Philadelphia, Pennsylvania. It is the second-largest broadcasting and cable television company in the world by revenue (behind AT&T), the largest pay-TV company, the largest cable TV company and largest home Internet service provider in the United States, and the nation's third-largest home telephone service provider. Comcast provides services to U.S. residential and commercial customers in 40 states and in the District of Columbia. As the parent company of the international media company NBCUniversal since 2011, Comcast is a producer of feature films and television programs intended for theatrical exhibition and over-the-air and cable television broadcast, respectively."
+  },
+  {
+    "number": 34,
+    "symbol": "ADBE",
+    "name": "Adobe Inc",
+    "description": "Adobe Inc. is an American multinational computer software company. Incorporated in Delaware and headquartered in San Jose, California, it has historically specialized in software for the creation and publication of a wide range of content, including graphics, photography, illustration, animation, multimedia, motion pictures and print. The company has expanded into digital marketing management software. Adobe has millions of users worldwide. Flagship products include: Photoshop image editing software, Adobe Illustrator vector-based illustration software, Adobe Acrobat Reader and the Portable Document Format (PDF), plus a host of tools primarily for audio-visual content creation, editing and publishing."
+  },
+  {
+    "number": 35,
+    "symbol": "ABT",
+    "name": "Abbott Laboratories",
+    "description": "Abbott Laboratories is an American multinational medical devices and health care company with headquarters in Abbott Park, Illinois, United States. The company was founded by Chicago physician Wallace Calvin Abbott in 1888 to formulate known drugs; today, it sells medical devices, diagnostics, branded generic medicines and nutritional products. It split off its research-based pharmaceuticals business into AbbVie in 2013."
+  },
+  {
+    "number": 36,
+    "symbol": "ACN",
+    "name": "Accenture plc",
+    "description": "Accenture plc is an Irish-domiciled multinational company that provides consulting and processing services. It has been incorporated in Dublin, Ireland since 2009."
+  },
+  {
+    "number": 37,
+    "symbol": "ORCL",
+    "name": "Oracle Corporation",
+    "description": "Oracle is an American multinational computer technology corporation headquartered in Austin, Texas. The company was formerly headquartered in Redwood Shores, California until December 2020 when it moved its headquarters to Texas. The company sells database software and technology, cloud engineered systems, and enterprise software products, particularly its own brands of database management systems."
+  },
+  {
+    "number": 38,
+    "symbol": "CRM",
+    "name": "salesforce.com inc",
+    "description": "Salesforce.com, Inc. is an American cloud-based software company headquartered in San Francisco, California. It provides customer relationship management (CRM) service and also provides a complementary suite of enterprise applications focused on customer service, marketing automation, analytics, and application development."
+  },
+  {
+    "number": 39,
+    "symbol": "MRK",
+    "name": "Merck & Co. Inc",
+    "description": "Merck & Co. is an American multinational pharmaceutical company headquartered in Kenilworth, New Jersey. It is named after the Merck family, which set up Merck Group in Germany in 1668."
+  },
+  {
+    "number": 40,
+    "symbol": "DHR",
+    "name": "Danaher Corporation",
+    "description": "Danaher Corporation is an American globally diversified conglomerate with its headquarters in Washington, D.C.. The company designs, manufactures, and markets professional, medical, industrial, and commercial products and services. The company's 3 platforms are Life Sciences, Diagnostics, and Environmental & Applied Solutions."
+  },
+  {
+    "number": 41,
+    "symbol": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "description": "Qualcomm is an American multinational corporation headquartered in San Diego, California, and incorporated in Delaware. It creates semiconductors, software, and services related to wireless technology. It owns patents critical to the 5G, 4G, CDMA2000, TD-SCDMA and WCDMA mobile communications standards."
+  },
+  {
+    "number": 42,
+    "symbol": "MCD",
+    "name": "McDonald's Corporation",
+    "description": "McDonald's Corporation is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona."
+  },
+  {
+    "number": 43,
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices Inc",
+    "description": "Advanced Micro Devices, Inc. (AMD) is an American multinational semiconductor company based in Santa Clara, California, that develops computer processors and related technologies for business and consumer markets. AMD's main products include microprocessors, motherboard chipsets, embedded processors and graphics processors for servers, workstations, personal computers and embedded system applications."
+  },
+  {
+    "number": 44,
+    "symbol": "INTC",
+    "name": "Intel Corporation",
+    "description": "Intel Corporation is an American multinational corporation and technology company headquartered in Santa Clara, California, in Silicon Valley. It is the world's largest semiconductor chip manufacturer by revenue, and is the developer of the x86 series of microprocessors, the processors found in most personal computers (PCs)."
+  },
+  {
+    "number": 45,
+    "symbol": "UPS",
+    "name": "United Parcel Service Inc",
+    "description": "United Parcel Service is an American multinational shipping & receiving and supply chain management company founded in 1907."
+  },
+  {
+    "number": 46,
+    "symbol": "NFLX",
+    "name": "Netflix Inc",
+    "description": "Netflix, Inc. is an American over-the-top content platform and production company headquartered in Los Gatos, California. Netflix was founded in 1997 by Reed Hastings and Marc Randolph in Scotts Valley, California. The company's primary business is a subscription-based streaming service offering online streaming from a library of films and television series, including those produced in-house."
+  },
+  {
+    "number": 47,
+    "symbol": "PM",
+    "name": "Philip Morris International Inc",
+    "description": "Philip Morris International Inc. (PMI) is a Swiss-American multinational cigarette and tobacco manufacturing company, with products sold in over 180 countries. The most recognized and best selling product of the company is Marlboro."
+  },
+  {
+    "number": 48,
+    "symbol": "T",
+    "name": "AT&T Inc",
+    "description": "AT&T Inc. is an American multinational conglomerate holding company, Delaware-registered but headquartered at Whitacre Tower in Downtown Dallas, Texas. It is the world largest telecommunications company, and the second largest provider of mobile telephone services."
+  },
+  {
+    "number": 49,
+    "symbol": "MS",
+    "name": "Morgan Stanley",
+    "description": "Morgan Stanley is an American multinational investment bank and financial services company headquartered at 1585 Broadway in the Morgan Stanley Building, Midtown Manhattan, New York City."
+  },
+  {
+    "number": 50,
+    "symbol": "SCHW",
+    "name": "The Charles Schwab Corporation",
+    "description": "The Charles Schwab Corporation is an American multinational financial services company. It offers banking, commercial banking, an electronic trading platform, and wealth management advisory services to both retail and institutional clients."
+  },
+  {
+    "number": 51,
+    "symbol": "UNP",
+    "name": "Union Pacific Corporation",
+    "description": "The Union Pacific Corporation (Union Pacific) is a publicly traded railroad holding company. It was incorporated in Utah in 1969 and is headquartered in Omaha, Nebraska. It is the parent company of the current, Delaware-registered, form of the Union Pacific Railroad."
+  },
+  {
+    "number": 52,
+    "symbol": "LIN",
+    "name": "Linde plc",
+    "description": "Linde plc is a multinational chemical company. It is the largest industrial gas company by market share and revenue. It serves customers in the healthcare, petroleum refining, manufacturing, food, beverage carbonation, fiber-optics, steel making, aerospace, chemicals, electronics and water treatment industries. The company's primary business is the manufacturing and distribution of atmospheric gases, including oxygen, nitrogen, argon, rare gases, and process gases, including carbon dioxide, helium, hydrogen, electronic gases, specialty gases, and acetylene."
+  },
+  {
+    "number": 53,
+    "symbol": "TMUS",
+    "name": "T-Mobile US Inc",
+    "description": "T-Mobile US, Inc., doing business under the global brand name T-Mobile, is an American wireless network operator. Its headquarters are located in Bellevue, Washington, in the Seattle metropolitan area and Overland Park, Kansas, in the Kansas City metropolitan area."
+  },
+  {
+    "number": 54,
+    "symbol": "TXN",
+    "name": "Texas Instruments Incorporated",
+    "description": "Texas Instruments Incorporated (TI) is an American technology company headquartered in Dallas, Texas, that designs and manufactures semiconductors and various integrated circuits, which it sells to electronics designers and manufacturers globally. It is one of the top 10 semiconductor companies worldwide based on sales volume."
+  },
+  {
+    "number": 55,
+    "symbol": "LOW",
+    "name": "Lowe's Companies Inc",
+    "description": "Lowe's Companies, Inc. is an American retail company specializing in home improvement. Headquartered in Mooresville, North Carolina, the company operates a chain of retail stores in the United States and Canada."
+  },
+  {
+    "number": 56,
+    "symbol": "AXP",
+    "name": "American Express Company",
+    "description": "The American Express Company is a multinational financial services corporation headquartered at 200 Vesey Street in the Battery Park City neighborhood of Lower Manhattan in New York City."
+  },
+  {
+    "number": 57,
+    "symbol": "BMY",
+    "name": "Bristol-Myers Squibb Company",
+    "description": "Bristol Myers Squibb (BMS) is an American multinational pharmaceutical company, headquartered in New York City. Bristol Myers Squibb manufactures prescription pharmaceuticals and biologics in several therapeutic areas, including cancer, AIDS, cardiovascular disease, diabetes, hepatitis, rheumatoid arthritis and psychiatric disorders."
+  },
+  {
+    "number": 58,
+    "symbol": "NEE",
+    "name": "NextEra Energy Inc",
+    "description": "NextEra Energy, Inc. is an American energy company with about 46 gigawatts of generating capacity, revenues of over $17 billion in 2017, and about 14,000 employees throughout the US and Canada. Its subsidiaries include Florida Power & Light (FPL), NextEra Energy Resources, NextEra Energy Partners, Gulf Power Company, and NextEra Energy Services."
+  },
+  {
+    "number": 59,
+    "symbol": "RTX",
+    "name": "Raytheon Technologies Corporation",
+    "description": "Raytheon Technologies Corporation is an American multinational aerospace and defense conglomerate headquartered in Waltham, Massachusetts. It is one of the largest aerospace, intelligence services providers, and defense manufacturers in the world by revenue and market capitalization. Raytheon Technologies (RTX) researches, develops, and manufactures advanced technology products in the aerospace and defense industry, including aircraft engines, avionics, aerostructures, cybersecurity, guided missiles, air defense systems, satellites, and drones."
+  },
+  {
+    "number": 60,
+    "symbol": "INTU",
+    "name": "Intuit Inc",
+    "description": "Intuit Inc. is an American business that specializes in financial software. Intuit's products include the tax preparation application TurboTax, personal finance app Mint and the small business accounting program QuickBooks."
+  },
+  {
+    "number": 61,
+    "symbol": "MDT",
+    "name": "Medtronic plc",
+    "description": "Medtronic plc is an American-Irish registered medical device company that primarily operates in the United States. Medtronic has an operational and executive headquarters in Fridley, Minnesota in the US."
+  },
+  {
+    "number": 62,
+    "symbol": "CVS",
+    "name": "CVS Health Corporation",
+    "description": "CVS Health (previously CVS Corporation and CVS Caremark Corporation) is an American healthcare company that owns CVS Pharmacy, a retail pharmacy chain; CVS Caremark, a pharmacy benefits manager; Aetna, a health insurance provider, among many other brands. The company's headquarters is in Woonsocket, Rhode Island."
+  },
+  {
+    "number": 63,
+    "symbol": "C",
+    "name": "Citigroup Inc",
+    "description": "Citigroup Inc. is an American multinational investment bank and financial services corporation headquartered in New York City. The company was formed by the merger of banking giant Citicorp and financial conglomerate Travelers Group in 1998; Travelers was subsequently spun off from the company in 2002. Citigroup owns Citicorp, the holding company for Citibank, as well as several international subsidiaries. Citigroup is incorporated in Delaware."
+  },
+  {
+    "number": 64,
+    "symbol": "HON",
+    "name": "Honeywell International Inc",
+    "description": "Honeywell International Inc. is an American publicly traded, multinational conglomerate headquartered in Charlotte, North Carolina. It primarily operates in four areas of business: aerospace, building technologies, performance materials and technologies (PMT), and safety and productivity solutions (SPS)."
+  },
+  {
+    "number": 65,
+    "symbol": "AMGN",
+    "name": "Amgen Inc",
+    "description": "Amgen Inc. (formerly Applied Molecular Genetics Inc.) is an American multinational biopharmaceutical company headquartered in Thousand Oaks, California. Focused on molecular biology and biochemistry, its goal is to provide a healthcare business based on recombinant DNA technology."
+  },
+  {
+    "number": 66,
+    "symbol": "BA",
+    "name": "The Boeing Company",
+    "description": "The Boeing Company is an American multinational corporation that designs, manufactures, and sells airplanes, rotorcraft, rockets, satellites, telecommunications equipment, and missiles worldwide. The company also provides leasing and product support services."
+  },
+  {
+    "number": 67,
+    "symbol": "PYPL",
+    "name": "PayPal Holdings Inc",
+    "description": "PayPal Holdings, Inc. is an American company operating an online payments system in the majority of countries that support online money transfers, and serves as an electronic alternative to traditional paper methods like checks and money orders. The company operates as a payment processor for online vendors, auction sites, and many other commercial users, for which it charges a fee."
+  },
+  {
+    "number": 68,
+    "symbol": "AMAT",
+    "name": "Applied Materials Inc",
+    "description": "Applied Materials, Inc. is an American corporation that supplies equipment, services and software for the manufacture of semiconductor (integrated circuit) chips for electronics, flat panel displays for computers, smartphones and televisions, and solar products. The company also supplies equipment to produce coatings for flexible electronics, packaging and other applications. The company is headquartered in Santa Clara, California, in Silicon Valley."
+  },
+  {
+    "number": 69,
+    "symbol": "COP",
+    "name": "ConocoPhillips",
+    "description": "ConocoPhillips is an American multinational corporation engaged in hydrocarbon exploration. It is based in the Energy Corridor district of Houston, Texas."
+  },
+  {
+    "number": 70,
+    "symbol": "GS",
+    "name": "The Goldman Sachs Group Inc",
+    "description": "The Goldman Sachs Group, Inc., is an American multinational investment bank and financial services company headquartered in New York City. It offers services in investment management, securities, asset management, prime brokerage, and securities underwriting. It also provides investment banking to institutional investors."
+  },
+  {
+    "number": 71,
+    "symbol": "BLK",
+    "name": "BlackRock Inc",
+    "description": "BlackRock, Inc. is an American multinational investment management corporation based in New York City."
+  },
+  {
+    "number": 72,
+    "symbol": "DE",
+    "name": "Deere & Company",
+    "description": "John Deere is the brand name of Deere & Company, an American corporation that manufactures agricultural, construction, and forestry machinery, diesel engines, drivetrains (axles, transmissions, gearboxes) used in heavy equipment, and lawn care equipment."
+  },
+  {
+    "number": 73,
+    "symbol": "IBM",
+    "name": "International Business Machines Corporation",
+    "description": "International Business Machines Corporation (IBM) is an American multinational technology company headquartered in Armonk, New York, with operations in over 170 countries. The company began in 1911, founded in Endicott, New York, as the Computing-Tabulating-Recording Company (CTR) and was renamed International Business Machines in 1924. IBM is incorporated in New York. IBM produces and sells computer hardware, middleware and software, and provides hosting and consulting services in areas ranging from mainframe computers to nanotechnology. IBM is also a major research organization, holding the record for most annual U.S. patents generated by a business (as of 2020) for 28 consecutive years. Inventions by IBM include the automated teller machine (ATM), the floppy disk, the hard disk drive, the magnetic stripe card, the relational database, the SQL programming language, the UPC barcode, and dynamic random-access memory (DRAM). The IBM mainframe, exemplified by the System/360, was the dominant computing platform during the 1960s and 1970s."
+  },
+  {
+    "number": 74,
+    "symbol": "NOW",
+    "name": "ServiceNow Inc",
+    "description": "ServiceNow is an American software company based in Santa Clara, California that develops a cloud computing platform to help companies manage digital workflows for enterprise operations."
+  },
+  {
+    "number": 75,
+    "symbol": "EL",
+    "name": "Estee Lauder Cos. Inc - Class A",
+    "description": "The Estee Lauder Companies Inc. is an American multinational manufacturer and marketer of prestige skincare, makeup, fragrance and hair care products, based in Midtown Manhattan, New York City. The company owns a diverse portfolio of brands, distributed internationally through both digital commerce and retail channels."
+  },
+  {
+    "number": 76,
+    "symbol": "ANTM",
+    "name": "Anthem Inc",
+    "description": "Anthem, Inc., is a provider of health insurance in the United States. It is the largest for-profit managed health care company in the Blue Cross Blue Shield Association."
+  },
+  {
+    "number": 77,
+    "symbol": "BKNG",
+    "name": "Booking Holdings Inc",
+    "description": "Booking Holdings Inc. is an American travel technology company organized in Delaware and based in Norwalk, Connecticut, that owns and operates several travel fare aggregators and travel fare metasearch engines including namesake and flagship Booking.com, Priceline.com, Agoda.com, Kayak.com, Cheapflights, Rentalcars.com, Momondo, and OpenTable."
+  },
+  {
+    "number": 78,
+    "symbol": "SBUX",
+    "name": "Starbucks Corporation",
+    "description": "Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. As the world's largest coffeehouse chain, Starbucks is seen to be the main representation of the United States' second wave of coffee culture."
+  },
+  {
+    "number": 79,
+    "symbol": "PLD",
+    "name": "Prologis Inc",
+    "description": "Prologis, Inc. is a real estate investment trust headquartered in San Francisco, California that invests in logistics facilities, with a focus on the consumption side of the global supply chain."
+  },
+  {
+    "number": 80,
+    "symbol": "LMT",
+    "name": "Lockheed Martin Corporation",
+    "description": "Lockheed Martin Corporation is an American aerospace, defense, information security, and technology company with worldwide interests. It is headquartered in North Bethesda, Maryland, in the Washington, D.C., area."
+  },
+  {
+    "number": 81,
+    "symbol": "AMT",
+    "name": "American Tower Corporation (REIT)",
+    "description": "American Tower Corporation (also referred to as American Tower or ATC) is an American real estate investment trust and an owner and operator of wireless and broadcast communications infrastructure in several countries worldwide and is headquartered in Boston, Massachusetts."
+  },
+  {
+    "number": 82,
+    "symbol": "CAT",
+    "name": "Caterpillar Inc",
+    "description": "Caterpillar Inc. (often shortened to CAT) is an American Fortune 100 corporation that designs, develops, engineers, manufactures, markets, and sells machinery, engines, financial products, and insurance to customers via a worldwide dealer network."
+  },
+  {
+    "number": 83,
+    "symbol": "CHTR",
+    "name": "Charter Communications Inc",
+    "description": "Charter Communications, Inc., is an American telecommunications and mass media company with services branded as Charter Spectrum."
+  },
+  {
+    "number": 84,
+    "symbol": "GE",
+    "name": "General Electric Company",
+    "description": "General Electric Company (GE) is an American multinational conglomerate incorporated in New York City and headquartered in Boston. As of 2018, the company operates through the following segments: aviation, healthcare, power, renewable energy, digital industry, additive manufacturing and venture capital and finance."
+  },
+  {
+    "number": 85,
+    "symbol": "MU",
+    "name": "Micron Technology Inc.",
+    "description": "Micron Technology, Inc. is an American producer of computer memory and computer data storage including dynamic random-access memory, flash memory, and USB flash drives. It is headquartered in Boise, Idaho."
+  },
+  {
+    "number": 86,
+    "symbol": "ISRG",
+    "name": "Intuitive Surgical Inc",
+    "description": "Intuitive Surgical, Inc. is an American corporation that develops, manufactures, and markets robotic products designed to improve clinical outcomes of patients through minimally invasive surgery, most notably with the da Vinci Surgical System."
+  },
+  {
+    "number": 87,
+    "symbol": "TGT",
+    "name": "Target Corporation",
+    "description": "Target Corporation is an American retail corporation. Their retail formats include the discount store Target, the hypermarket SuperTarget, and small-format stores previously named CityTarget and TargetExpress before being consolidated under the Target branding."
+  },
+  {
+    "number": 88,
+    "symbol": "MO",
+    "name": "Altria Group Inc",
+    "description": "Altria Group, Inc. (previously known as Philip Morris Companies, Inc.) is an American corporation and one of the world's largest producers and marketers of tobacco, cigarettes and related products. It operates worldwide and is headquartered in unincorporated Henrico County, Virginia, just outside the city of Richmond."
+  },
+  {
+    "number": 89,
+    "symbol": "SYK",
+    "name": "Stryker Corporation",
+    "description": "Stryker Corporation is an American multinational medical technologies corporation based in Kalamazoo, Michigan. Stryker's products include implants used in joint replacement and trauma surgeries; surgical equipment and surgical navigation systems; endoscopic and communications systems; patient handling and emergency medical equipment; neurosurgical, neurovascular and spinal devices; as well as other medical device products used in a variety of medical specialties."
+  },
+  {
+    "number": 90,
+    "symbol": "MDLZ",
+    "name": "Mondelez International Inc",
+    "description": "Mondelez International, Inc. is an American multinational confectionery, food, holding and beverage and snack food company based in Chicago, Illinois."
+  },
+  {
+    "number": 91,
+    "symbol": "SPGI",
+    "name": "S&P Global Inc",
+    "description": "S&P Global Inc. is an American publicly traded corporation headquartered in Manhattan, New York City. Its primary areas of business are financial information and analytics."
+  },
+  {
+    "number": 92,
+    "symbol": "CB",
+    "name": "Chubb Limited",
+    "description": "Chubb Limited, incorporated in Zurich, Switzerland, is the parent company of Chubb, a global provider of insurance products covering property and casualty, accident and health, reinsurance, and life insurance and the largest publicly traded property and casualty company in the world."
+  },
+  {
+    "number": 93,
+    "symbol": "CME",
+    "name": "CME Group Inc",
+    "description": "CME Group Inc. (Chicago Mercantile Exchange, Chicago Board of Trade, New York Mercantile Exchange, The Commodity Exchange) is an American global markets company. It is the world's largest financial derivatives exchange, and trades in asset classes that include agricultural products, currencies, energy, interest rates, metals, stock indexes and cryptocurrencies futures."
+  },
+  {
+    "number": 94,
+    "symbol": "USB",
+    "name": "U.S. Bancorp",
+    "description": "U.S. Bancorp is an American bank holding company based in Minneapolis, Minnesota, and incorporated in Delaware. The company provides banking, investment, mortgage, trust, and payment services products to individuals, businesses, governmental entities, and other financial institutions."
+  },
+  {
+    "number": 95,
+    "symbol": "PNC",
+    "name": "The PNC Financial Services Group Inc",
+    "description": "PNC Financial Services Group, Inc. (stylized as PNC) is a bank holding company and financial services corporation based in Pittsburgh, Pennsylvania. Its banking subsidiary, PNC Bank, operates in 21 states and the District of Columbia with 2,296 branches and 9,051 ATMs. The company also provides financial services such as asset management, wealth management, estate planning, loan servicing, and information processing."
+  },
+  {
+    "number": 96,
+    "symbol": "ADI",
+    "name": "Analog Devices Inc",
+    "description": "Analog Devices, Inc. (ADI), also known simply as Analog, is an American multinational semiconductor company specializing in data conversion, signal processing and power management technology, headquartered in Wilmington, Massachusetts."
+  },
+  {
+    "number": 97,
+    "symbol": "MMM",
+    "name": "3M Company",
+    "description": "The 3M Company is an American multinational conglomerate corporation operating in the fields of industry, worker safety, US health care, and consumer goods. The company produces over 60,000 products under several brands, including adhesives, abrasives, laminates, passive fire protection, personal protective equipment, window films, paint protection films, dental and orthodontic products, electrical and electronic connecting and insulating materials, medical products, car-care products, electronic circuits, healthcare software and optical films. It is based in Maplewood, a suburb of Saint Paul, Minnesota."
+  },
+  {
+    "number": 98,
+    "symbol": "ADP",
+    "name": "Automatic Data Processing Inc",
+    "description": "Automatic Data Processing, Inc. (ADP) is an American provider of human resources management software and services."
+  },
+  {
+    "number": 99,
+    "symbol": "TFC",
+    "name": "Truist Financial Corporation",
+    "description": "Truist Financial Corporation is an American bank holding company headquartered in Charlotte, North Carolina. Its bank operates 2,781 branches in 15 states and Washington, D.C., and offers consumer and commercial banking, securities brokerage, asset management, mortgage, and insurance products and services."
+  },
+  {
+    "number": 100,
+    "symbol": "LRCX",
+    "name": "Lam Research Corporation",
+    "description": "Lam Research Corporation is an American corporation that engages in the design, manufacture, marketing, and service of semiconductor processing equipment used in the fabrication of integrated circuits. Its products are used primarily in front-end wafer processing, which involves the steps that create the active components of semiconductor devices (transistors, capacitors) and their wiring (interconnects). The company also builds equipment for back-end wafer-level packaging (WLP), and for related manufacturing markets such as for microelectromechanical systems (MEMS). The company is headquartered in Fremont, California, in the Silicon Valley."
+  },
+  {
+    "number": 101,
+    "symbol": "TJX",
+    "name": "The TJX Companies Inc",
+    "description": "The TJX Companies, Inc. (abbreviated TJX) is an American multinational off-price department store corporation, headquartered in Framingham, Massachusetts."
+  },
+  {
+    "number": 102,
+    "symbol": "CSX",
+    "name": "CSX Corporation",
+    "description": "CSX Corporation is an American holding company focused on rail transportation and real estate in North America, among other industries. Based in Richmond, Virginia, USA after the merger, in 2003 the CSX Corporation headquarters moved to Jacksonville, Florida."
+  },
+  {
+    "number": 103,
+    "symbol": "DUK",
+    "name": "Duke Energy Corporation",
+    "description": "Duke Energy Corporation is an American electric power and natural gas holding company headquartered in Charlotte, North Carolina."
+  },
+  {
+    "number": 104,
+    "symbol": "MMC",
+    "name": "Marsh & McLennan Companies Inc",
+    "description": "Marsh McLennan (formerly known as Marsh & McLennan Companies) is a global professional services firm, headquartered in New York City with businesses in insurance brokerage, risk management, reinsurance services, talent management, investment advisory, and management consulting. Its four main operating companies are Marsh, Guy Carpenter, Mercer, and Oliver Wyman."
+  },
+  {
+    "number": 105,
+    "symbol": "GILD",
+    "name": "Gilead Sciences Inc",
+    "description": "Gilead Sciences, Inc. is an American biopharmaceutical company headquartered in Foster City, California, that focuses on researching and developing antiviral drugs used in the treatment of HIV, hepatitis B, hepatitis C, and influenza, including Harvoni and Sovaldi."
+  },
+  {
+    "number": 106,
+    "symbol": "HCA",
+    "name": "HCA Healthcare Inc",
+    "description": "HCA Healthcare is an American for-profit operator of health care facilities that was founded in 1968. It is based in Nashville, Tennessee, and, as of May 2020, owns and operates 186 hospitals and approximately 2,000 sites of care, including surgery centers, freestanding emergency rooms, urgent care centers and physician clinics in 21 states and the United Kingdom."
+  },
+  {
+    "number": 107,
+    "symbol": "BDX",
+    "name": "Becton Dickinson and Company",
+    "description": "Becton, Dickinson and Company, also known as BD, is an American multinational medical technology company that manufactures and sells medical devices, instrument systems, and reagents. BD also provides consulting and analytics services in certain geographies."
+  },
+  {
+    "number": 108,
+    "symbol": "CI",
+    "name": "Cigna Corporation",
+    "description": "Cigna is an American multinational managed healthcare and insurance company based in Bloomfield, Connecticut. Its insurance subsidiaries are major providers of medical, dental, disability, life and accident insurance and related products and services, the majority of which are offered through employers and other groups (e.g. governmental and non-governmental organizations, unions and associations)."
+  },
+  {
+    "number": 109,
+    "symbol": "F",
+    "name": "Ford Motor Company",
+    "description": "Ford Motor Company, commonly known as Ford, is an American multinational automaker that has its main headquarters in Dearborn, Michigan."
+  },
+  {
+    "number": 110,
+    "symbol": "GM",
+    "name": "General Motors Company",
+    "description": "General Motors Company (GM) is an American multinational corporation headquartered in Detroit, Michigan that designs, manufactures, markets, and distributes vehicles and vehicle parts, and sells financial services, with global headquarters in Detroit's Renaissance Center."
+  },
+  {
+    "number": 111,
+    "symbol": "SHW",
+    "name": "The Sherwin-Williams Company",
+    "description": "Sherwin Williams Company is a Cleveland, Ohio based company in the paint and coating manufacturing industry. The company primarily engages in the manufacture, distribution, and sale of paints, coatings, floorcoverings, and related products to professional, industrial, commercial, and retail customers primarily in North and South America and Europe."
+  },
+  {
+    "number": 112,
+    "symbol": "CCI",
+    "name": "Crown Castle International Corp. (REIT)",
+    "description": "Crown Castle is a real estate investment trust and provider of shared communications infrastructure in the United States. Its network includes over 40,000 cell towers and nearly 80,000 route miles of fiber supporting small cells and fiber solutions. Headquartered in Houston, Texas, the company has 100 offices nationwide."
+  },
+  {
+    "number": 113,
+    "symbol": "ICE",
+    "name": "Intercontinental Exchange Inc",
+    "description": "The Intercontinental Exchange (ICE) is an American Fortune 500 company formed in 2000 that operates global exchanges, clearing houses and provides mortgage technology, data and listing services. The company owns exchanges for financial and commodity markets, and operates regulated exchanges and marketplaces."
+  },
+  {
+    "number": 114,
+    "symbol": "SO",
+    "name": "The Southern Company",
+    "description": "Southern Company is an American gas and electric utility holding company based in the southern United States. It is headquartered in Atlanta, Georgia, with executive offices also located in Birmingham, Alabama."
+  },
+  {
+    "number": 115,
+    "symbol": "ITW",
+    "name": "Illinois Tool Works Inc",
+    "description": "Illinois Tool Works Inc. or ITW is an American company that produces engineered fasteners and components, equipment and consumable systems, and specialty products."
+  },
+  {
+    "number": 116,
+    "symbol": "CL",
+    "name": "Colgate-Palmolive Company",
+    "description": "Colgate-Palmolive Company is an American multinational consumer products company headquartered on Park Avenue in Midtown Manhattan, New York City. It specializes in the production, distribution and provision of household, health care, personal care and veterinary products."
+  },
+  {
+    "number": 117,
+    "symbol": "REGN",
+    "name": "Regeneron Pharmaceuticals Inc",
+    "description": "Regeneron Pharmaceuticals, Inc. is an American biotechnology company headquartered in Westchester County, New York. Originally focused on neurotrophic factors and their regenerative capabilities, giving rise to its name, the company then branched out into the study of both cytokine and tyrosine kinase receptors."
+  },
+  {
+    "number": 118,
+    "symbol": "EW",
+    "name": "Edwards Lifesciences Corporation",
+    "description": "Edwards Lifesciences is an American medical technology company headquartered in Irvine, California, specializing in artificial heart valves and hemodynamic monitoring."
+  },
+  {
+    "number": 119,
+    "symbol": "EOG",
+    "name": "EOG Resources Inc",
+    "description": "EOG Resources, Inc. is an American energy company engaged in hydrocarbon exploration. It is organized in Delaware and headquartered in the Heritage Plaza building in Houston, Texas."
+  },
+  {
+    "number": 120,
+    "symbol": "NSC",
+    "name": "Norfolk Southern Corporation",
+    "description": "The Norfolk Southern Railway is a Class I freight railroad in the United States, and is the current name of the former Southern Railway. With headquarters in Atlanta, Georgia, the company operates 19,420 route miles (31,250 km) in 22 eastern states, the District of Columbia, and has rights in Canada over the Albany to Montreal route of the Canadian Pacific Railway, and previously on CN from Buffalo to St. Thomas."
+  },
+  {
+    "number": 121,
+    "symbol": "D",
+    "name": "Dominion Energy Inc",
+    "description": "Dominion Energy, Inc., commonly referred to as Dominion, is an American power and energy company headquartered in Richmond, Virginia that supplies electricity in parts of Virginia, North Carolina, and South Carolina and supplies natural gas to parts of Utah, West Virginia, Ohio, Pennsylvania, North Carolina, South Carolina, and Georgia. Dominion also has generation facilities in Indiana, Illinois, Connecticut, and Rhode Island."
+  },
+  {
+    "number": 122,
+    "symbol": "COF",
+    "name": "Capital One Financial Corporation",
+    "description": "Capital One Financial Corporation is an American bank holding company specializing in credit cards, auto loans, banking, and savings accounts, headquartered in McLean, Virginia with operations primarily in the United States."
+  },
+  {
+    "number": 123,
+    "symbol": "ATVI",
+    "name": "Activision Blizzard Inc",
+    "description": "Activision Blizzard, Inc. is an American video game holding company based in Santa Monica, California. Activision Blizzard currently includes five business units: Activision Publishing, Blizzard Entertainment, King, Major League Gaming, and Activision Blizzard Studios."
+  },
+  {
+    "number": 124,
+    "symbol": "FCX",
+    "name": "Freeport-McMoRan Inc",
+    "description": "Freeport-McMoRan Inc., often called Freeport, is an American mining company based in the Freeport-McMoRan Center, in Phoenix, Arizona."
+  },
+  {
+    "number": 125,
+    "symbol": "EQIX",
+    "name": "Equinix Inc. (REIT)",
+    "description": "Equinix, Inc. is an American multinational company headquartered in Redwood City, California, that specializes in Internet connection and data centers."
+  },
+  {
+    "number": 126,
+    "symbol": "PGR",
+    "name": "The Progressive Corporation",
+    "description": "The Progressive Corporation is an American insurance company, one of the largest providers of car insurance in the United States. The company insures motorcycles, boats, RVs, and commercial vehicles and provides home insurance through select companies."
+  },
+  {
+    "number": 127,
+    "symbol": "FISV",
+    "name": "Fiserv Inc",
+    "description": "Fiserv, Inc. is an American multinational company headquartered in Brookfield, Wisconsin that provides financial technology and financial services. The company's clients include banks, thrifts, credit unions, securities broker dealers, leasing and finance companies, and retailers."
+  },
+  {
+    "number": 128,
+    "symbol": "ETN",
+    "name": "Eaton Corporation plc",
+    "description": "Eaton Corporation plc is an American Irish-domiciled multinational power management company with 2020 sales of 17.86 billion USD, founded in the United States with corporate headquarters in Dublin, Ireland, and operational headquarters in Beachwood, Ohio."
+  },
+  {
+    "number": 129,
+    "symbol": "NOC",
+    "name": "Northrop Grumman Corporation",
+    "description": "Northrop Grumman Corporation (NYSE: NOC) is an American multinational aerospace and defense technology company."
+  },
+  {
+    "number": 130,
+    "symbol": "AON",
+    "name": "Aon plc",
+    "description": "Aon plc is a multinational professional services firm that sells a range of financial risk-mitigation products, including insurance, pension administration, and health-insurance plans."
+  },
+  {
+    "number": 131,
+    "symbol": "BSX",
+    "name": "Boston Scientific Corporation",
+    "description": "Boston Scientific Corporation, doing business as Boston Scientific, is a manufacturer of medical devices used in interventional medical specialties, including interventional radiology, interventional cardiology, peripheral interventions, neuromodulation, neurovascular intervention, electrophysiology, cardiac surgery, vascular surgery, endoscopy, oncology, urology and gynecology."
+  },
+  {
+    "number": 132,
+    "symbol": "PSA",
+    "name": "Public Storage",
+    "description": "Public Storage is an American international self storage company headquartered in Glendale, California, that is run as a real estate investment trust (REIT)."
+  },
+  {
+    "number": 133,
+    "symbol": "MCO",
+    "name": "Moody's Corporation",
+    "description": "Moody's Corporation, often referred to as Moody's, is an American business and financial services company. It is the holding company for Moody's Investors Service (MIS), an American credit rating agency, and Moody's Analytics (MA), an American provider of financial analysis software and services."
+  },
+  {
+    "number": 134,
+    "symbol": "GD",
+    "name": "General Dynamics Corporation",
+    "description": "General Dynamics Corporation (GD) is an American aerospace and defense corporation. It is headquartered in Reston, Fairfax County, Virginia."
+  },
+  {
+    "number": 135,
+    "symbol": "MRNA",
+    "name": "Moderna Inc",
+    "description": "Moderna, Inc., a biotechnology company, develops messenger RNA-based vaccines and therapies for the treatment of infectious diseases, immuno-oncology, rare diseases, cardiovascular diseases, and autoimmune diseases. The company is headquartered in Cambridge, Massachusetts."
+  },
+  {
+    "number": 136,
+    "symbol": "WM",
+    "name": "Waste Management Inc",
+    "description": "Waste Management, Inc. is an American waste management, comprehensive waste, and environmental services company in North America. Founded in 1968, the company is headquartered 800 Capitol in Houston, Texas."
+  },
+  {
+    "number": 137,
+    "symbol": "FDX",
+    "name": "FedEx Corporation",
+    "description": "FedEx Corporation, formerly Federal Express Corporation and later FDX Corporation, is an American multinational delivery services company headquartered in Memphis, Tennessee."
+  },
+  {
+    "number": 138,
+    "symbol": "VRTX",
+    "name": "Vertex Pharmaceuticals Incorporated",
+    "description": "Vertex Pharmaceuticals, Inc. is an American biopharmaceutical company based in Boston, Massachusetts."
+  },
+  {
+    "number": 139,
+    "symbol": "FIS",
+    "name": "Fidelity National Information Services Inc",
+    "description": "FIS is an American Fortune 500 company which offers a wide range of financial products and services. Headquartered in Jacksonville, Florida, FIS employs approximately 63,000 people worldwide. FIS is most known for its development of Financial Technology, or FinTech, and as of Q2 2020 it offers its solutions in three primary segments: Merchant Solutions, Banking Solutions, and Capital Market Solutions."
+  },
+  {
+    "number": 140,
+    "symbol": "MET",
+    "name": "MetLife Inc",
+    "description": "MetLife, Inc. is the holding corporation for the Metropolitan Life Insurance Company (MLIC), better known as MetLife, and its affiliates. MetLife is among the largest global providers of insurance, annuities, and employee benefit programs, with 90 million customers in over 60 countries."
+  },
+  {
+    "number": 141,
+    "symbol": "MAR",
+    "name": "Marriott International Inc",
+    "description": "Marriott International, Inc. is an American multinational company that operates, franchises, and licenses lodging including hotel, residential, and timeshare properties. It is headquartered in Bethesda, Maryland."
+  },
+  {
+    "number": 142,
+    "symbol": "PXD",
+    "name": "Pioneer Natural Resources Company",
+    "description": "Pioneer Natural Resources Company is a company engaged in hydrocarbon exploration headquartered in Irving, Texas. It operates in the Cline Shale, which is part of the Spraberry Trend of the Permian Basin, where the company is the largest acreage holder."
+  },
+  {
+    "number": 143,
+    "symbol": "SLB",
+    "name": "Schlumberger Limited",
+    "description": "Schlumberger Limited is an oilfield services company. Schlumberger has four principal executive offices located in Paris, Houston, London, and The Hague."
+  },
+  {
+    "number": 144,
+    "symbol": "EMR",
+    "name": "Emerson Electric Co",
+    "description": "Emerson Electric Co. is an American multinational corporation headquartered in Ferguson, Missouri. The Fortune 500 company manufactures products and provides engineering services for a wide range of industrial, commercial, and consumer markets."
+  },
+  {
+    "number": 145,
+    "symbol": "KLAC",
+    "name": "KLA Corporation",
+    "description": "KLA Corporation is a capital equipment company based in Milpitas, California. It supplies process control and yield management systems for the semiconductor industry and other related nanoelectronics industries. The company's products and services are intended for all phases of wafer, reticle, integrated circuit (IC) and packaging production, from research and development to final volume manufacturing."
+  },
+  {
+    "number": 146,
+    "symbol": "NEM",
+    "name": "Newmont Corporation",
+    "description": "Newmont Corporation, based in Greenwood Village, Colorado, United States, is one of the largest gold mining companies in the world."
+  },
+  {
+    "number": 147,
+    "symbol": "APD",
+    "name": "Air Products and Chemicals Inc",
+    "description": "Air Products and Chemicals, Inc. is an American international corporation whose principal business is selling gases and chemicals for industrial uses. Air Products' headquarters is in Allentown, Pennsylvania."
+  },
+  {
+    "number": 148,
+    "symbol": "HUM",
+    "name": "Humana Inc",
+    "description": "Humana Inc. is a for-profit American health insurance company based in Louisville, Kentucky."
+  },
+  {
+    "number": 149,
+    "symbol": "SPG",
+    "name": "Simon Property Group Inc",
+    "description": "Simon Property Group, Inc. is a real estate investment trust that invests in shopping malls, outlet centers, and community/lifestyle centers. It is the largest owner of shopping malls in the United States and is headquartered in Indianapolis, Indiana."
+  },
+  {
+    "number": 150,
+    "symbol": "AIG",
+    "name": "American International Group Inc",
+    "description": "American International Group, Inc., also known as AIG, is an American multinational finance and insurance corporation with operations in more than 80 countries and jurisdictions. The company operates through three core businesses: General Insurance, Life & Retirement, and a standalone technology-enabled subsidiary."
+  },
+  {
+    "number": 151,
+    "symbol": "ECL",
+    "name": "Ecolab Inc",
+    "description": "Ecolab Inc., headquartered in St. Paul, Minnesota, is an American corporation that develops and offers services, technology and systems that specialize in water treatment, purification, cleaning and hygiene in a wide variety of applications. It helps organizations both private market as well as public treat their water, not only for drinking directly, but also for use in food, healthcare, hospitality related safety and industry."
+  },
+  {
+    "number": 152,
+    "symbol": "FTNT",
+    "name": "Fortinet Inc",
+    "description": "Fortinet (Nasdaq: FTNT) is an American multinational corporation headquartered in Sunnyvale, California. It develops and sells cybersecurity solutions, including but not limited to physical products such as firewalls, plus software and services such as anti-virus protection, intrusion prevention systems and endpoint security components."
+  },
+  {
+    "number": 153,
+    "symbol": "NXPI",
+    "name": "NXP Semiconductors N.V",
+    "description": "NXP Semiconductors N.V. is a Dutch semiconductor manufacturer with headquarters in Eindhoven, Netherlands."
+  },
+  {
+    "number": 154,
+    "symbol": "ILMN",
+    "name": "Illumina Inc",
+    "description": "Illumina, Inc. is an American company. Incorporated on April 1, 1998, Illumina develops, manufactures, and markets integrated systems for the analysis of genetic variation and biological function. The company provides a line of products and services that serves the sequencing, genotyping and gene expression, and proteomics markets. Its headquarters are located in San Diego, California."
+  },
+  {
+    "number": 155,
+    "symbol": "CNC",
+    "name": "Centene Corporation",
+    "description": "Centene Corporation is a large publicly traded company and a multi-line managed care enterprise that serves as a major intermediary for both government-sponsored and privately insured health care programs. It is a healthcare insurer that focuses on managed care for uninsured, underinsured, and low-income individuals."
+  },
+  {
+    "number": 156,
+    "symbol": "ADSK",
+    "name": "Autodesk Inc",
+    "description": "Autodesk, Inc. is an American multinational software corporation that makes software products and services for the architecture, engineering, construction, manufacturing, media, education, and entertainment industries. Autodesk is headquartered in San Rafael, California."
+  },
+  {
+    "number": 157,
+    "symbol": "KHC",
+    "name": "The Kraft Heinz Company",
+    "description": "The Kraft Heinz Company (KHC), commonly known as Kraft Heinz, is an American food company formed by the merger of Kraft Foods and Heinz, co-headquartered in Chicago, Illinois, and Pittsburgh, Pennsylvania."
+  },
+  {
+    "number": 158,
+    "symbol": "TEL",
+    "name": "TE Connectivity Ltd",
+    "description": "TE Connectivity is an American Swiss-domiciled technology company that designs and manufactures connectors and sensors for several industries, such as automotive, industrial equipment, data communication systems, aerospace, defense, medical, oil and gas, consumer electronics and energy."
+  },
+  {
+    "number": 159,
+    "symbol": "ROP",
+    "name": "Roper Technologies Inc",
+    "description": "Roper Technologies, Inc. (formerly Roper Industries, Inc.) is an American diversified industrial company that produces engineered products for global niche markets. The company is headquartered in Sarasota, Florida."
+  },
+  {
+    "number": 160,
+    "symbol": "DG",
+    "name": "Dollar General Corporation",
+    "description": "Dollar General Corporation is an American chain of variety stores headquartered in Goodlettsville, Tennessee."
+  },
+  {
+    "number": 161,
+    "symbol": "JCI",
+    "name": "Johnson Controls International plc",
+    "description": "Johnson Controls International plc is an Irish-domiciled multinational conglomerate headquartered in Cork, Ireland, that produces fire, HVAC, and security equipment for buildings."
+  },
+  {
+    "number": 162,
+    "symbol": "APH",
+    "name": "Amphenol Corporation",
+    "description": "Amphenol Corporation is a major producer of electronic and fiber optic connectors, cable and interconnect systems such as coaxial cables. Amphenol is a portmanteau from the corporation's original name, American Phenolic Corp."
+  },
+  {
+    "number": 163,
+    "symbol": "CTSH",
+    "name": "Cognizant Technology Solutions Corporation",
+    "description": "Cognizant is an American multinational technology company that provides business consulting, information technology and outsourcing services. It is headquartered in Teaneck, New Jersey, United States."
+  },
+  {
+    "number": 164,
+    "symbol": "BK",
+    "name": "The Bank of New York Mellon Corporation",
+    "description": "The Bank of New York Mellon Corporation, commonly known as BNY Mellon, is a multinational American investment banking services holding company headquartered in New York City."
+  },
+  {
+    "number": 165,
+    "symbol": "ORLY",
+    "name": "O'Reilly Automotive Inc",
+    "description": "O'Reilly Auto Parts is an American auto parts retailer that provides automotive aftermarket parts, tools, supplies, equipment, and accessories in the United States serving both the professional service providers and do-it-yourself customers."
+  },
+  {
+    "number": 166,
+    "symbol": "KMB",
+    "name": "Kimberly-Clark Corporation",
+    "description": "Kimberly-Clark Corporation is an American multinational personal care corporation that produces mostly paper-based consumer products. The company manufactures sanitary paper products and surgical & medical instruments. Kimberly-Clark brand name products include Kleenex facial tissue, Kotex feminine hygiene products, Cottonelle, Scott and Andrex toilet paper, Wypall utility wipes, KimWipes scientific cleaning wipes and Huggies disposable diapers and baby wipes."
+  },
+  {
+    "number": 167,
+    "symbol": "MPC",
+    "name": "Marathon Petroleum Corporation",
+    "description": "Marathon Petroleum Corporation is an American petroleum refining, marketing, and transportation company headquartered in Findlay, Ohio."
+  },
+  {
+    "number": 168,
+    "symbol": "DOW",
+    "name": "Dow Inc",
+    "description": "Dow Inc. is an American commodity chemical company. The company is headquartered in Midland, Michigan."
+  },
+  {
+    "number": 169,
+    "symbol": "SNPS",
+    "name": "Synopsys Inc",
+    "description": "Synopsys is an American electronic design automation company that focuses on silicon design and verification, silicon intellectual property and software security and quality. Products include logic synthesis, behavioral synthesis, place and route, static timing analysis, formal verification, hardware description language (SystemC, SystemVerilog/Verilog, VHDL) simulators, and transistor-level circuit simulation."
+  },
+  {
+    "number": 170,
+    "symbol": "IQV",
+    "name": "IQVIA Holdings Inc",
+    "description": "IQVIA, formerly Quintiles and IMS Health, Inc., is an American multinational company serving the combined industries of health information technology and clinical research. It is a provider of biopharmaceutical development and commercial outsourcing services, focused primarily on Phase I-IV clinical trials and associated laboratory and analytical services, including consulting services."
+  },
+  {
+    "number": 171,
+    "symbol": "SRE",
+    "name": "Sempra",
+    "description": "Sempra Energy is a North American energy infrastructure company based in San Diego, California. Sempra Energy's focus is on electric and natural gas infrastructure. Its operating companies include: Southern California Gas Company (SoCalGas) and San Diego Gas & Electric (SDG&E) in Southern California; Oncor Electric Delivery Company (Oncor) in Texas; Sempra LNG; and IEnova, based in Mexico."
+  },
+  {
+    "number": 172,
+    "symbol": "PRU",
+    "name": "Prudential Financial Inc",
+    "description": "Prudential Financial, Inc. is an American company whose subsidiaries provide insurance, investment management, and other financial products and services to both retail and institutional customers throughout the United States and in over 40 other countries."
+  },
+  {
+    "number": 173,
+    "symbol": "MNST",
+    "name": "Monster Beverage Corporation",
+    "description": "Monster Beverage Corporation is an American beverage company that manufactures energy drinks including Monster Energy, Relentless and Burn."
+  },
+  {
+    "number": 174,
+    "symbol": "ADM",
+    "name": "Archer-Daniels-Midland Company",
+    "description": "The Archer-Daniels-Midland Company, commonly known as ADM, is an American multinational food processing and commodities trading corporation founded in 1902 and headquartered in Chicago, Illinois. The company operates more than 270 plants and 420 crop procurement facilities worldwide, where cereal grains and oilseeds are processed into products used in food, beverage, nutraceutical, industrial, and animal feed markets worldwide."
+  },
+  {
+    "number": 175,
+    "symbol": "MSCI",
+    "name": "MSCI Inc",
+    "description": "MSCI Inc. (formerly Morgan Stanley Capital International and MSCI Barra), is an American finance company headquartered in New York City and serving as a global provider of equity, fixed income, hedge fund stock market indexes, multi-asset portfolio analysis tools and ESG products. It publishes the MSCI BRIC, MSCI World and MSCI EAFE Indexes."
+  },
+  {
+    "number": 176,
+    "symbol": "INFO",
+    "name": "IHS Markit Ltd",
+    "description": "IHS Markit Ltd is an American-British information provider based in London. It was formed in 2016 with the merger of IHS Inc. and Markit Ltd."
+  },
+  {
+    "number": 177,
+    "symbol": "LHX",
+    "name": "L3Harris Technologies Inc",
+    "description": "L3Harris Technologies (L3Harris) is an American technology company, defense contractor and information technology services provider that produces C6ISR systems and products, wireless equipment, tactical radios, avionics and electronic systems, night vision equipment, and both terrestrial and spaceborne antennas for use in the government, defense, and commercial sectors."
+  },
+  {
+    "number": 178,
+    "symbol": "CMG",
+    "name": "Chipotle Mexican Grill Inc",
+    "description": "Chipotle Mexican Grill, Inc., often known simply as Chipotle, is an American chain of fast casual restaurants in the United States, United Kingdom, Canada, Germany, and France, specializing in tacos and Mission burritos that are made to order in front of the customer."
+  },
+  {
+    "number": 179,
+    "symbol": "AEP",
+    "name": "American Electric Power Company Inc",
+    "description": "American Electric Power (AEP) is a major investor-owned electric utility in the United States, delivering electricity to more than five million customers in 11 states."
+  },
+  {
+    "number": 180,
+    "symbol": "SYY",
+    "name": "Sysco Corporation",
+    "description": "Sysco Corporation is an American multinational corporation involved in marketing and distributing food products, smallwares, kitchen equipment and tabletop items to restaurants, healthcare and educational facilities, hospitality businesses like hotels and inns, and wholesale to other companies that provide foodservice (like Aramark and Sodexo). The company is headquartered in the Energy Corridor district of Houston, Texas."
+  },
+  {
+    "number": 181,
+    "symbol": "HLT",
+    "name": "Hilton Worldwide Holdings Inc",
+    "description": "Hilton Worldwide Holdings Inc., formerly Hilton Hotels Corporation, is an American multinational hospitality company that manages and franchises a broad portfolio of hotels and resorts."
+  },
+  {
+    "number": 182,
+    "symbol": "PAYX",
+    "name": "Paychex Inc",
+    "description": "Paychex, Inc. is an American provider of human resource, payroll, and benefits outsourcing services for small- to medium-sized businesses."
+  },
+  {
+    "number": 183,
+    "symbol": "HSY",
+    "name": "The Hershey Company",
+    "description": "The Hershey Company, commonly known as Hershey's, is an American multinational company and one of the largest chocolate manufacturers in the world. It also manufactures baked products, such as cookies and cakes, and sells beverages like milkshakes, and many more that are produced globally. Its headquarters are in Hershey, Pennsylvania."
+  },
+  {
+    "number": 184,
+    "symbol": "IDXX",
+    "name": "IDEXX Laboratories Inc",
+    "description": "IDEXX Laboratories, Inc. is an American multinational corporation  engaged in the development, manufacture, and distribution of products and services for the companion animal veterinary, livestock and poultry, water testing, and dairy markets."
+  },
+  {
+    "number": 185,
+    "symbol": "BAX",
+    "name": "Baxter International Inc",
+    "description": "Baxter International Inc. is an American multinational health care company with headquarters in Deerfield, Illinois. The company primarily focuses on products to treat hemophilia, kidney disease, immune disorders and other chronic and acute medical conditions. "
+  },
+  {
+    "number": 186,
+    "symbol": "TRV",
+    "name": "The Travelers Companies Inc",
+    "description": "The Travelers Companies, Inc., commonly known as Travelers, is an American insurance company."
+  },
+  {
+    "number": 187,
+    "symbol": "AFL",
+    "name": "Aflac Incorporated",
+    "description": "Aflac Inc. (American Family Life Assurance Company) is an American insurance company and is the largest provider of supplemental insurance in the United States."
+  },
+  {
+    "number": 188,
+    "symbol": "GIS",
+    "name": "General Mills Inc",
+    "description": "General Mills, Inc., is an American multinational manufacturer and marketer of branded consumer foods sold through retail stores. It is headquartered in Golden Valley, Minnesota, a suburb of Minneapolis."
+  },
+  {
+    "number": 189,
+    "symbol": "STZ",
+    "name": "Constellation Brands Inc",
+    "description": "Constellation Brands, Inc., headquartered in Victor, New York, is an American producer and marketer of beer, wine, and spirits."
+  },
+  {
+    "number": 190,
+    "symbol": "EXC",
+    "name": "Exelon Corporation",
+    "description": "Exelon Corporation is an American Fortune 100 energy company headquartered in Chicago, Illinois and incorporated in Pennsylvania."
+  },
+  {
+    "number": 191,
+    "symbol": "MCK",
+    "name": "McKesson Corporation",
+    "description": "McKesson Corporation is an American company distributing pharmaceuticals and providing health information technology, medical supplies, and care management tools."
+  },
+  {
+    "number": 192,
+    "symbol": "DD",
+    "name": "DuPont de Nemours Inc",
+    "description": "DuPont de Nemours, Inc., commonly known as DuPont, is an American company formed by the merger of Dow Chemical and E. I. du Pont de Nemours and Company on August 31, 2017, and the subsequent spinoffs of Dow Inc. and Corteva. Prior to the spinoffs it was the world's largest chemical company in terms of sales."
+  },
+  {
+    "number": 193,
+    "symbol": "WBA",
+    "name": "Walgreens Boots Alliance Inc",
+    "description": "Walgreens Boots Alliance, Inc. is an American pharmaceuticals holding company headquartered in Deerfield, Illinois. It owns the pharmacy chains Walgreens and Boots, as well as several pharmaceutical manufacturing, wholesale, and distribution companies."
+  },
+  {
+    "number": 194,
+    "symbol": "MCHP",
+    "name": "Microchip Technology Incorporated",
+    "description": "Microchip Technology Inc. is a publicly-listed American corporation that manufactures microcontroller, mixed-signal, analog and Flash-IP integrated circuits."
+  },
+  {
+    "number": 195,
+    "symbol": "A",
+    "name": "Agilent Technologies Inc",
+    "description": "Agilent Technologies, Inc. is an American analytical instrumentation development and manufacturing company that offers its products and services to markets worldwide. Its global headquarters is located in Santa Clara, California."
+  },
+  {
+    "number": 196,
+    "symbol": "AZO",
+    "name": "AutoZone Inc",
+    "description": "AutoZone, Inc. is an American retailer of aftermarket automotive parts and accessories, the largest in the United States."
+  },
+  {
+    "number": 197,
+    "symbol": "DLR",
+    "name": "Digital Realty Trust Inc",
+    "description": "Digital Realty Trust, Inc. is a real estate investment trust that invests in carrier-neutral data centers and provides colocation and peering services."
+  },
+  {
+    "number": 198,
+    "symbol": "ALGN",
+    "name": "Align Technology Inc",
+    "description": "Align Technology is a manufacturer of 3D digital scanners and the Invisalign clear aligners used in orthodontics. It is headquartered in San Jose, California."
+  },
+  {
+    "number": 199,
+    "symbol": "HPQ",
+    "name": "HP Inc",
+    "description": "HP Inc. is an American multinational information technology company headquartered in Palo Alto, California, that develops personal computers (PCs), printers and related supplies, as well as 3D printing solutions."
+  },
+  {
+    "number": 200,
+    "symbol": "GPN",
+    "name": "Global Payments Inc",
+    "description": "Global Payments Inc. is an American company providing financial technology services globally headquartered in Atlanta, Georgia."
+  },
+  {
+    "number": 201,
+    "symbol": "ANET",
+    "name": "Arista Networks Inc",
+    "description": "Arista Networks (formerly Arastra) is an American computer networking company headquartered in Santa Clara, California. The company designs and sells multilayer network switches to deliver software-defined networking (SDN) solutions for large datacenter, cloud computing, high-performance computing, and high-frequency trading environments."
+  },
+  {
+    "number": 202,
+    "symbol": "PH",
+    "name": "Parker-Hannifin Corporation",
+    "description": "Parker-Hannifin Corporation, originally Parker Appliance Company, usually referred to as just Parker, is an American corporation specializing in motion and control technologies. Its corporate headquarters are in Mayfield Heights, Ohio, in Greater Cleveland."
+  },
+  {
+    "number": 203,
+    "symbol": "CTAS",
+    "name": "Cintas Corporation",
+    "description": "Cintas Corporation is an American corporation headquartered in Cincinnati, Ohio, which provides a range of products and services to businesses including uniforms, mats, mops, cleaning and restroom supplies, first aid and safety products, fire extinguishers and testing, and safety courses."
+  },
+  {
+    "number": 204,
+    "symbol": "APTV",
+    "name": "Aptiv PLC",
+    "description": "Aptiv plc is an auto parts company headquartered in Dublin, Ireland."
+  },
+  {
+    "number": 205,
+    "symbol": "CARR",
+    "name": "Carrier Global Corporation",
+    "description": "Carrier Global Corporation is an American multinational home appliances corporation based in Palm Beach Gardens, Florida."
+  },
+  {
+    "number": 206,
+    "symbol": "O",
+    "name": "Realty Income Corporation",
+    "description": "Realty Income Corporation is a real estate investment trust that invests in free-standing, single-tenant commercial properties in the United States, Puerto Rico, and the United Kingdom that are subject to NNN Leases. The company is organized in Maryland with its headquarters in San Diego, California."
+  },
+  {
+    "number": 207,
+    "symbol": "KMI",
+    "name": "Kinder Morgan Inc",
+    "description": "Kinder Morgan, Inc. is one of the largest energy infrastructure companies in North America. The company specializes in owning and controlling oil and gas pipelines and terminals."
+  },
+  {
+    "number": 208,
+    "symbol": "CDNS",
+    "name": "Cadence Design Systems Inc",
+    "description": "Cadence Design Systems, Inc., headquartered in San Jose, California, is an American multinational computational software company. The company produces software, hardware and silicon structures for designing integrated circuits, systems on chips (SoCs) and printed circuit boards."
+  },
+  {
+    "number": 209,
+    "symbol": "PSX",
+    "name": "Phillips 66",
+    "description": "The Phillips 66 Company is an American multinational energy company headquartered in Westchase, Houston, Texas."
+  },
+  {
+    "number": 210,
+    "symbol": "RSG",
+    "name": "Republic Services Inc",
+    "description": "Republic Services, Inc is the second largest provider of non-hazardous solid waste collection, transfer, disposal, recycling, and energy services in the United States, as measured by revenue."
+  },
+  {
+    "number": 211,
+    "symbol": "WELL",
+    "name": "Welltower Inc",
+    "description": "Welltower Inc. is a real estate investment trust that invests in healthcare infrastructure."
+  },
+  {
+    "number": 212,
+    "symbol": "DXCM",
+    "name": "DexCom Inc",
+    "description": "DexCom, Inc. is a company that develops, manufactures, and distributes continuous glucose monitoring (CGM) systems for diabetes management. It operates internationally with headquarters in San Diego, California, and has a manufacturing facility in Mesa, Arizona."
+  },
+  {
+    "number": 213,
+    "symbol": "OXY",
+    "name": "Occidental Petroleum Corporation",
+    "description": "Occidental Petroleum Corporation is an American company engaged in hydrocarbon exploration in the United States, the Middle East, and Colombia as well as petrochemical manufacturing in the United States, Canada, and Chile."
+  },
+  {
+    "number": 214,
+    "symbol": "CTVA",
+    "name": "Corteva Inc",
+    "description": "Corteva, Inc. (also known as Corteva Agriscience) is a major American agricultural chemical and seed company that was the agricultural unit of DowDuPont prior to being spun off as an independent public company."
+  },
+  {
+    "number": 215,
+    "symbol": "MSI",
+    "name": "Motorola Solutions Inc",
+    "description": "Motorola Solutions, Inc., is an American data communications and telecommunications equipment provider that succeeded Motorola, Inc., following the spinoff of the mobile phone division into Motorola Mobility in 2011. The company is headquartered in Chicago, Illinois."
+  },
+  {
+    "number": 216,
+    "symbol": "DVN",
+    "name": "Devon Energy Corporation",
+    "description": "Devon Energy Corporation is an American energy company engaged in hydrocarbon exploration in the American market."
+  },
+  {
+    "number": 217,
+    "symbol": "EA",
+    "name": "Electronic Arts Inc",
+    "description": "Electronic Arts Inc. (EA) is an American video game company headquartered in Redwood City, California. It is the second-largest gaming company in the Americas and Europe by revenue and market capitalization after Activision Blizzard and ahead of Take-Two Interactive, and Ubisoft as of May 2020."
+  },
+  {
+    "number": 218,
+    "symbol": "YUM",
+    "name": "Yum! Brands Inc",
+    "description": "Yum! Brands, Inc. is an American fast food corporation listed on the Fortune 1000. Yum! operates the brands KFC, Pizza Hut, Taco Bell, The Habit Burger Grill, and WingStreet worldwide, except in China, where the brands are operated by a separate company, Yum China."
+  },
+  {
+    "number": 219,
+    "symbol": "SIVB",
+    "name": "SVB Financial Group",
+    "description": "Silicon Valley Bank, a subsidiary of SVB Financial Group, is a U.S.-based high-tech commercial bank."
+  },
+  {
+    "number": 220,
+    "symbol": "LVS",
+    "name": "Las Vegas Sands Corp",
+    "description": "Las Vegas Sands Corporation is an American casino and resort company based in Paradise, Nevada, United States. Its resorts feature accommodations, gambling and entertainment, convention and exhibition facilities, restaurants and clubs, as well as an art and science museum in Singapore."
+  },
+  {
+    "number": 221,
+    "symbol": "TDG",
+    "name": "TransDigm Group Incorporated",
+    "description": "TransDigm Group is a publicly traded aerospace manufacturing company headquartered in Cleveland, Ohio. TransDigm develops and manufactures engineered aerospace components."
+  },
+  {
+    "number": 222,
+    "symbol": "WMB",
+    "name": "The Williams Companies Inc",
+    "description": "The Williams Companies, Inc., is an American energy company based in Tulsa, Oklahoma. Its core business is natural gas processing and transportation, with additional petroleum and electricity generation assets."
+  },
+  {
+    "number": 223,
+    "symbol": "XEL",
+    "name": "Xcel Energy Inc",
+    "description": "Xcel Energy Inc. is a utility holding company based in Minneapolis, Minnesota, serving more than 3.7 million electric customers and 2.1 million natural gas customers in Minnesota, Michigan, Wisconsin, North Dakota, South Dakota, Colorado, Texas, and New Mexico as of 2019. It consists of four operating subsidiaries: Northern States Power-Minnesota, Northern States Power-Wisconsin, Public Service Company of Colorado, and Southwestern Public Service Co."
+  },
+  {
+    "number": 224,
+    "symbol": "DFS",
+    "name": "Discover Financial Services",
+    "description": "Discover Financial Services is an American financial services company that owns and operates Discover Bank, which offers checking and savings accounts, personal loans, home equity loans, student loans and credit cards. It also owns and operates the Discover and Pulse networks, and owns Diners Club International. Discover is currently headquartered in the Chicago suburb of Riverwoods, Illinois."
+  },
+  {
+    "number": 225,
+    "symbol": "TT",
+    "name": "Trane Technologies plc",
+    "description": "Trane Technologies plc is an American Irish domiciled diversified industrial manufacturing company. It is headquartered near Dublin, Ireland."
+  },
+  {
+    "number": 226,
+    "symbol": "PPG",
+    "name": "PPG Industries Inc",
+    "description": "PPG Industries, Inc. is an American Fortune 500 company and global supplier of paints, coatings, and specialty materials. With headquarters in Pittsburgh, Pennsylvania, PPG operates in more than 70 countries around the globe."
+  },
+  {
+    "number": 227,
+    "symbol": "VLO",
+    "name": "Valero Energy Corporation",
+    "description": "Valero Energy Corporation is a Fortune 500 international manufacturer and marketer of transportation fuels, other petrochemical products, and power. It is headquartered in San Antonio, Texas, United States."
+  },
+  {
+    "number": 228,
+    "symbol": "ALL",
+    "name": "The Allstate Corporation",
+    "description": "The Allstate Corporation is an American insurance company, headquartered in Northfield Township, Illinois."
+  },
+  {
+    "number": 229,
+    "symbol": "GLW",
+    "name": "Corning Incorporated",
+    "description": "Corning Incorporated is an American multinational technology company that specializes in specialty glass, ceramics, and related materials and technologies including advanced optics, primarily for industrial and scientific applications."
+  },
+  {
+    "number": 230,
+    "symbol": "EBAY",
+    "name": "eBay Inc",
+    "description": "eBay Inc. is an American multinational e-commerce corporation based in San Jose, California, that facilitates consumer-to-consumer and business-to-consumer sales through its website."
+  },
+  {
+    "number": 231,
+    "symbol": "IFF",
+    "name": "International Flavors & Fragrances Inc.",
+    "description": "International Flavors & Fragrances is an American corporation that produces flavors, fragrances, and cosmetic actives, which it markets globally. It is headquartered in New York City."
+  },
+  {
+    "number": 232,
+    "symbol": "STT",
+    "name": "State Street Corporation",
+    "description": "State Street Corporation is an American financial services and bank holding company headquartered at One Lincoln Street in Boston with operations worldwide."
+  },
+  {
+    "number": 233,
+    "symbol": "RMD",
+    "name": "ResMed Inc",
+    "description": "ResMed is a San Diego, California-based medical equipment company. It primarily provides cloud-connectable medical devices for the treatment of sleep apnea (such as CPAP devices and masks), chronic obstructive pulmonary disease (COPD), and other respiratory conditions."
+  },
+  {
+    "number": 234,
+    "symbol": "KR",
+    "name": "The Kroger Co",
+    "description": "The Kroger Company, or simply Kroger, is an American retail company founded by Bernard Kroger in 1883 in Cincinnati, Ohio."
+  },
+  {
+    "number": 235,
+    "symbol": "TSN",
+    "name": "Tyson Foods Inc",
+    "description": "Tyson Foods, Inc. is an American multinational corporation based in Springdale, Arkansas, that operates in the food industry."
+  },
+  {
+    "number": 236,
+    "symbol": "NUE",
+    "name": "Nucor Corporation",
+    "description": "Nucor Corporation is a producer of steel and related products based in Charlotte, North Carolina."
+  },
+  {
+    "number": 237,
+    "symbol": "CBRE",
+    "name": "CBRE Group Inc",
+    "description": "CBRE Group, Inc. is an American commercial real estate services and investment firm. The abbreviation CBRE stands for Coldwell Banker Richard Ellis. It is the largest commercial real estate services company in the world."
+  },
+  {
+    "number": 238,
+    "symbol": "AMP",
+    "name": "Ameriprise Financial Inc",
+    "description": "Ameriprise Financial, Inc. is a diversified financial services company and bank holding company incorporated in Delaware and headquartered in Minneapolis, Minnesota. It provides financial planning products and services, including wealth management, asset management, insurance, annuities, and estate planning."
+  },
+  {
+    "number": 239,
+    "symbol": "ODFL",
+    "name": "Old Dominion Freight Line Inc",
+    "description": "Old Dominion Freight Line, Inc. is an American less than truckload shipping (LTL) company. It offers regional, inter-regional and national LTL service. In addition to its core LTL services, the company offers logistics services including ground and air expedited transportation, supply chain consulting, transportation management, truckload brokerage, container delivery and warehousing, as well as household moving services."
+  },
+  {
+    "number": 240,
+    "symbol": "ROST",
+    "name": "Ross Stores Inc",
+    "description": "Ross Stores, Inc., operating under the brand name Ross Dress for Less, is an American chain of discount department stores headquartered in Dublin, California."
+  },
+  {
+    "number": 241,
+    "symbol": "LYB",
+    "name": "LyondellBasell Industries N.V",
+    "description": "LyondellBasell Industries N.V. (NYSE: LYB) is a Dutch-domiciled multinational chemical company with American and British roots, incorporated in the Netherlands, with U.S. operations headquarters in Houston, Texas, and offices in London, UK. The company is the largest licensor of polyethylene and polypropylene technologies. It also produces ethylene, propylene, polyolefins, and oxyfuels."
+  },
+  {
+    "number": 242,
+    "symbol": "FITB",
+    "name": "Fifth Third Bancorp",
+    "description": "Fifth Third Bank is a bank headquartered in Cincinnati, Ohio, at Fifth Third Center. It is the principal subsidiary of Fifth Third Bancorp, a diversified bank holding company."
+  },
+  {
+    "number": 243,
+    "symbol": "EQR",
+    "name": "Equity Residential",
+    "description": "Equity Residential is a publicly traded real estate investment trust that invests in apartments."
+  },
+  {
+    "number": 244,
+    "symbol": "TROW",
+    "name": "T. Rowe Price Group Inc",
+    "description": "T. Rowe Price Group, Inc. is an American publicly owned global investment management firm that offers funds, advisory services, account management, and retirement plans and services for individuals, institutions, and financial intermediaries."
+  },
+  {
+    "number": 245,
+    "symbol": "AVB",
+    "name": "AvalonBay Communities Inc",
+    "description": "AvalonBay Communities, Inc. is a publicly traded real estate investment trust that invests in apartments."
+  },
+  {
+    "number": 246,
+    "symbol": "PEG",
+    "name": "Public Service Enterprise Group Incorporated",
+    "description": "The Public Service Enterprise Group (PSEG) is a publicly traded diversified energy company headquartered in Newark, New Jersey."
+  },
+  {
+    "number": 247,
+    "symbol": "PCAR",
+    "name": "PACCAR Inc",
+    "description": "PACCAR Inc is an American Fortune 500 company and counts among the largest manufacturers of medium- and heavy-duty trucks in the world. PACCAR is engaged in the design, manufacture and customer support of light-, medium- and heavy-duty trucks under the Kenworth, Peterbilt, Leyland Trucks, and DAF nameplates. PACCAR also designs and manufactures powertrains, provides financial services and information technology, and distributes truck parts related to its principal business."
+  },
+  {
+    "number": 248,
+    "symbol": "EXPE",
+    "name": "Expedia Group Inc",
+    "description": "Expedia Group, Inc. is an American online travel shopping company for consumer and small business travel. Its websites, which are primarily travel fare aggregators and travel metasearch engines, include Expedia.com, Vrbo (previously HomeAway), Hotels.com, Hotwire.com, Orbitz, Travelocity, trivago and CarRentals.com."
+  },
+  {
+    "number": 249,
+    "symbol": "OTIS",
+    "name": "Otis Worldwide Corporation",
+    "description": "Otis Worldwide Corporation is an American company that develops, manufactures and markets elevators, escalators, moving walkways, and related equipment."
+  },
+  {
+    "number": 250,
+    "symbol": "AJG",
+    "name": "Arthur J. Gallagher & Co",
+    "description": "Arthur J. Gallagher & Co. (AJG) is an American global insurance brokerage and risk management services firm headquartered in Rolling Meadows, Illinois."
+  },
+  {
+    "number": 251,
+    "symbol": "DLTR",
+    "name": "Dollar Tree Inc",
+    "description": "Dollar Tree is an American chain of discount variety stores that sells items for $1 or less, headquartered in Chesapeake, Virginia."
+  },
+  {
+    "number": 252,
+    "symbol": "MTD",
+    "name": "Mettler-Toledo International Inc",
+    "description": "Mettler Toledo (NYSE: MTD) is a multinational manufacturer of scales and analytical instruments. It is the largest provider of weighing instruments for use in laboratory, industrial, and food retailing applications. The company also provides various analytical instruments, process analytics instruments, and end-of-line inspection systems."
+  },
+  {
+    "number": 253,
+    "symbol": "SBAC",
+    "name": "SBA Communications Corporation",
+    "description": "SBA Communications Corporation is a real estate investment trust which owns and operates wireless infrastructure in the United States, Canada, Central America, South America, and South Africa."
+  },
+  {
+    "number": 254,
+    "symbol": "CMI",
+    "name": "Cummins Inc",
+    "description": "Cummins is a Columbus, Indiana based multinational corporation that designs, manufactures, and distributes engines, filtration, and power generation products. Cummins also services engines and related equipment, including fuel systems, controls, air handling, filtration, emission control, electrical power generation systems, and trucks."
+  },
+  {
+    "number": 255,
+    "symbol": "BIIB",
+    "name": "Biogen Inc",
+    "description": "Biogen Inc. is an American multinational biotechnology company based in Cambridge, Massachusetts, specializing in the discovery, development, and delivery of therapies for the treatment of neurological diseases to patients worldwide."
+  },
+  {
+    "number": 256,
+    "symbol": "ROK",
+    "name": "Rockwell Automation Inc",
+    "description": "Rockwell Automation, Inc. is an American provider of industrial automation and information technology. Its brands include Allen-Bradley and Factory Talk software."
+  },
+  {
+    "number": 257,
+    "symbol": "VRSK",
+    "name": "Verisk Analytics Inc",
+    "description": "Verisk Analytics, Inc. is an American data analytics and risk assessment firm based in Jersey City, New Jersey, with customers in insurance, natural resources, financial services, government, and risk management sectors. The company uses proprietary data sets and industry expertise to provide predictive analytics and decision support consultations in areas including fraud prevention, actuarial science, insurance coverage, fire protection, catastrophe and weather risk, and data management."
+  },
+  {
+    "number": 258,
+    "symbol": "MTCH",
+    "name": "Match Group Inc",
+    "description": "Match Group, Inc. offers dating products globally. The company is headquartered in Dallas, Texas."
+  },
+  {
+    "number": 259,
+    "symbol": "FRC",
+    "name": "First Republic Bank",
+    "description": "First Republic Bank is an American bank and wealth management company offering personal banking, business banking, trust and wealth management services, catering to low-risk, high net-worth clientele, and focusing on providing personalized customer experience. The bank specializes in delivering personalized relationship-based service through preferred banking or trust offices in the United States."
+  },
+  {
+    "number": 260,
+    "symbol": "ED",
+    "name": "Consolidated Edison Inc",
+    "description": "Consolidated Edison, Inc., commonly known as Con Edison (stylized as conEdison) or ConEd, is one of the largest investor-owned energy companies in the United States, with approximately $12 billion in annual revenues as of 2017, and over $48 billion in assets. The company provides a wide range of energy-related products and services to its customers through its subsidiaries."
+  },
+  {
+    "number": 261,
+    "symbol": "BKR",
+    "name": "Baker Hughes Company Class A Common Stock",
+    "description": "Baker Hughes Company is an American international industrial service company and one of the world's largest oil field services companies. The company provides the oil and gas industry with products and services for oil drilling, formation evaluation, completion, production and reservoir consulting. Baker Hughes is headquartered in Houston."
+  },
+  {
+    "number": 262,
+    "symbol": "ARE",
+    "name": "Alexandria Real Estate Equities Inc",
+    "description": "Alexandria Real Estate Equities, Inc. is an American real estate investment trust that invests in office buildings and laboratories leased to tenants in the life science and technology industries."
+  },
+  {
+    "number": 263,
+    "symbol": "AME",
+    "name": "AMETEK Inc",
+    "description": "AMETEK, Inc. is an American global manufacturer of electronic instruments and electromechanical devices with a headquarters in the United States and over 220 manufacturing sites worldwide."
+  },
+  {
+    "number": 264,
+    "symbol": "ABC",
+    "name": "AmerisourceBergen Corporation",
+    "description": "AmerisourceBergen Corporation is an American drug wholesale company that was formed by the merger of Bergen Brunswig and AmeriSource in 2001."
+  },
+  {
+    "number": 265,
+    "symbol": "DHI",
+    "name": "D.R. Horton Inc",
+    "description": "D.R. Horton, Inc. is a home construction company incorporated in Delaware and headquartered in Arlington, Texas."
+  },
+  {
+    "number": 266,
+    "symbol": "FAST",
+    "name": "Fastenal Company",
+    "description": "Fastenal Company is an American company based in Winona, Minnesota. Fastenal's service model centers on approximately 3,200 in-market locations, each providing custom inventory, and a dedicated sales team to support local businesses. Fastenal offers companies supply chain solutions that help business reduce inventory touches, and supply chain waste."
+  },
+  {
+    "number": 267,
+    "symbol": "KEYS",
+    "name": "Keysight Technologies Inc",
+    "description": "Keysight Technologies, or Keysight, is an American company that manufactures electronics test and measurement equipment and software."
+  },
+  {
+    "number": 268,
+    "symbol": "BLL",
+    "name": "Ball Corporation",
+    "description": "Ball Corporation is an American company headquartered in Westminster, Colorado. It is best known for its early production of glass jars, lids, and related products used for home canning."
+  },
+  {
+    "number": 269,
+    "symbol": "WY",
+    "name": "Weyerhaeuser Company",
+    "description": "Weyerhaeuser Company is an American timberland company which owns nearly 12,400,000 acres of timberlands in the U.S. and manages an additional 14,000,000 acres timberlands under long-term licenses in Canada. The company also manufactures wood products. Weyerhaeuser is a real estate investment trust."
+  },
+  {
+    "number": 270,
+    "symbol": "HES",
+    "name": "Hess Corporation",
+    "description": "Hess Corporation (formerly Amerada Hess Corporation) is an American global independent energy company involved in the exploration and production of crude oil and natural gas."
+  },
+  {
+    "number": 271,
+    "symbol": "CPRT",
+    "name": "Copart Inc",
+    "description": "Copart, Inc. or simply Copart is a global provider of online vehicle auction and remarketing services to automotive resellers such as insurance, rental car, fleet and finance companies in 11 countries: the US, Canada, the UK, Germany, Ireland, Brazil, Spain, Dubai, Bahrain, Oman and Finland."
+  },
+  {
+    "number": 272,
+    "symbol": "HAL",
+    "name": "Halliburton Company",
+    "description": "Halliburton Company is an American multinational corporation. One of the world's largest oil field service companies, it has operations in more than 70 countries."
+  },
+  {
+    "number": 273,
+    "symbol": "NDAQ",
+    "name": "Nasdaq Inc",
+    "description": "Nasdaq, Inc. is an American multinational financial services corporation that owns and operates stock exchanges in the United States and Europe. It is headquartered in New York City."
+  },
+  {
+    "number": 274,
+    "symbol": "ES",
+    "name": "Eversource Energy",
+    "description": "Eversource Energy is a publicly traded, Fortune 500 energy company headquartered in Hartford, Connecticut, and Boston, Massachusetts."
+  },
+  {
+    "number": 275,
+    "symbol": "WEC",
+    "name": "WEC Energy Group Inc",
+    "description": "WEC Energy Group, based in Milwaukee, Wisconsin, provides electricity and natural gas to 4.4 million customers across four states."
+  },
+  {
+    "number": 276,
+    "symbol": "OKE",
+    "name": "ONEOK Inc",
+    "description": "Oneok, Inc. is a diversified Fortune 500 energy corporation based in Tulsa, Oklahoma."
+  },
+  {
+    "number": 277,
+    "symbol": "WTW",
+    "name": "Willis Towers Watson Public Limited Company",
+    "description": "None"
+  },
+  {
+    "number": 278,
+    "symbol": "TWTR",
+    "name": "Twitter Inc",
+    "description": "Twitter is an American microblogging and social networking service on which users post and interact with messages known as tweets. The service is provided by Twitter, Inc., a corporation based in San Francisco, California."
+  },
+  {
+    "number": 279,
+    "symbol": "DAL",
+    "name": "Delta Air Lines Inc",
+    "description": "Delta Air Lines, Inc., typically referred to as Delta, is one of the major airlines of the United States and a legacy carrier. It is headquartered in Atlanta, Georgia."
+  },
+  {
+    "number": 280,
+    "symbol": "WST",
+    "name": "West Pharmaceutical Services Inc",
+    "description": "West Pharmaceutical Services, Inc. is a designer and manufacturer of injectable pharmaceutical packaging and delivery systems. The company is headquartered in Exton, Pennsylvania."
+  },
+  {
+    "number": 281,
+    "symbol": "LUV",
+    "name": "Southwest Airlines Co",
+    "description": "Southwest Airlines Co., typically referred to as Southwest, is one of the major airlines of the United States and the world's largest low-cost carrier airline. It is headquartered in Dallas, Texas."
+  },
+  {
+    "number": 282,
+    "symbol": "AWK",
+    "name": "American Water Works Company Inc",
+    "description": "American Water is an American public utility company operating in the United States and Canada."
+  },
+  {
+    "number": 283,
+    "symbol": "CERN",
+    "name": "Cerner Corporation",
+    "description": "Cerner Corporation is an American supplier of health information technology (HIT) services, devices, and hardware. Its headquarters are in the suburb of North Kansas City, Missouri."
+  },
+  {
+    "number": 284,
+    "symbol": "LYV",
+    "name": "Live Nation Entertainment Inc",
+    "description": "Live Nation Entertainment, Inc is an American global entertainment company, founded in 2010, following the merger of Live Nation and Ticketmaster. The company promotes, operates, and manages ticket sales for live entertainment in the United States and internationally. It also owns and operates entertainment venues, and manages the careers of music artists."
+  },
+  {
+    "number": 285,
+    "symbol": "SWK",
+    "name": "Stanley Black & Decker Inc",
+    "description": "Stanley Black & Decker, Inc., formerly known as The Stanley Works, is a Fortune 500 American manufacturer of industrial tools and household hardware and provider of security products. Headquartered in the greater Hartford city of New Britain, Connecticut, Stanley Black & Decker is the result of the merger of Stanley Works and Black & Decker on March 12, 2010."
+  },
+  {
+    "number": 286,
+    "symbol": "LEN",
+    "name": "Lennar Corporation",
+    "description": "Lennar Corporation is a home construction and real estate company based in Fontainebleau, Florida."
+  },
+  {
+    "number": 287,
+    "symbol": "EXR",
+    "name": "Extra Space Storage Inc",
+    "description": "Extra Space Storage is a real estate investment trust headquartered in Cottonwood Heights, Utah that invests in self storage units."
+  },
+  {
+    "number": 288,
+    "symbol": "MKC",
+    "name": "McCormick & Company Incorporated",
+    "description": "McCormick & Company is an American multinational food company that manufactures, markets, and distributes spices, seasoning mixes, condiments, and other flavoring products to retail outlets, food manufacturers, and foodservice businesses."
+  },
+  {
+    "number": 289,
+    "symbol": "ANSS",
+    "name": "ANSYS Inc",
+    "description": "Ansys, Inc. is an American company based in Canonsburg, Pennsylvania. It develops and markets multiphysics engineering simulation software for product design, testing and operation and offers its products and services to customers worldwide."
+  },
+  {
+    "number": 290,
+    "symbol": "EFX",
+    "name": "Equifax Inc",
+    "description": "Equifax Inc. is an American multinational consumer credit reporting agency and is one of the three largest consumer credit reporting agencies, along with Experian and TransUnion. In addition to credit and demographic data and services to business, Equifax sells credit monitoring and fraud prevention services directly to consumers."
+  },
+  {
+    "number": 291,
+    "symbol": "CCL",
+    "name": "Carnival Corporation & plc",
+    "description": "Carnival Corporation & plc is a British-American cruise operator, currently the world's largest travel leisure company, with a combined fleet of over 100 vessels across 10 cruise line brands."
+  },
+  {
+    "number": 292,
+    "symbol": "HRL",
+    "name": "Hormel Foods Corporation",
+    "description": "Hormel Foods Corporation is an American company founded in 1891 in Austin, Minnesota, by George A. Hormel as George A. Hormel & Company. Originally focusing on the packaging and selling of ham, Spam, sausage and other pork, chicken, beef and lamb products to consumers; by the 1980s, Hormel began offering a wider range of packaged and refrigerated foods."
+  },
+  {
+    "number": 293,
+    "symbol": "EPAM",
+    "name": "EPAM Systems Inc",
+    "description": "EPAM Systems, Inc. provides digital platform engineering and software development services in North America, Europe, Russia, Belarus, Kazakhstan, Ukraine, Georgia, East Asia, Southeast Asia, and Australia. The company is headquartered in Newtown, Pennsylvania."
+  },
+  {
+    "number": 294,
+    "symbol": "CDW",
+    "name": "CDW Corporation",
+    "description": "CDW Corporation, headquartered in Lincolnshire, Illinois, is a provider of technology products and services for business, government and education."
+  },
+  {
+    "number": 295,
+    "symbol": "NTRS",
+    "name": "Northern Trust Corporation",
+    "description": "Northern Trust Corporation is a financial services company headquartered in Chicago, Illinois that caters to corporations, institutional investors, and ultra high net worth individuals."
+  },
+  {
+    "number": 296,
+    "symbol": "LH",
+    "name": "Laboratory Corporation of America Holdings",
+    "description": "Laboratory Corporation of America Holdings, more commonly known as Labcorp, is an American company headquartered in Burlington, North Carolina. It operates one of the largest clinical laboratory networks in the world, with a United States network of 36 primary laboratories."
+  },
+  {
+    "number": 297,
+    "symbol": "VMC",
+    "name": "Vulcan Materials Company",
+    "description": "Vulcan Materials Company (NYSE: VMC) is an American company based in Birmingham, Alabama. It is principally engaged in the production, distribution and sale of construction materials."
+  },
+  {
+    "number": 298,
+    "symbol": "GWW",
+    "name": "W.W. Grainger Inc",
+    "description": "W. W. Grainger, Inc. is an American Fortune 500 industrial supply company founded in 1927 in Chicago by William W. (Bill) Grainger."
+  },
+  {
+    "number": 299,
+    "symbol": "TSCO",
+    "name": "Tractor Supply Company",
+    "description": "Tractor Supply Company (TSCO) is an American retail chain of stores that offers products for home improvement, agriculture, lawn and garden maintenance, livestock, equine and pet care."
+  },
+  {
+    "number": 300,
+    "symbol": "MAA",
+    "name": "Mid-America Apartment Communities Inc",
+    "description": "Mid-America Apartment Communities (MAA) is a publicly traded real estate investment trust based in Memphis, Tennessee that invests in apartments in the Southeastern United States and the Southwestern United States."
+  },
+  {
+    "number": 301,
+    "symbol": "CHD",
+    "name": "Church & Dwight Co. Inc",
+    "description": "Church & Dwight Co., Inc., is a major American manufacturer of household products that is headquartered in Ewing, New Jersey."
+  },
+  {
+    "number": 302,
+    "symbol": "MLM",
+    "name": "Martin Marietta Materials Inc",
+    "description": "Martin Marietta Materials, Inc. is an American-based company. The company is a supplier of aggregates and heavy building materials, with operations spanning 26 states, Canada and the Caribbean. In particular, Martin Marietta supplies the resources for roads, sidewalks and foundations."
+  },
+  {
+    "number": 303,
+    "symbol": "FANG",
+    "name": "Diamondback Energy Inc",
+    "description": "Diamondback Energy is a company engaged in hydrocarbon exploration and headquartered in Midland, Texas."
+  },
+  {
+    "number": 304,
+    "symbol": "KEY",
+    "name": "KeyCorp",
+    "description": "KeyBank, the primary subsidiary of KeyCorp, is a regional bank headquartered in Cleveland."
+  },
+  {
+    "number": 305,
+    "symbol": "STX",
+    "name": "Seagate Technology Holdings plc",
+    "description": "Seagate Technology Holdings plc, an Irish public limited company (commonly referred to as Seagate) is an American data storage company."
+  },
+  {
+    "number": 306,
+    "symbol": "IT",
+    "name": "Gartner Inc",
+    "description": "Gartner, Inc, officially known as Gartner, is a global research and advisory firm providing information, advice, and tools for leaders in IT, finance, HR, customer service and support, communications, legal and compliance, marketing, sales, and supply chain functions. Its headquarters are in Stamford, Connecticut, United States."
+  },
+  {
+    "number": 307,
+    "symbol": "HIG",
+    "name": "The Hartford Financial Services Group Inc",
+    "description": "The Hartford Financial Services Group, Inc., usually known as The Hartford, is a United States-based investment and insurance company."
+  },
+  {
+    "number": 308,
+    "symbol": "MTB",
+    "name": "M&T Bank Corporation",
+    "description": "M&T Bank Corporation is an American bank holding company headquartered in Buffalo, New York."
+  },
+  {
+    "number": 309,
+    "symbol": "BBY",
+    "name": "Best Buy Co. Inc",
+    "description": "Best Buy Co., Inc. is an American multinational consumer electronics retailer headquartered in Richfield, Minnesota."
+  },
+  {
+    "number": 310,
+    "symbol": "FE",
+    "name": "FirstEnergy Corp",
+    "description": "FirstEnergy Corp is an electric utility headquartered in Akron, Ohio. Its subsidiaries and affiliates are involved in the distribution, transmission, and generation of electricity, as well as energy management and other energy-related services."
+  },
+  {
+    "number": 311,
+    "symbol": "DTE",
+    "name": "DTE Energy Company",
+    "description": "DTE Energy (formerly Detroit Edison until 1996) is a Detroit-based diversified energy company involved in the development and management of energy-related businesses and services in the United States and Canada."
+  },
+  {
+    "number": 312,
+    "symbol": "VRSN",
+    "name": "VeriSign Inc",
+    "description": "Verisign Inc. is an American company based in Reston, Virginia, United States that operates a diverse array of network infrastructure, including two of the Internet's thirteen root nameservers. Verisign also offers a range of security services, including managed DNS, distributed denial-of-service (DDoS) attack mitigation and cyber-threat reporting."
+  },
+  {
+    "number": 313,
+    "symbol": "VFC",
+    "name": "V.F. Corporation",
+    "description": "VF Corporation is an American worldwide apparel and footwear company founded in 1899 and headquartered in Denver, Colorado. The company's more than 30 brands are organized into three categories: Outdoor, Active and Work."
+  },
+  {
+    "number": 314,
+    "symbol": "DOV",
+    "name": "Dover Corporation",
+    "description": "Dover Corporation is an American conglomerate manufacturer of industrial products. Founded in 1955 in New York City, Dover is now based in Downers Grove, Illinois."
+  },
+  {
+    "number": 315,
+    "symbol": "FOX",
+    "name": "Fox Corporation",
+    "description": "Fox Corporation is an American mass media company headquartered in New York City."
+  },
+  {
+    "number": 315,
+    "symbol": "FOXA",
+    "name": "Fox Corporation",
+    "description": "Fox Corporation is an American mass media company headquartered in New York City."
+  },
+  {
+    "number": 317,
+    "symbol": "FTV",
+    "name": "Fortive Corporation",
+    "description": "Fortive is an American diversified industrial technology conglomerate company headquartered in Everett, Washington."
+  },
+  {
+    "number": 318,
+    "symbol": "HBAN",
+    "name": "Huntington Bancshares Incorporated",
+    "description": "Huntington Bancshares Incorporated is a bank holding company headquartered in Columbus, Ohio."
+  },
+  {
+    "number": 319,
+    "symbol": "EIX",
+    "name": "Edison International",
+    "description": "Edison International is a public utility holding company based in Rosemead, California. Its subsidiaries include Southern California Edison, and unregulated non-utility business assets Edison Energy."
+  },
+  {
+    "number": 320,
+    "symbol": "SYF",
+    "name": "Synchrony Financial",
+    "description": "Synchrony Financial is a consumer financial services company headquartered in Stamford, Connecticut, United States. The company offers consumer financing products, including credit, promotional financing and loyalty programs, installment lending to industries, and FDIC-insured consumer savings products through Synchrony Bank, its wholly owned online bank subsidiary."
+  },
+  {
+    "number": 321,
+    "symbol": "STE",
+    "name": "STERIS plc",
+    "description": "Steris Corporation is an American Irish-domiciled medical equipment company specializing in sterilization and surgical products for the US healthcare system."
+  },
+  {
+    "number": 322,
+    "symbol": "PKI",
+    "name": "PerkinElmer Inc",
+    "description": "PerkinElmer, Inc., previously styled Perkin-Elmer, is an American global corporation focused in the business areas of diagnostics, life science research, food, environmental and industrial testing. Its capabilities include detection, imaging, informatics, and service. PerkinElmer produces analytical instruments, genetic testing and diagnostic tools, medical imaging components, software, instruments, and consumables for multiple end markets."
+  },
+  {
+    "number": 323,
+    "symbol": "K",
+    "name": "Kellogg Company",
+    "description": "The Kellogg Company, doing business as Kellogg's, is an American multinational food manufacturing company headquartered in Battle Creek, Michigan, United States."
+  },
+  {
+    "number": 324,
+    "symbol": "URI",
+    "name": "United Rentals Inc",
+    "description": "United Rentals, Inc. (NYSE: URI) is the world's largest equipment rental company, with about 13 percent of the North American market share as of 2019."
+  },
+  {
+    "number": 325,
+    "symbol": "HPE",
+    "name": "Hewlett Packard Enterprise Company",
+    "description": "The Hewlett Packard Enterprise Company (HPE) is an American multinational enterprise information technology company based in Houston, Texas, United States."
+  },
+  {
+    "number": 326,
+    "symbol": "RJF",
+    "name": "Raymond James Financial Inc",
+    "description": "Raymond James Financial is an American multinational independent investment bank and financial services company providing financial services to individuals, corporations, and municipalities through its subsidiary companies that engage primarily in investment and financial planning, in addition to investment banking and asset management."
+  },
+  {
+    "number": 327,
+    "symbol": "CFG",
+    "name": "Citizens Financial Group Inc",
+    "description": "Citizens Financial Group, Inc. is an American bank headquartered in Providence, Rhode Island."
+  },
+  {
+    "number": 328,
+    "symbol": "SWKS",
+    "name": "Skyworks Solutions Inc",
+    "description": "Skyworks Solutions, Inc. is an American semiconductor company headquartered in Irvine, California, United States. Skyworks manufactures semiconductors for use in Radio Frequency (RF) and mobile communications systems."
+  },
+  {
+    "number": 329,
+    "symbol": "RF",
+    "name": "Regions Financial Corporation",
+    "description": "Regions Financial Corporation is a bank holding company headquartered in the Regions Center in Birmingham, Alabama. The company provides retail banking and commercial banking, trust, stockbrokerage, and mortgage services."
+  },
+  {
+    "number": 330,
+    "symbol": "ALB",
+    "name": "Albemarle Corporation",
+    "description": "Albemarle Corporation is a fine chemical manufacturing company based in Charlotte, North Carolina."
+  },
+  {
+    "number": 331,
+    "symbol": "GRMN",
+    "name": "Garmin Ltd",
+    "description": "Garmin Ltd. is an American multinational technology company with headquarters in Olathe, Kansas."
+  },
+  {
+    "number": 332,
+    "symbol": "AEE",
+    "name": "Ameren Corporation",
+    "description": "Ameren Corporation is an American power company created December 31, 1997, by the merger of St. Louis, Missouri's Union Electric Company (formerly NYSE: UEP) and the neighboring Central Illinois Public Service Company (CIPSCO Inc. holding, formerly NYSE: CIP) of Springfield, Illinois. It is now a holding company for several power companies and energy companies."
+  },
+  {
+    "number": 333,
+    "symbol": "IR",
+    "name": "Ingersoll Rand Inc",
+    "description": "Ingersoll Rand Inc., founded in 1859, is an American worldwide provider of industrial equipment, technologies and related parts and services to a broad and diverse customer base through a family of brands."
+  },
+  {
+    "number": 334,
+    "symbol": "RCL",
+    "name": "Royal Caribbean Group",
+    "description": "Royal Caribbean Group, formerly known as Royal Caribbean Cruises Ltd., is an American global cruise holding company incorporated in Liberia and based in Miami, Florida, US."
+  },
+  {
+    "number": 335,
+    "symbol": "ESS",
+    "name": "Essex Property Trust Inc",
+    "description": "Essex Property Trust is a publicly traded real estate investment trust that invests in apartments, primarily on the West Coast of the United States."
+  },
+  {
+    "number": 336,
+    "symbol": "MPWR",
+    "name": "Monolithic Power Systems Inc",
+    "description": "Monolithic Power Systems, Inc. is an American, publicly traded company headquartered in Kirkland, Washington. The company provides power circuits for systems found in cloud computing, telecom infrastructures, automotive, industrial applications and consumer applications."
+  },
+  {
+    "number": 337,
+    "symbol": "VTR",
+    "name": "Ventas Inc",
+    "description": "Ventas, Inc. is a real estate investment trust specializing in the ownership and management of health care facilities in the United States, Canada and the United Kingdom."
+  },
+  {
+    "number": 338,
+    "symbol": "ETR",
+    "name": "Entergy Corporation",
+    "description": "Entergy Corporation is a Fortune 500 integrated energy company engaged primarily in electric power production and retail distribution operations in the Deep South of the United States."
+  },
+  {
+    "number": 339,
+    "symbol": "DRE",
+    "name": "Duke Realty Corporation",
+    "description": "Duke Realty is a major United States real estate investment trust, based in Indianapolis, Indiana. It mainly owns industrial warehouses."
+  },
+  {
+    "number": 340,
+    "symbol": "ULTA",
+    "name": "Ulta Beauty Inc",
+    "description": "Ulta Beauty, Inc., formerly known as Ulta Salon, Cosmetics & Fragrance Inc., is an American chain of beauty stores headquartered in Bolingbrook, Illinois. Ulta Beauty carries cosmetics and skincare brands, men's and women's fragrances, nail products, bath and body products, beauty tools and haircare products."
+  },
+  {
+    "number": 341,
+    "symbol": "SBNY",
+    "name": "Signature Bank",
+    "description": "Signature Bank commercial banking products and services. The company is headquartered in New York, New York."
+  },
+  {
+    "number": 342,
+    "symbol": "NTAP",
+    "name": "NetApp Inc",
+    "description": "NetApp, Inc. is an American hybrid cloud data services and data management company headquartered in Sunnyvale, California. Founded in 1992 with an IPO in 1995, NetApp offers cloud data services for management of applications and data both online and physically."
+  },
+  {
+    "number": 343,
+    "symbol": "CINF",
+    "name": "Cincinnati Financial Corporation",
+    "description": "Cincinnati Financial Corporation offers property and casualty insurance, its main business, through The Cincinnati Insurance Company, The Cincinnati Indemnity Company and The Cincinnati Casualty Company."
+  },
+  {
+    "number": 344,
+    "symbol": "JBHT",
+    "name": "J.B. Hunt Transport Services Inc",
+    "description": "J.B. Hunt Transport Services, Inc. is an American transportation and logistics company based in Lowell, Arkansas."
+  },
+  {
+    "number": 345,
+    "symbol": "MGM",
+    "name": "MGM Resorts International",
+    "description": "MGM Resorts International is an American global hospitality and entertainment company operating destination resorts globally."
+  },
+  {
+    "number": 346,
+    "symbol": "PPL",
+    "name": "PPL Corporation",
+    "description": "PPL Corporation is an energy company headquartered in Allentown, Pennsylvania, United States."
+  },
+  {
+    "number": 347,
+    "symbol": "TDY",
+    "name": "Teledyne Technologies Incorporated",
+    "description": "Teledyne Technologies Incorporated is an American industrial conglomerate."
+  },
+  {
+    "number": 348,
+    "symbol": "WAT",
+    "name": "Waters Corporation",
+    "description": "Waters Corporation is a publicly traded Analytical Laboratory instrument and software company headquartered in Milford, Massachusetts."
+  },
+  {
+    "number": 349,
+    "symbol": "PAYC",
+    "name": "Paycom Software Inc",
+    "description": "Paycom Software, Inc., known simply as Paycom, is an American online payroll and human resource technology provider based in Oklahoma City, Oklahoma."
+  },
+  {
+    "number": 350,
+    "symbol": "COO",
+    "name": "The Cooper Companies Inc",
+    "description": "The Cooper Companies, Inc., branded as CooperCompanies, is a global medical device company headquartered in San Ramon, California."
+  },
+  {
+    "number": 351,
+    "symbol": "BXP",
+    "name": "Boston Properties Inc",
+    "description": "Boston Properties, Inc. is a publicly traded real estate investment trust that invests in office buildings in Boston, Los Angeles, New York City, San Francisco, and Washington, D.C."
+  },
+  {
+    "number": 352,
+    "symbol": "PFG",
+    "name": "Principal Financial Group Inc",
+    "description": "Principal Financial Group is an American global financial investment management and insurance company headquartered in Des Moines, Iowa."
+  },
+  {
+    "number": 353,
+    "symbol": "ENPH",
+    "name": "Enphase Energy Inc",
+    "description": "Enphase Energy is an American energy technology company headquartered in Fremont, California. Enphase designs and manufactures software-driven home energy solutions that span solar generation, home energy storage and web-based monitoring and control."
+  },
+  {
+    "number": 354,
+    "symbol": "GNRC",
+    "name": "Generac Holdings Inc",
+    "description": "Generac Holdings Inc., commonly referred to as Generac, is a Fortune 1000 American manufacturer of backup power generation products for residential, light commercial and industrial markets."
+  },
+  {
+    "number": 355,
+    "symbol": "TER",
+    "name": "Teradyne Inc",
+    "description": "Teradyne, Inc. is an American automatic test equipment (ATE) designer and manufacturer based in North Reading, Massachusetts."
+  },
+  {
+    "number": 356,
+    "symbol": "BRO",
+    "name": "Brown & Brown Inc",
+    "description": "Brown & Brown, Inc. markets and sells insurance products and services in the United States, Bermuda, Canada, the Cayman Islands, Ireland, and the United Kingdom. The company is headquartered in Daytona Beach, Florida."
+  },
+  {
+    "number": 357,
+    "symbol": "CLX",
+    "name": "The Clorox Company",
+    "description": "The Clorox Company, based in Oakland, California, is an American global manufacturer and marketer of consumer and professional products."
+  },
+  {
+    "number": 358,
+    "symbol": "DRI",
+    "name": "Darden Restaurants Inc",
+    "description": "Darden Restaurants, Inc. is an American multi-brand restaurant operator headquartered in Orlando."
+  },
+  {
+    "number": 359,
+    "symbol": "CTRA",
+    "name": "Coterra Energy Inc",
+    "description": "Coterra Energy Inc., an independent oil and gas company, explores, exploits, develops, produces and markets oil and gas properties in the United States. The company is headquartered in Houston, Texas."
+  },
+  {
+    "number": 360,
+    "symbol": "TTWO",
+    "name": "Take-Two Interactive Software Inc",
+    "description": "Take-Two Interactive Software, Inc. is an American video game holding company based in New York City. The company owns two major publishing labels, Rockstar Games and 2K, which operate internal game development studios."
+  },
+  {
+    "number": 361,
+    "symbol": "POOL",
+    "name": "Pool Corporation",
+    "description": "Pool Corporation is a major distributor of swimming pool supplies, equipment, and related outdoor products."
+  },
+  {
+    "number": 362,
+    "symbol": "FLT",
+    "name": "FLEETCOR Technologies Inc",
+    "description": "FleetCor Technologies, Inc. or FLEETCOR provides fuel cards and workforce payment products and services."
+  },
+  {
+    "number": 363,
+    "symbol": "CMS",
+    "name": "CMS Energy Corporation",
+    "description": "CMS Energy (NYSE: CMS), based in Jackson, Michigan, is an energy company that is focused principally on utility operations in Michigan."
+  },
+  {
+    "number": 364,
+    "symbol": "IP",
+    "name": "International Paper Company",
+    "description": "The International Paper Company (NYSE: IP) is an American pulp and paper company, the largest such company in the world. The company is headquartered in Memphis, Tennessee."
+  },
+  {
+    "number": 365,
+    "symbol": "WAB",
+    "name": "Westinghouse Air Brake Technologies Corporation",
+    "description": "Wabtec Corporation (derived from Westinghouse Air Brake Technologies Corporation) is an American company formed by the merger of the Westinghouse Air Brake Company (WABCO) and MotivePower Industries Corporation in 1999. It is headquartered in Pittsburgh, Pennsylvania."
+  },
+  {
+    "number": 366,
+    "symbol": "GPC",
+    "name": "Genuine Parts Company",
+    "description": "Genuine Parts Company (GPC) is an American service organization engaged in the distribution of automotive replacement parts, industrial replacement parts, office products and electrical/electronic materials."
+  },
+  {
+    "number": 367,
+    "symbol": "EXPD",
+    "name": "Expeditors International of Washington Inc",
+    "description": "Expeditors (Expeditors International of Washington) is an American worldwide logistics and freight forwarding company headquartered in Seattle, Washington."
+  },
+  {
+    "number": 368,
+    "symbol": "AMCR",
+    "name": "Amcor plc",
+    "description": "Amcor plc is an Australian-American, UK-domiciled packaging company. It develops and produces flexible packaging, rigid containers, specialty cartons, closures and services for food, beverage, pharmaceutical, medical-device, home and personal-care, and other products."
+  },
+  {
+    "number": 369,
+    "symbol": "VTRS",
+    "name": "Viatris Inc",
+    "description": "Viatris Inc. is an American global healthcare company headquartered in Canonsburg, Pennsylvania."
+  },
+  {
+    "number": 370,
+    "symbol": "BIO",
+    "name": "Bio-Rad Laboratories Inc",
+    "description": "Bio-Rad Laboratories, Inc. is an American developer and manufacturer of specialized technological products for the life science research and clinical diagnostics markets."
+  },
+  {
+    "number": 371,
+    "symbol": "CTLT",
+    "name": "Catalent Inc",
+    "description": "Catalent, Inc. (Catalent Pharma Solutions) is a multinational corporation headquartered in Somerset, New Jersey. It is a global provider of delivery technologies, development, drug manufacturing, biologics, gene therapies and consumer health products."
+  },
+  {
+    "number": 372,
+    "symbol": "OMC",
+    "name": "Omnicom Group Inc",
+    "description": "Omnicom Group Inc. is an American global media, marketing and corporate communications holding company, headquartered in New York City."
+  },
+  {
+    "number": 373,
+    "symbol": "UDR",
+    "name": "UDR Inc",
+    "description": "UDR Inc. is a publicly traded real estate investment trust that invests in apartments. The company is organized in Maryland with its headquarters in Highlands Ranch, Colorado."
+  },
+  {
+    "number": 374,
+    "symbol": "HOLX",
+    "name": "Hologic Inc",
+    "description": "Hologic, Inc. is a medical technology company primarily focused on women's health; it sells medical devices for diagnostics, surgery, and medical imaging."
+  },
+  {
+    "number": 375,
+    "symbol": "WDC",
+    "name": "Western Digital Corporation",
+    "description": "Western Digital Corporation (WDC, commonly known as Western Digital or WD) is an American computer hard disk drive manufacturer and data storage company, headquartered in San Jose, California. It designs, manufactures and sells data technology products, including storage devices, data center systems and cloud storage services."
+  },
+  {
+    "number": 376,
+    "symbol": "CAG",
+    "name": "Conagra Brands Inc",
+    "description": "Conagra Brands, Inc. (formerly ConAgra Foods) is an American consumer packaged goods holding company headquartered in Chicago, Illinois. Conagra makes and sells products under various brand names that are available in supermarkets, restaurants, and food service establishments."
+  },
+  {
+    "number": 377,
+    "symbol": "NVR",
+    "name": "NVR Inc",
+    "description": "NVR, Inc. is a company engaged in home construction. It also operates a mortgage banking and title services business. The company primarily operates on the East Coast of the United States."
+  },
+  {
+    "number": 378,
+    "symbol": "TRMB",
+    "name": "Trimble Inc",
+    "description": "Trimble Inc. is a Sunnyvale, California-based hardware, software and services technology company. Trimble services global industries in Agriculture, Building & Construction, Geospatial, Natural Resources and Utilities, Governments, Transportation and others. Trimble also does hardware development of Global Navigation Satellite System (GNSS) receivers, scanners, laser rangefinders, unmanned aerial vehicles (UAVs), inertial navigation systems and software processing tools."
+  },
+  {
+    "number": 379,
+    "symbol": "PEAK",
+    "name": "Healthpeak Properties Inc",
+    "description": "Healthpeak Properties, Inc. is a real estate investment trust that invests in real estate related to the healthcare industry including senior housing, life science, and medical offices. It is organized in Maryland and headquartered in Denver, Colorado."
+  },
+  {
+    "number": 380,
+    "symbol": "KMX",
+    "name": "CarMax Inc",
+    "description": "CarMax is a used vehicle retailer based in the United States. It operates two business segments: CarMax Sales Operations and CarMax Auto Finance."
+  },
+  {
+    "number": 381,
+    "symbol": "MRO",
+    "name": "Marathon Oil Corporation",
+    "description": "Marathon Oil Corporation is an American company engaged in hydrocarbon exploration incorporated in Ohio and headquartered in the Marathon Oil Tower in Houston, Texas."
+  },
+  {
+    "number": 382,
+    "symbol": "CZR",
+    "name": "Caesars Entertainment Inc",
+    "description": "Caesars Entertainment, Inc., formerly Eldorado Resorts, Inc., is an American hotel and casino entertainment company founded and based in Reno, Nevada, that operates more than 50 properties."
+  },
+  {
+    "number": 383,
+    "symbol": "TYL",
+    "name": "Tyler Technologies Inc",
+    "description": "Tyler Technologies, Inc., based in Plano, Texas, is the largest provider of software to the United States public sector."
+  },
+  {
+    "number": 384,
+    "symbol": "CNP",
+    "name": "CenterPoint Energy Inc",
+    "description": "CenterPoint Energy, Inc. is an American Fortune 500 electric and natural gas utility serving several markets in the American states of Arkansas, Indiana, Louisiana, Minnesota, Mississippi, Oklahoma, and Texas."
+  },
+  {
+    "number": 385,
+    "symbol": "MOS",
+    "name": "The Mosaic Company",
+    "description": "The Mosaic Company is a Fortune 500 company based in Tampa, Florida which mines phosphate and potash, and operates through segments such as international distribution and Mosaic Fertilizantes."
+  },
+  {
+    "number": 386,
+    "symbol": "BR",
+    "name": "Broadridge Financial Solutions Inc",
+    "description": "Broadridge Financial Solutions is a public corporate services company founded in 2007 as a spin-off from Automatic Data Processing. The main business of Broadridge is as a service provider supplying public companies with proxy statements, annual reports and other financial documents, and shareholder communications solutions, such as virtual annual meetings."
+  },
+  {
+    "number": 387,
+    "symbol": "XYL",
+    "name": "Xylem Inc",
+    "description": "Xylem Inc. is a large American water technology provider, in public utility, residential, commercial, agricultural and industrial settings."
+  },
+  {
+    "number": 388,
+    "symbol": "EMN",
+    "name": "Eastman Chemical Company",
+    "description": "Eastman Chemical Company is an American company primarily involved in the chemical industry. Once a subsidiary of Kodak, today it is an independent global specialty materials company that produces a broad range of advanced materials, chemicals and fibers for everyday purposes. The company is headquartered in Kingsport, Tennessee."
+  },
+  {
+    "number": 389,
+    "symbol": "NLOK",
+    "name": "NortonLifeLock Inc",
+    "description": "NortonLifeLock Inc., is an American software company headquartered in Tempe, Arizona, United States. The company provides cybersecurity software and services."
+  },
+  {
+    "number": 390,
+    "symbol": "AKAM",
+    "name": "Akamai Technologies Inc",
+    "description": "Akamai Technologies, Inc. is a global content delivery network (CDN), cybersecurity, and cloud service company, providing web and Internet security services."
+  },
+  {
+    "number": 391,
+    "symbol": "ETSY",
+    "name": "Etsy Inc",
+    "description": "Etsy, Inc. is an American e-commerce company focused on handmade or vintage items and craft supplies. These items fall under a wide range of categories, including jewelry, bags, clothing, home decor and furniture, toys, art, as well as craft supplies and tools."
+  },
+  {
+    "number": 392,
+    "symbol": "WRB",
+    "name": "W. R. Berkley Corporation",
+    "description": "W. R. Berkley Corporation is a commercial lines property & casualty insurance holding company organized in Delaware and based in Greenwich, Connecticut."
+  },
+  {
+    "number": 393,
+    "symbol": "DPZ",
+    "name": "Domino's Pizza Inc",
+    "description": "Domino's Pizza, Inc., branded as Domino's, is an American multinational pizza restaurant chain founded in 1960. The corporation is headquartered at the Domino's Farms Office Park in Ann Arbor, Michigan."
+  },
+  {
+    "number": 394,
+    "symbol": "TECH",
+    "name": "Bio-Techne Corporation",
+    "description": "Bio-Techne Corporation develops, manufactures, and sells life science reagents, instruments, and services for the global clinical diagnostic and research markets. The company is headquartered in Minneapolis, Minnesota."
+  },
+  {
+    "number": 395,
+    "symbol": "CF",
+    "name": "CF Industries Holdings Inc",
+    "description": "CF Industries Holdings, Inc. is a North American manufacturer and distributor of agricultural fertilizers, based in Deerfield, Illinois."
+  },
+  {
+    "number": 396,
+    "symbol": "DGX",
+    "name": "Quest Diagnostics Incorporated",
+    "description": "Quest Diagnostics is an American clinical laboratory. A Fortune 500 company, Quest operates in the United States, Puerto Rico, Mexico, and Brazil. Quest also maintains collaborative agreements with various hospitals and clinics across the globe."
+  },
+  {
+    "number": 397,
+    "symbol": "CE",
+    "name": "Celanese Corporation",
+    "description": "Celanese Corporation is a Fortune 500 global technology and specialty materials company headquartered in Irving, Texas, United States."
+  },
+  {
+    "number": 398,
+    "symbol": "J",
+    "name": "Jacobs Engineering Group Inc",
+    "description": "Jacobs Engineering Group Inc. (NYSE: J) is an American international technical professional services firm. The company provides technical, professional and construction services, as well as scientific and specialty consulting for a broad range of clients globally, including companies, organizations, and government agencies."
+  },
+  {
+    "number": 399,
+    "symbol": "UAL",
+    "name": "United Airlines Holdings Inc",
+    "description": "United Airlines Holdings, Inc. (formerly known as United Continental Holdings, Inc., UAL Corporation, Allegis Corporation and founded originally as UAL, Inc.) is a publicly traded airline holding company headquartered in the Willis Tower in Chicago. UAH owns and operates United Airlines, Inc."
+  },
+  {
+    "number": 400,
+    "symbol": "TXT",
+    "name": "Textron Inc",
+    "description": "Textron Inc. is an American industrial conglomerate based in Providence, Rhode Island. Textron's subsidiaries include Arctic Cat, Bell Textron, Textron Aviation (which itself includes the Beechcraft, Hawker, and Cessna brands), and Lycoming Engines."
+  },
+  {
+    "number": 401,
+    "symbol": "ROL",
+    "name": "Rollins Inc",
+    "description": "Rollins, Inc. is a North American consumer and commercial services company."
+  },
+  {
+    "number": 402,
+    "symbol": "DISH",
+    "name": "DISH Network Corporation",
+    "description": "DISH Network Corporation is an American television provider and the owner of the direct-broadcast satellite provider DISH, commonly known as DISH Network, and the over-the-top IPTV service, Sling TV."
+  },
+  {
+    "number": 403,
+    "symbol": "L",
+    "name": "Loews Corporation",
+    "description": "Loews Corporation is an American conglomerate headquartered in New York City. The company's majority-stake holdings include CNA Financial Corporation, Diamond Offshore Drilling, Boardwalk Pipeline Partners, Loews Hotels and Altium Packaging."
+  },
+  {
+    "number": 404,
+    "symbol": "BEN",
+    "name": "Franklin Resources Inc",
+    "description": "Franklin Resources Inc. is an American multinational holding company that, together with its subsidiaries, is referred to as Franklin Templeton; it is a global investment firm founded in New York City in 1947 as Franklin Distributors, Inc."
+  },
+  {
+    "number": 405,
+    "symbol": "FDS",
+    "name": "FactSet Research Systems Inc",
+    "description": "FactSet Research Systems Inc. provides integrated financial information and analytical applications to investment and corporate communities in the Americas, EMEA, and Asia Pacific. The company is headquartered in Norwalk, Connecticut."
+  },
+  {
+    "number": 406,
+    "symbol": "INCY",
+    "name": "Incyte Corporation",
+    "description": "Incyte Corp is an American pharmaceutical company based in Alapocas, Delaware."
+  },
+  {
+    "number": 407,
+    "symbol": "DISCK",
+    "name": "Discovery Inc",
+    "description": "Discovery, Inc. is an American multinational mass media factual television company based in New York City. Established in 1985, the company primarily operates a group of factual and lifestyle television brands, such as the namesake Discovery Channel, Animal Planet, Science Channel, and TLC."
+  },
+  {
+    "number": 408,
+    "symbol": "DISCA",
+    "name": "Discovery Inc",
+    "description": "Discovery, Inc. is an American multinational mass media factual television company based in New York City. Established in 1985, the company primarily operates a group of factual and lifestyle television brands, such as the namesake Discovery Channel, Animal Planet, Science Channel, and TLC."
+  },
+  {
+    "number": 409,
+    "symbol": "SJM",
+    "name": "The J. M. Smucker Company",
+    "description": "The J. M. Smucker Company, also known as Smucker and Smucker's, is an American manufacturer of jam, peanut butter, jelly, fruit syrups, beverages, shortening, ice cream toppings, and other products in North America. Smucker's headquarters are located in Orrville, Ohio."
+  },
+  {
+    "number": 410,
+    "symbol": "CAH",
+    "name": "Cardinal Health Inc",
+    "description": "Cardinal Health, Inc. is an American multinational health care services company."
+  },
+  {
+    "number": 411,
+    "symbol": "AVY",
+    "name": "Avery Dennison Corporation",
+    "description": "Avery Dennison Corporation is a multinational manufacturer and distributor of pressure-sensitive adhesive materials (such as self-adhesive labels), apparel branding labels and tags, RFID inlays, and specialty medical products. The company is headquartered in Glendale, California."
+  },
+  {
+    "number": 412,
+    "symbol": "CEG",
+    "name": "Constellation Energy Corporation",
+    "description": "Constellation Energy Corporation is an energy producer in the United States. The company is headquartered in Baltimore, Maryland."
+  },
+  {
+    "number": 413,
+    "symbol": "CRL",
+    "name": "Charles River Laboratories International Inc",
+    "description": "Charles River Laboratories International, Inc., is an American pharmaceutical company specializing in a variety of preclinical and clinical laboratory, gene therapy and cell therapy services for the Pharmaceutical, Medical device and Biotechnology industries. It also supplies assorted biomedical products and outsourcing services for research and development in the pharmaceutical industry and offer support in the fields of basic research, drug discovery, safety and efficacy, clinical support, and manufacturing."
+  },
+  {
+    "number": 414,
+    "symbol": "FMC",
+    "name": "FMC Corporation",
+    "description": "FMC Corporation (Food Machinery and Chemical Corporation) is an American chemical manufacturing company headquartered in Philadelphia, Pennsylvania."
+  },
+  {
+    "number": 415,
+    "symbol": "TFX",
+    "name": "Teleflex Incorporated",
+    "description": "Teleflex Incorporated, headquartered in Wayne, Pennsylvania, is an American provider of specialty medical devices for a range of procedures in critical care and surgery."
+  },
+  {
+    "number": 416,
+    "symbol": "KIM",
+    "name": "Kimco Realty Corporation",
+    "description": "Kimco Realty Corporation is a real estate investment trust (REIT) that invests in shopping centers."
+  },
+  {
+    "number": 417,
+    "symbol": "PWR",
+    "name": "Quanta Services Inc",
+    "description": "Quanta Services is an American corporation that provides infrastructure services for electric power, pipeline, industrial and communications industries. Capabilities include the planning, design, installation, program management, maintenance and repair of most types of network infrastructure."
+  },
+  {
+    "number": 418,
+    "symbol": "HWM",
+    "name": "Howmet Aerospace Inc",
+    "description": "Howmet Aerospace Inc. is an American aerospace company based in Pittsburgh, Pennsylvania. The company manufactures components for jet engines, fasteners and titanium structures for aerospace applications, and forged aluminum wheels for heavy trucks."
+  },
+  {
+    "number": 419,
+    "symbol": "QRVO",
+    "name": "Qorvo Inc",
+    "description": "Qorvo is an American semiconductor company that designs, manufactures, and supplies radio-frequency systems for applications that drive wireless and broadband communications, as well as foundry services."
+  },
+  {
+    "number": 420,
+    "symbol": "IEX",
+    "name": "IDEX Corporation",
+    "description": "IDEX Corporation, based in Northbrook, Illinois, is a publicly traded company engaged in the development, design, and manufacture of fluidics systems and specialty engineered products."
+  },
+  {
+    "number": 421,
+    "symbol": "ATO",
+    "name": "Atmos Energy Corporation",
+    "description": "Atmos Energy Corporation, headquartered in Dallas, Texas, is one of the United States' largest natural-gas-only distributors."
+  },
+  {
+    "number": 422,
+    "symbol": "LKQ",
+    "name": "LKQ Corporation",
+    "description": "LKQ Corporation (Like Kind and Quality) is an American provider of alternative and speciality parts to repair and accessorise automobiles and other vehicles."
+  },
+  {
+    "number": 423,
+    "symbol": "LNT",
+    "name": "Alliant Energy Corporation",
+    "description": "Alliant Energy is a public utility holding company headquartered in Madison, Wisconsin providing power in Iowa and Wisconsin."
+  },
+  {
+    "number": 424,
+    "symbol": "IPG",
+    "name": "The Interpublic Group of Companies Inc",
+    "description": "The Interpublic Group of Companies, Inc. (IPG) is an American publicly traded advertising company. The company consists of five major networks: FCB, IPG Mediabrands, McCann Worldgroup, MullenLowe Group, and Marketing Specialists, as well as a number of independent specialty agencies in the areas of public relations, sports marketing, talent representation, and healthcare."
+  },
+  {
+    "number": 425,
+    "symbol": "AES",
+    "name": "The AES Corporation",
+    "description": "The AES Corporation is a Fortune 500 company that generates and distributes electrical power. AES is headquartered in Arlington, Virginia."
+  },
+  {
+    "number": 426,
+    "symbol": "MKTX",
+    "name": "MarketAxess Holdings Inc",
+    "description": "MarketAxess Holdings Inc. (MarketAxess) is an international financial technology company that operates an electronic trading platform for the institutional credit markets, and also provides market data and post-trade services."
+  },
+  {
+    "number": 427,
+    "symbol": "PKG",
+    "name": "Packaging Corporation of America",
+    "description": "Packaging Corporation of America is an American manufacturing company based in Lake Forest, Illinois."
+  },
+  {
+    "number": 428,
+    "symbol": "EVRG",
+    "name": "Evergy Inc",
+    "description": "Evergy is an American investor-owned utility (IOU) with publicly traded stock that has its headquarters in Topeka, Kansas, and in Kansas City, Missouri."
+  },
+  {
+    "number": 429,
+    "symbol": "MAS",
+    "name": "Masco Corporation",
+    "description": "Masco Corporation is a manufacturer of products for the home improvement and new home construction markets."
+  },
+  {
+    "number": 430,
+    "symbol": "HST",
+    "name": "Host Hotels & Resorts Inc",
+    "description": "Host Hotels & Resorts, Inc. is a real estate investment trust that invests in hotels."
+  },
+  {
+    "number": 431,
+    "symbol": "SEDG",
+    "name": "SolarEdge Technologies Inc",
+    "description": "SolarEdge Technologies, Inc. designs, develops and sells optimized direct current (DC) inverter systems for solar photovoltaic (PV) installations worldwide. The company is headquartered in Herzliya, Israel."
+  },
+  {
+    "number": 432,
+    "symbol": "ABMD",
+    "name": "Abiomed Inc",
+    "description": "Abiomed is a publicly-traded medical devices company that develops and manufactures external and implantable circulatory support devices. The company is headquartered in Danvers, Massachusetts and has three additional offices, two in Germany in the cities of Berlin and Aachen, and another in Tokyo, Japan."
+  },
+  {
+    "number": 433,
+    "symbol": "CPB",
+    "name": "Campbell Soup Company",
+    "description": "Campbell Soup Company, doing business as Campbell's, is an American processed food and snack company."
+  },
+  {
+    "number": 434,
+    "symbol": "HAS",
+    "name": "Hasbro Inc",
+    "description": "Hasbro, Inc. is an American multinational conglomerate with toy, board game, and media assets, headquartered in Pawtucket, Rhode Island."
+  },
+  {
+    "number": 435,
+    "symbol": "AAP",
+    "name": "Advance Auto Parts Inc",
+    "description": "Advance Auto Parts, Inc. (Advance) is an American automotive aftermarket parts provider. Headquartered in Raleigh, North Carolina, it serves both professional installer and do-it-yourself (DIY) customers."
+  },
+  {
+    "number": 436,
+    "symbol": "NDSN",
+    "name": "Nordson Corporation",
+    "description": "Nordson Corporation designs, manufactures, and markets products and systems for dispensing, applying, and controlling adhesives, coatings, polymers, sealants, biomaterials, and other fluids globally. The company is headquartered in Westlake, Ohio."
+  },
+  {
+    "number": 437,
+    "symbol": "RHI",
+    "name": "Robert Half International Inc",
+    "description": "Robert Half International, or commonly referred as, Robert Half, is a global human resource consulting firm based in Menlo Park, California."
+  },
+  {
+    "number": 438,
+    "symbol": "NWS",
+    "name": "News Corporation",
+    "description": "News Corporation is an American mass media and publishing company operating across digital real estate information, news media, book publishing, and cable television."
+  },
+  {
+    "number": 439,
+    "symbol": "NWSA",
+    "name": "News Corporation",
+    "description": "News Corporation is an American mass media and publishing company operating across digital real estate information, news media, book publishing, and cable television."
+  },
+  {
+    "number": 440,
+    "symbol": "LDOS",
+    "name": "Leidos Holdings Inc",
+    "description": "Leidos, formerly known as Science Applications International Corporation (SAIC), is an American defense, aviation, information technology (Lockheed Martin IS&GS), and biomedical research company headquartered in Reston, Virginia, that provides scientific, engineering, systems integration, and technical services."
+  },
+  {
+    "number": 441,
+    "symbol": "CTXS",
+    "name": "Citrix Systems Inc",
+    "description": "Citrix Systems, Inc. is an American multinational software company that provides server, application and desktop virtualization, networking, software as a service (SaaS), and cloud computing technologies."
+  },
+  {
+    "number": 442,
+    "symbol": "BBWI",
+    "name": "Bath Body Works Inc",
+    "description": "None"
+  },
+  {
+    "number": 443,
+    "symbol": "PTC",
+    "name": "PTC Inc",
+    "description": "PTC Inc. is an American computer software and services company founded in 1985 and headquartered in Boston, Massachusetts."
+  },
+  {
+    "number": 444,
+    "symbol": "CBOE",
+    "name": "Cboe Global Markets Inc",
+    "description": "Cboe Global Markets is an American company that owns the Chicago Board Options Exchange and the stock exchange operator BATS Global Markets."
+  },
+  {
+    "number": 445,
+    "symbol": "CMA",
+    "name": "Comerica Incorporated",
+    "description": "Comerica Incorporated is a financial services company headquartered in Dallas, Texas."
+  },
+  {
+    "number": 446,
+    "symbol": "JKHY",
+    "name": "Jack Henry & Associates Inc",
+    "description": "Jack Henry & Associates, Inc. is a technology company and payment processing service for the financial services industry."
+  },
+  {
+    "number": 447,
+    "symbol": "IRM",
+    "name": "Iron Mountain Incorporated",
+    "description": "Iron Mountain Inc. (NYSE: IRM) is an American enterprise information management services company founded in 1951 and headquartered in Boston, Massachusetts."
+  },
+  {
+    "number": 448,
+    "symbol": "LNC",
+    "name": "Lincoln National Corporation",
+    "description": "Lincoln National Corporation is an American holding company, which operates multiple insurance and investment management businesses through subsidiary companies. Lincoln Financial Group is the marketing name for LNC and its subsidiary companies."
+  },
+  {
+    "number": 449,
+    "symbol": "WRK",
+    "name": "WestRock Company",
+    "description": "WestRock is an American corrugated packaging company headquartered in Sandy Springs, Georgia."
+  },
+  {
+    "number": 450,
+    "symbol": "FFIV",
+    "name": "F5 Networks Inc",
+    "description": "F5, Inc. is an American company that specializes in application delivery networking (ADN), application availability & performance, multi-cloud management, application security, network security, access & authorization and online fraud prevention. F5 is headquartered in Seattle, Washington, with additional development, manufacturing, and administrative offices worldwide."
+  },
+  {
+    "number": 451,
+    "symbol": "FBHS",
+    "name": "Fortune Brands Home & Security Inc",
+    "description": "Fortune Brands Home & Security, Inc. is an American manufacturer of home and security products, headquartered in Deerfield, Illinois. Its portfolio of businesses and brands includes Moen and the House of Rohl; outdoor living and security products from Therma-Tru, Larson, Fiberon, Master Lock and SentrySafe; and MasterBrand Cabinets."
+  },
+  {
+    "number": 452,
+    "symbol": "XRAY",
+    "name": "DENTSPLY SIRONA Inc",
+    "description": "Dentsply Sirona is an American dental equipment manufacturer and dental consumables producer that markets its products in over 120 countries."
+  },
+  {
+    "number": 453,
+    "symbol": "WHR",
+    "name": "Whirlpool Corporation",
+    "description": "The Whirlpool Corporation is an American multinational manufacturer and marketer of home appliances, headquartered in Benton Charter Township, Michigan, United States."
+  },
+  {
+    "number": 454,
+    "symbol": "PHM",
+    "name": "PulteGroup Inc",
+    "description": "PulteGroup, Inc. (previously known as Pulte Homes) is a home construction company based in Atlanta, Georgia, United States."
+  },
+  {
+    "number": 455,
+    "symbol": "CHRW",
+    "name": "C.H. Robinson Worldwide Inc",
+    "description": "C.H. Robinson is an American Fortune 500 provider of multimodal transportation services and third-party logistics (3PL). The company offers freight transportation, transportation management, brokerage and warehousing. It offers truckload, less than truckload, air freight, intermodal, and ocean transportation."
+  },
+  {
+    "number": 456,
+    "symbol": "RE",
+    "name": "Everest Re Group Ltd",
+    "description": "Everest Re Group is a reinsurance company based in Hamilton, Bermuda."
+  },
+  {
+    "number": 457,
+    "symbol": "APA",
+    "name": "APA Corporation",
+    "description": "APA Corporation is the holding company for Apache Corporation, a company engaged in hydrocarbon exploration. It is organized in Delaware and headquartered in Houston."
+  },
+  {
+    "number": 458,
+    "symbol": "AAL",
+    "name": "American Airlines Group Inc",
+    "description": "American Airlines Group Inc. is an American publicly traded airline holding company headquartered in Fort Worth, Texas."
+  },
+  {
+    "number": 459,
+    "symbol": "SNA",
+    "name": "Snap-on Incorporated",
+    "description": "Snap-on Incorporated is an American designer, manufacturer and marketer of high-end tools and equipment for professional use in the transportation industry including the automotive, heavy duty, equipment, marine, aviation, and railroad industries."
+  },
+  {
+    "number": 460,
+    "symbol": "HSIC",
+    "name": "Henry Schein Inc",
+    "description": "Henry Schein, Inc. is an American distributor of health care products and services with a presence in 32 countries."
+  },
+  {
+    "number": 461,
+    "symbol": "REG",
+    "name": "Regency Centers Corporation",
+    "description": "Regency Centers Corporation is a real estate investment trust based in Jacksonville, Florida and is one of the largest operators of shopping centers with grocery stores as anchor tenants."
+  },
+  {
+    "number": 462,
+    "symbol": "AOS",
+    "name": "A. O. Smith Corporation",
+    "description": "A. O. Smith Corporation is an American manufacturer of both residential and commercial water heaters and boilers and the largest manufacturer and marketer of water heaters in North America. It also supplies water treatment products in the Asian market."
+  },
+  {
+    "number": 463,
+    "symbol": "NI",
+    "name": "NiSource Inc",
+    "description": "NiSource Inc. is one of the largest fully regulated utility companies in the United States. The company is based in Merrillville, Indiana."
+  },
+  {
+    "number": 464,
+    "symbol": "JNPR",
+    "name": "Juniper Networks Inc",
+    "description": "Juniper Networks, Inc. is an American multinational corporation headquartered in Sunnyvale, California. The company develops and markets networking products, including routers, switches, network management software, network security products, and software-defined networking technology."
+  },
+  {
+    "number": 465,
+    "symbol": "DVA",
+    "name": "DaVita Inc",
+    "description": "DaVita Inc. provides kidney dialysis services through a network of outpatient dialysis centers in the United States."
+  },
+  {
+    "number": 466,
+    "symbol": "NWL",
+    "name": "Newell Brands Inc",
+    "description": "Newell Brands is an American worldwide manufacturer, marketer and distributor of consumer and commercial products with a portfolio of brands."
+  },
+  {
+    "number": 467,
+    "symbol": "UHS",
+    "name": "Universal Health Services Inc",
+    "description": "UnitedHealth Group Incorporated is an American for-profit multinational managed healthcare and insurance company based in Minnetonka, Minnesota. It offers health care products and insurance services."
+  },
+  {
+    "number": 468,
+    "symbol": "WYNN",
+    "name": "Wynn Resorts Limited",
+    "description": "Wynn Resorts, Limited is an American publicly traded corporation based in Paradise, Nevada that is a developer and operator of high end hotels and casinos."
+  },
+  {
+    "number": 469,
+    "symbol": "TAP",
+    "name": "Molson Coors Beverage Company",
+    "description": "The Molson Coors Beverage Company, commonly known as Molson Coors, is a multinational drink and brewing company headquartered in Chicago in the United States."
+  },
+  {
+    "number": 470,
+    "symbol": "GL",
+    "name": "Globe Life Inc",
+    "description": "Globe Life is a financial services holding company that operates through its wholly owned subsidiaries providing life insurance, annuity, and supplemental health insurance products. The company is based in McKinney, Texas."
+  },
+  {
+    "number": 471,
+    "symbol": "BWA",
+    "name": "BorgWarner Inc",
+    "description": "BorgWarner Inc. is an American multinational automotive supplier headquartered in Auburn Hills, Michigan."
+  },
+  {
+    "number": 472,
+    "symbol": "TPR",
+    "name": "Tapestry Inc",
+    "description": "Tapestry, Inc. is an American multinational luxury fashion holding company. It is based in New York City and is the parent company of three major brands: Coach New York, Kate Spade New York and Stuart Weitzman."
+  },
+  {
+    "number": 473,
+    "symbol": "SEE",
+    "name": "Sealed Air Corporation",
+    "description": "Sealed Air Corporation is a packaging company known for its brands: Cryovac food packaging and Bubble Wrap cushioning packaging."
+  },
+  {
+    "number": 474,
+    "symbol": "IVZ",
+    "name": "Invesco Ltd",
+    "description": "Invesco Ltd. is an American independent investment management company that is headquartered in Atlanta, Georgia."
+  },
+  {
+    "number": 475,
+    "symbol": "LUMN",
+    "name": "Lumen Technologies Inc",
+    "description": "Lumen Technologies (formerly CenturyLink) is an American telecommunications company headquartered in Monroe, Louisiana, that offers communications, network services, security, cloud solutions, voice, and managed services."
+  },
+  {
+    "number": 476,
+    "symbol": "CDAY",
+    "name": "Ceridian HCM Holding Inc",
+    "description": "Ceridian HCM Holding Inc., is a Human Capital Management (HCM) software company in the United States, Canada, and internationally. The company is headquartered in Minneapolis, Minnesota."
+  },
+  {
+    "number": 477,
+    "symbol": "ALLE",
+    "name": "Allegion plc",
+    "description": "Allegion plc is an American-Irish provider based in Dublin of security products, for homes and businesses. It comprises thirty one global brands, including CISA, Interflex, LCN, Schlage and Von Duprin."
+  },
+  {
+    "number": 478,
+    "symbol": "MHK",
+    "name": "Mohawk Industries Inc",
+    "description": "Mohawk Industries is an American flooring manufacturer based in Calhoun, Georgia, United States. Mohawk produces floor covering products for residential and commercial applications in North America and residential applications in Europe."
+  },
+  {
+    "number": 479,
+    "symbol": "LW",
+    "name": "Lamb Weston Holdings Inc",
+    "description": "Lamb Weston Holdings, Inc. is an American food processing company that is one of the world's largest producers and processors of frozen french fries and other frozen potato products. It is headquartered in Eagle, Idaho."
+  },
+  {
+    "number": 480,
+    "symbol": "PNR",
+    "name": "Pentair plc",
+    "description": "Pentair plc (PNR) is an American water treatment company with its main U.S. office in Minneapolis, Minnesota."
+  },
+  {
+    "number": 481,
+    "symbol": "AIZ",
+    "name": "Assurant Inc",
+    "description": "Assurant, Inc. is a global provider of risk management products and services with headquarters in New York City."
+  },
+  {
+    "number": 482,
+    "symbol": "NRG",
+    "name": "NRG Energy Inc",
+    "description": "NRG Energy, Inc. is a large American energy company, headquartered in Houston, Texas. It was formerly the wholesale arm of Northern States Power Company (NSP), which became Xcel Energy, but became independent in 2000. NRG Energy is involved in energy generation and retail electricity."
+  },
+  {
+    "number": 483,
+    "symbol": "FRT",
+    "name": "Federal Realty Investment Trust",
+    "description": "Federal Realty Investment Trust is a real estate investment trust that invests in shopping centers in the Northeastern United States, the Mid-Atlantic states, California, and South Florida."
+  },
+  {
+    "number": 484,
+    "symbol": "OGN",
+    "name": "Organon & Co",
+    "description": "Organon & Co. is an American pharmaceutical company headquartered in Jersey City, New Jersey. Organon specializes in the following core therapeutic fields: reproductive medicine, contraception, psychiatry, Hormone replacement therapy (HRT), and anesthesia. The company sells to international markets."
+  },
+  {
+    "number": 485,
+    "symbol": "VNO",
+    "name": "Vornado Realty Trust",
+    "description": "Vornado Realty Trust is a real estate investment trust formed in Maryland, with its primary office in New York City. The company invests in office buildings and street retail in Manhattan."
+  },
+  {
+    "number": 486,
+    "symbol": "RL",
+    "name": "Ralph Lauren Corporation",
+    "description": "Ralph Lauren Corporation is an American fashion company producing products ranging from the mid-range to the luxury segments. They are known for the clothing, marketing and distribution of products in four categories: apparel, home, accessories, and fragrances."
+  },
+  {
+    "number": 487,
+    "symbol": "PBCT",
+    "name": "People's United Financial Inc",
+    "description": "People's United Financial, Inc. is an American bank holding company that owns People's United Bank."
+  },
+  {
+    "number": 488,
+    "symbol": "NCLH",
+    "name": "Norwegian Cruise Line Holdings Ltd",
+    "description": "Norwegian Cruise Line Holdings Ltd., is a cruise company in North America, Europe, Asia-Pacific and internationally. The company is headquartered in Miami, Florida."
+  },
+  {
+    "number": 489,
+    "symbol": "DXC",
+    "name": "DXC Technology Company",
+    "description": "DXC Technology is an American multinational corporation that provides business-to-business information technology services."
+  },
+  {
+    "number": 490,
+    "symbol": "PENN",
+    "name": "Penn National Gaming Inc",
+    "description": "Penn National Gaming, Inc. is an American operator of casinos and racetracks, based in Wyomissing, Pennsylvania."
+  },
+  {
+    "number": 491,
+    "symbol": "PNW",
+    "name": "Pinnacle West Capital Corporation",
+    "description": "Pinnacle West Capital is a utility holding company that owns Arizona Public Service and Bright Canyon Energy."
+  },
+  {
+    "number": 492,
+    "symbol": "HII",
+    "name": "Huntington Ingalls Industries Inc",
+    "description": "Huntington Ingalls Industries (HII) is the largest military shipbuilding company in the United States as well as a provider of professional services to partners in government and industry."
+  },
+  {
+    "number": 493,
+    "symbol": "UAA",
+    "name": "Under Armour Inc",
+    "description": "Under Armour, Inc. is an American sports equipment company that manufactures footwear, sports and casual apparel. Under Armour's global headquarters are located in Baltimore, Maryland."
+  },
+  {
+    "number": 494,
+    "symbol": "UA",
+    "name": "Under Armour Inc",
+    "description": "Under Armour, Inc. is an American sports equipment company that manufactures footwear, sports and casual apparel. Under Armour's global headquarters are located in Baltimore, Maryland."
+  },
+  {
+    "number": 495,
+    "symbol": "IPGP",
+    "name": "IPG Photonics Corporation",
+    "description": "IPG Photonics is a manufacturer of fiber lasers."
+  },
+  {
+    "number": 496,
+    "symbol": "PVH",
+    "name": "PVH Corp",
+    "description": "PVH Corp., formerly known as the Phillips-Van Heusen Corporation, is an American clothing company which owns brands such as Van Heusen, Tommy Hilfiger, Calvin Klein, IZOD, Arrow, Warner's, Olga, True & Co., and Geoffrey Beene."
+  },
+  {
+    "number": 497,
+    "symbol": "NLSN",
+    "name": "Nielsen Holdings plc",
+    "description": "Nielsen Holdings PLC is an American, UK-domiciled, information, data and market measurement firm."
+  }
+]
