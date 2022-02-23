@@ -6,8 +6,8 @@ const delayFunc = require("./delayFuncs");
 const API_KEY = process.env.ALPHAVANTAGEAPI;
 
 router.post("/", function (req, res, next) {
-  const sql = `SELECT symbol FROM company_info`;
-
+  const sql = `select symbol from (select symbol, rank() over (order by cap desc) as 'ranking' from company_info) ranked where ranked.ranking <=100;`;
+  //select symbol from (select symbol, rank() over (order by cap desc) as 'ranking' from company_info) ranked where ranked.ranking <=100;
   async function getSymbol(countResult) {
     let symbol;
     let count = 500;

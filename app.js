@@ -74,14 +74,14 @@ const getIntradayData = require("./routes/getIntradayData");
 const getCompanyInfo = require("./routes/getCompanyInfo");
 const kakaoAuth = require("./routes/kakao/auth");
 const realtime = require("./routes/realtimeData");
-
+const cursorPaging = require("./routes/cursorPaging");
 app.use("/searchData", searchData);
 app.use("/daily", getDailyData);
 app.use("/intraday", getIntradayData);
 app.use("/company-info", getCompanyInfo);
 app.use("/auth", kakaoAuth);
 app.use("/realtime", realtime);
-
+app.use("/cursorPaging", cursorPaging);
 app.use("/swagger", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
 // error handler
