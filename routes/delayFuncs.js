@@ -3,10 +3,13 @@ const delay = function () {
   return new Promise((resolve) => setTimeout(resolve, randomDelay));
 };
 
-const sleep = function (ms) {
+const sleep = function (ms, symbol) {
+  // console.log("sleep test");
   return new Promise((r) => setTimeout(r, ms));
 };
-
+const tt = function (symbol) {
+  return new Promise((r) => console.log(symbol));
+};
 module.exports = {
   delay,
   sleep,

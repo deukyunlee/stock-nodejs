@@ -5,66 +5,82 @@ const axios = require("axios");
 const delayFunc = require("./delayFuncs");
 const API_KEY = process.env.ALPHAVANTAGEAPI;
 
-router.post("/", function (req, res) {
-  // cron.schedule("0 * * * *", symbolCreator)
-  async function getSymbol() {
-    let count = 100;
+router.post("/", function (req, res, next) {
+  const sql = `SELECT symbol FROM company_info`;
+
+  async function getSymbol(countResult) {
     let symbol;
-    var data = await crawling.crawlSymbol();
-    // data2 = fs.readFileSync("./symbol.json")
-    // parsedData = JSON.stringify(parsedData)
-    for (var key in data) {
-      //console.log(data);
-      url = new Array();
-      //   console.log(data[key].title);
-      symbol = data[key].symbol;
-      url[
-        key
-      ] = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&outputsize=compact&apikey=${API_KEY}`;
+    let count = 500;
 
-      //   console.log(url[key]);
-      await delayFunc.sleep(12050).then(() =>
-        axios({
-          method: "get",
-          url: url[key],
-        })
-          .then((res) => {
-            //   console.log(res.data);
-            var res2 = res.data;
-            var content = res2["Time Series (Daily)"];
-
-            if (content) {
-              const keys = Object.keys(content);
-              // console.log(keys)
-
-              const sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
-              count -= 1;
-              console.log(
-                symbol + " inserted into database : " + count + " symbols left"
-              );
-
-              // extract and insert data from API into mysql DB
-              keys.forEach(function (key, index) {
-                const row = content[key];
-                const date = keys[index];
-                const open = parseFloat(row["1. open"]);
-                const high = parseFloat(row["2. high"]);
-                const low = parseFloat(row["3. low"]);
-                const close = parseFloat(row["4. close"]);
-                const volume = parseInt(row["5. volume"]);
-                const array = [symbol, date, open, high, low, close, volume];
-                db.query(sql, [array], function (err, rows, fields) {});
-              });
+    for (var i in countResult) {
+      await delayFunc.sleep(12050).then(() => {
+        symbol = new Promise((resolve, reject) => {
+          console.log(countResult[i].symbol);
+          resolve(countResult[i].symbol);
+        }).then((symbol) => {
+          let url = [];
+          console.log(i);
+          url = new Promise((resolve, reject) => {
+            for (var i in symbol) {
+              url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${API_KEY}`;
             }
-          })
-          .catch(() => {
-            console.log("rejected");
-          })
-      );
+
+            console.log(url);
+            resolve(url);
+          }).then((url) => {
+            axios({
+              method: "get",
+              url: url,
+            }).then((res) => {
+              //   console.log(res.data);
+              let res2 = res.data;
+              const content = res2["Global Quote"];
+              const sy = content["01. symbol"];
+              const open = content["02. open"];
+              const high = content["03. high"];
+              const low = content["04. low"];
+              const close = content["05. price"];
+              const volume = content["06. volume"];
+              const ltd = content["07. latest trading day"];
+              const change = content["09. change"];
+              const changePercent = content["10. change percent"];
+              if (sy) {
+                const sql = `insert IGNORE into daily(symbol, open, high, low, close, volume, last_trading_day, change_value, change_percent) values (?)`;
+                count -= 1;
+                console.log(
+                  symbol +
+                    " inserted into database : " +
+                    count +
+                    " symbols left"
+                );
+
+                const array = [
+                  sy,
+                  open,
+                  high,
+                  low,
+                  close,
+                  volume,
+                  ltd,
+                  change,
+                  changePercent,
+                ];
+                console.log(array);
+                db.query(sql, [array], function (err, rows, fields) {});
+              }
+            });
+          });
+        });
+      });
     }
   }
-  getSymbol().then(() => {
-    console.log("-----all the pieces of data are inserted!-----");
+
+  db.query(sql, (err, countResult) => {
+    try {
+      getSymbol(countResult);
+    } catch (exception) {
+      console.log(exception);
+    }
   });
 });
 

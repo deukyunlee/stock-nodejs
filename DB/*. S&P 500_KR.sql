@@ -101,7 +101,7 @@ UPDATE company_info SET kr_name = '엔터기', kr_desc = "엔터기(Entergy)는 
 UPDATE company_info SET kr_name = '듀크 부동산', kr_desc = "듀크 부동산(Duke Realty)은 인디애나폴리스에 본사를 둔 미국의 부동산 투자 신탁 회사이다. 주로 산업용 창고를 소유하고 있다." WHERE symbol = 'DRE';
 UPDATE company_info SET kr_name = '울타 뷰티', kr_desc = "울타 뷰티(Ulta Beauty, Inc.)는 미국 일리노이주 볼링브룩에 본사를 둔 미용 전문 체인점이다. 울타뷰티는 화장품 및 스킨케어 브랜드, 남녀공용 향수, 네일제품, 목욕 및 바디제품, 미용도구, 헤어케어 제품을 취급한다." WHERE symbol = 'ULTA';
 
-UPDATE company_info SET kr_name = '', kr_desc = "Signature Bank 상업 은행 상품 및 서비스. 이 회사는 뉴욕에 본사를 두고 있다." WHERE symbol = 'SBNY';
+UPDATE company_info SET kr_name = '시그니처 뱅크', kr_desc = "Signature Bank 상업 은행 상품 및 서비스. 이 회사는 뉴욕에 본사를 두고 있다." WHERE symbol = 'SBNY';
 UPDATE company_info SET kr_name = '넷앱', kr_desc = "NetApp, Inc.는 캘리포니아 서니베일에 본사를 둔 미국의 하이브리드 클라우드 데이터 서비스 및 데이터 관리 회사입니다. 1995년 IPO를 통해 1992년에 설립된 NetApp은 온라인 및 물리적 애플리케이션 및 데이터 관리를 위한 클라우드 데이터 서비스를 제공합니다." WHERE symbol = 'NTAP';
 UPDATE company_info SET kr_name = '신시내티 파이낸셜', kr_desc = "신시내티 파이낸셜 코퍼레이션은 신시내티 보험사, 신시내티 배상사, 신시내티 손해보험사를 통해 주요 사업인 손해보험을 제공하고 있다." WHERE symbol = 'CINF';
 UPDATE company_info SET kr_name = 'J.B. 헌트', kr_desc = "J.B. 헌트 운송 서비스(J.B. Hunt Transport Services, Inc.)는 미국 아칸소주 로웰에 본사를 둔 운송 및 물류 회사이다." WHERE symbol = 'JBHT';
