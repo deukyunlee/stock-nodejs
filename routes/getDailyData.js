@@ -53,7 +53,6 @@ router.post("/", function (req, res, next) {
                     count +
                     " symbols left"
                 );
-
                 const array = [
                   sy,
                   open,
