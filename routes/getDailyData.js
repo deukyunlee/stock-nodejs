@@ -32,6 +32,7 @@ router.post("/", function (req, res, next) {
           console.log("no url");
         }
       }
+
       try {
         res = await axios({
           method: "get",
@@ -40,6 +41,7 @@ router.post("/", function (req, res, next) {
       } catch {
         console.log("axios failed");
       }
+
       try {
         resData = await res.data;
       } catch {
@@ -56,26 +58,28 @@ router.post("/", function (req, res, next) {
       const ltd = content["07. latest trading day"];
       const change = content["09. change"];
       const changePercent = content["10. change percent"];
-      if (sy) {
-        const sql = `insert IGNORE into daily(symbol, open, high, low, close, volume, last_trading_day, change_value, change_percent) values (?)`;
-        count -= 1;
-        console.log(
-          symbol + " inserted into database : " + count + " symbols left"
-        );
-        const array = [
-          sy,
-          open,
-          high,
-          low,
-          close,
-          volume,
-          ltd,
-          change,
-          changePercent,
-        ];
-        console.log(array);
-        db.query(sql, [array], function (err, rows, fields) {});
+
+      const sql = `insert IGNORE into daily(symbol, open, high, low, close, volume, last_trading_day, change_value, change_percent) values (?)`;
+      count -= 1;
+      console.log(
+        symbol + " inserted into database : " + count + " symbols left"
+      );
+      if (count == 0) {
+        console.log("-----all the pieces of data are inserted!-----");
       }
+      const array = [
+        sy,
+        open,
+        high,
+        low,
+        close,
+        volume,
+        ltd,
+        change,
+        changePercent,
+      ];
+      // console.log(array);
+      db.query(sql, [array], function (err, rows, fields) {});
     }
   }
 

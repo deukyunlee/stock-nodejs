@@ -9,15 +9,21 @@ const db = require("../app.js");
 router.get("/", (req, res) => {
   let limit = req.query.limit;
   let offset = req.query.offset;
-  let cursor = Number(req.query.cursor);
+  let cursor = req.query.cursor;
 
-  limit !== undefined && limit !== "" ? limit : 20;
-  offset !== undefined && offset !== "" ? offset : 0;
+  limit = limit !== undefined && limit !== "" ? limit : 20;
+  offset = offset !== undefined && offset !== "" ? offset : 0;
+  cursor = cursor !== undefined && cursor !== "" ? cursor : 0;
 
   limit = parseInt(limit);
   offset = parseInt(offset);
+  cursor = parseInt(cursor);
 
-  sql = `select * from (select symbol, rank() over (order by cap desc) as 'ranking' from daily natural join company_info) ranked where ranked.ranking < ${cursor} limit ${offset}, ${limit};`;
+  sql = `select * from ( select last_trading_day, change_percent, symbol, rank() over(order by volume desc) as ranking from daily where last_trading_day in (select max(last_trading_day) from daily)) ranked where ranked.ranking> ${cursor} limit ${offset}, ${limit}`;
+
+  //select symbol, change_percent, name from (select symbol, change_percent, name, rank1.ranking from (select symbol, change_percent, name, rank() over (order by cap desc) as 'ranking', MAX(last_trading_day) from daily natural join company_info group by symbol) rank1) ranked where ranked.ranking > ${cursor} limit ${offset}, ${limit};
+  //sql = `select symbol, change_percent, name from (select symbol, change_percent, name, rank() over (order by cap desc) as 'ranking' from daily natural join company_info where last_trading_day <= NOW() group by symbol) ranked where ranked.ranking > ${cursor} limit ${offset}, ${limit};`;
+
   //select * from (select symbol, rank() over (order by volume desc) as 'ranking' from daily) ranked where ranked.ranking = 1;
   db.query(sql, function (err, rows, fields) {
     if (err) throw err;
