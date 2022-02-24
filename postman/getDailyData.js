@@ -13,69 +13,72 @@ router.post("/", function (req, res, next) {
   async function getSymbol(countResult) {
     let symbol;
     let count = 100;
-    let url = [];
-    let res;
-    let resData;
+
     for (var i in countResult) {
-      await delayFunc.sleep(12050);
-      try {
-        symbol = await countResult[i].symbol;
-      } catch {
-        console.log("no symbol");
-      }
-
-      for (var i in symbol) {
-        try {
-          url =
-            await `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${API_KEY}`;
-        } catch {
-          console.log("no url");
-        }
-      }
-      try {
-        res = await axios({
-          method: "get",
-          url: url,
+      await delayFunc.sleep(12050).then(() => {
+        symbol = new Promise((resolve, reject) => {
+          // console.log(countResult[i].symbol);
+          if (countResult[i].symbol) {
+            resolve(countResult[i].symbol);
+          } else {
+            reject("no symbol");
+          }
+        }).then((symbol) => {
+          let url = [];
+          console.log(i);
+          url = new Promise((resolve, reject) => {
+            for (var i in symbol) {
+              url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${API_KEY}`;
+            }
+            if (url) {
+              resolve(url);
+            } else {
+              reject("no url");
+            }
+          }).then((url) => {
+            axios({
+              method: "get",
+              url: url,
+            }).then((res) => {
+              //   console.log(res.data);
+              let res2 = res.data;
+              const content = res2["Global Quote"];
+              const sy = content["01. symbol"];
+              const open = content["02. open"];
+              const high = content["03. high"];
+              const low = content["04. low"];
+              const close = content["05. price"];
+              const volume = content["06. volume"];
+              const ltd = content["07. latest trading day"];
+              const change = content["09. change"];
+              const changePercent = content["10. change percent"];
+              if (sy) {
+                const sql = `insert IGNORE into daily(symbol, open, high, low, close, volume, last_trading_day, change_value, change_percent) values (?)`;
+                count -= 1;
+                console.log(
+                  symbol +
+                    " inserted into database : " +
+                    count +
+                    " symbols left"
+                );
+                const array = [
+                  sy,
+                  open,
+                  high,
+                  low,
+                  close,
+                  volume,
+                  ltd,
+                  change,
+                  changePercent,
+                ];
+                console.log(array);
+                db.query(sql, [array], function (err, rows, fields) {});
+              }
+            });
+          });
         });
-      } catch {
-        console.log("axios failed");
-      }
-      try {
-        resData = await res.data;
-      } catch {
-        console.log("no data");
-      }
-
-      const content = resData["Global Quote"];
-      const sy = content["01. symbol"];
-      const open = content["02. open"];
-      const high = content["03. high"];
-      const low = content["04. low"];
-      const close = content["05. price"];
-      const volume = content["06. volume"];
-      const ltd = content["07. latest trading day"];
-      const change = content["09. change"];
-      const changePercent = content["10. change percent"];
-      if (sy) {
-        const sql = `insert IGNORE into daily(symbol, open, high, low, close, volume, last_trading_day, change_value, change_percent) values (?)`;
-        count -= 1;
-        console.log(
-          symbol + " inserted into database : " + count + " symbols left"
-        );
-        const array = [
-          sy,
-          open,
-          high,
-          low,
-          close,
-          volume,
-          ltd,
-          change,
-          changePercent,
-        ];
-        console.log(array);
-        db.query(sql, [array], function (err, rows, fields) {});
-      }
+      });
     }
   }
 
