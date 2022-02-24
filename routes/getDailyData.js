@@ -6,33 +6,31 @@ const delayFunc = require("./delayFuncs");
 const API_KEY = process.env.ALPHAVANTAGEAPI;
 
 router.post("/", function (req, res, next) {
-  const sql = `select symbol from (select symbol, rank() over (order by cap desc) as 'ranking' from company_info) ranked where ranked.ranking <=100;`;
+  const sql = `select symbol from company_info;`;
+  //const sql = `select symbol from (select symbol, rank() over (order by cap desc) as 'ranking' from company_info) ranked where ranked.ranking <=100;`;
+
   // 500개의 데이터 중 시총 순으로 100개만 정렬해서 DB에 들어감
   // select symbol from daily;
   // .then 블럭 async/await으로 리팩토링 필요
   async function getSymbol(countResult) {
     let symbol;
-    let count = 100;
+    let count = 500;
     let url = [];
     let res;
     let resData;
+    let content;
     for (var i in countResult) {
       await delayFunc.sleep(12050);
+
       try {
-        symbol = await countResult[i].symbol;
-      } catch {
-        console.log("no symbol");
-      }
+        symbol = countResult[i].symbol;
 
-      for (var i in symbol) {
-        try {
-          url =
-            await `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${API_KEY}`;
-        } catch {
-          console.log("no url");
+        for (var i in symbol) {
+          url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&outputsize=compact&apikey=${API_KEY}`;
         }
+      } catch {
+        console.log("symbol or url not found");
       }
-
       try {
         res = await axios({
           method: "get",
@@ -43,43 +41,39 @@ router.post("/", function (req, res, next) {
       }
 
       try {
-        resData = await res.data;
+        resData = res.data;
       } catch {
         console.log("no data");
       }
 
-      const content = resData["Global Quote"];
-      const sy = content["01. symbol"];
-      const open = content["02. open"];
-      const high = content["03. high"];
-      const low = content["04. low"];
-      const close = content["05. price"];
-      const volume = content["06. volume"];
-      const ltd = content["07. latest trading day"];
-      const change = content["09. change"];
-      const changePercent = content["10. change percent"];
+      try {
+        content = await resData["Time Series (Daily)"];
+        if (content) {
+          const keys = Object.keys(content);
 
-      const sql = `insert IGNORE into daily(symbol, open, high, low, close, volume, last_trading_day, change_value, change_percent) values (?)`;
-      count -= 1;
-      console.log(
-        symbol + " inserted into database : " + count + " symbols left"
-      );
-      if (count == 0) {
-        console.log("-----all the pieces of data are inserted!-----");
+          const sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
+
+          count -= 1;
+          console.log(
+            symbol + " inserted into database : " + count + " symbols left"
+          );
+
+          keys.forEach(function (key, index) {
+            const row = content[key];
+            const date = keys[index];
+            const open = parseFloat(row["1. open"]);
+            const high = parseFloat(row["2. high"]);
+            const low = parseFloat(row["3. low"]);
+            const close = parseFloat(row["4. close"]);
+            const volume = parseInt(row["5. volume"]);
+            const array = [symbol, date, open, high, low, close, volume];
+            db.query(sql, [array], function (err, rows, fields) {});
+          });
+        }
+      } catch {
+        console.log("sql error");
       }
-      const array = [
-        sy,
-        open,
-        high,
-        low,
-        close,
-        volume,
-        ltd,
-        change,
-        changePercent,
-      ];
       // console.log(array);
-      db.query(sql, [array], function (err, rows, fields) {});
     }
   }
 

@@ -18,9 +18,12 @@ router.get("/", (req, res) => {
   limit = parseInt(limit);
   offset = parseInt(offset);
 
-  cursor = offset === 0 ? 0 : offset * limit;
+  cursor = offset === 0 ? 0 : limit * offset;
 
-  sql = `select * from ( select change_percent, symbol, rank() over(order by volume desc) as ranking from daily where last_trading_day in (select max(last_trading_day) from daily)) ranked where ranked.ranking> ${cursor} limit ${limit}`;
+  sql = `select * from ( select change_percent, symbol, rank() over(order by volume desc) as ranking from daily where last_trading_day in (select max(last_trading_day) from daily)) ranked where ranked.ranking >${cursor} order by ranked.ranking asc limit ${limit}`;
+
+  // select symbol, id from test where id<=6 order by id desc limit 2;
+  //  sql = `select * from ( select change_percent, symbol, rank() over(order by volume desc) as ranking from daily where last_trading_day in (select max(last_trading_day) from daily)) ranked where ranked.ranking > ${cursor} limit ${limit}`;
 
   //select symbol, change_percent, name from (select symbol, change_percent, name, rank1.ranking from (select symbol, change_percent, name, rank() over (order by cap desc) as 'ranking', MAX(last_trading_day) from daily natural join company_info group by symbol) rank1) ranked where ranked.ranking > ${cursor} limit ${offset}, ${limit};
   //sql = `select symbol, change_percent, name from (select symbol, change_percent, name, rank() over (order by cap desc) as 'ranking' from daily natural join company_info where last_trading_day <= NOW() group by symbol) ranked where ranked.ranking > ${cursor} limit ${offset}, ${limit};`;
