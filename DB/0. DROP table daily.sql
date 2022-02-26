@@ -1,3 +1,0 @@
-
-
--- DROP table daily;
