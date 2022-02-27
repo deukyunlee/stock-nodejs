@@ -10,7 +10,6 @@ const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 const swaggerUI = require("swagger-ui-express");
 const swaggerJSDoc = require("swagger-jsdoc");
-
 var app = express();
 // const stockCron = require("./routes/stock2")
 // stockCron
