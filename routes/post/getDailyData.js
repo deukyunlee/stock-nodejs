@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const db = require("../app.js");
-const crawling = require("./crawling");
 const axios = require("axios");
 const delayFunc = require("./delayFuncs");
 const API_KEY = process.env.ALPHAVANTAGEAPI;
@@ -10,17 +9,6 @@ const API_KEY = process.env.ALPHAVANTAGEAPI;
 //sql = `select LEAD(symbol, ${id}) over (order by symbol) from daily group by symbol;`;
 
 router.post("/", function (req, res, next) {
-  // async function here() {
-
-  //   let symbol;
-
-  //   let id;
-  //   await db.query(sql, (err, currentId) => {
-  //     id = currentId;
-  //   });
-  //   await console.log(id);
-  // }
-
   async function SymbolExists(curId) {
     let count = 500;
     let url = [];
@@ -29,8 +17,8 @@ router.post("/", function (req, res, next) {
     let content;
     let symbol;
     // console.log(curId[0].id);
-    id = curId[0].id;
-
+    let id = curId[0].id;
+    count -= id;
     let sql = `select LEAD(symbol, ${id}) over (order by symbol) as list from company_info group by symbol;`;
     try {
       console.log("here");
@@ -39,11 +27,12 @@ router.post("/", function (req, res, next) {
           for (var i in result) {
             await delayFunc.sleep(12050);
             id += 1;
+            count -= 1;
             symbol = result[i].list;
             if (symbol) {
               try {
                 url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&outputsize=compact&apikey=${API_KEY}`;
-                console.log(url);
+                // console.log(url);
               } catch {
                 console.log("symbol or url not found");
               }
@@ -53,7 +42,7 @@ router.post("/", function (req, res, next) {
                 method: "get",
                 url: url,
               });
-              console.log(resApi);
+              // console.log(resApi);
             } catch {
               console.log("axios failed");
             }
@@ -71,7 +60,6 @@ router.post("/", function (req, res, next) {
 
                 let sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
 
-                count -= 1;
                 console.log(
                   symbol +
                     " inserted into database : " +
@@ -94,7 +82,7 @@ router.post("/", function (req, res, next) {
                 let sql2 = `UPDATE sequence SET id = ${id}, symbol = '${symbol}' where t_name = "daily";`;
                 db.query(sql2, function (err, rows, fields) {});
 
-                console.log(id);
+                // console.log(id);
               }
             } catch {
               console.log("sql error");
@@ -168,9 +156,8 @@ router.post("/", function (req, res, next) {
 
           const sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
 
-          count -= 1;
           console.log(
-            symbol + " inserted into database : " + count + " symbols left"
+            symbol + " inserted into database : " + count - id + " symbols left"
           );
 
           keys.forEach(function (key, index) {

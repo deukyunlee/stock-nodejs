@@ -5,9 +5,6 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const fs = require("fs");
 const mysql = require("mysql");
-const bodyparser = require("body-parser");
-const indexRouter = require("./routes/index");
-const usersRouter = require("./routes/users");
 const swaggerUI = require("swagger-ui-express");
 const swaggerJSDoc = require("swagger-jsdoc");
 var app = express();
@@ -64,23 +61,31 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/", indexRouter);
-app.use("/users", usersRouter);
-
-const searchData = require("./routes/searchData");
-const getDailyData = require("./routes/getDailyData");
-const getIntradayData = require("./routes/getIntradayData");
-const getCompanyInfo = require("./routes/getCompanyInfo");
+/*GET*/
+const searchData = require("./routes/get/searchData");
+const getDailyData = require("./routes/get/getDailyData");
+const getIntradayData = require("./routes/get/getIntradayData");
+const getCompanyInfo = require("./routes/get/getCompanyInfo");
 const kakaoAuth = require("./routes/kakao/auth");
-const realtime = require("./routes/realtimeData");
-const cursorPaging = require("./routes/cursorPaging");
+const cursorPaging = require("./routes/get/cursorPaging");
+
 app.use("/searchData", searchData);
 app.use("/daily", getDailyData);
 app.use("/intraday", getIntradayData);
 app.use("/company-info", getCompanyInfo);
-app.use("/auth", kakaoAuth);
-app.use("/realtime", realtime);
 app.use("/cursorPaging", cursorPaging);
+
+/*POST*/
+const postCompanyInfo = require("./routes/post/postCompanyInfo");
+const postDailyData = require("./routes/post/postDailyData");
+const postIntradayData = require("./routes/post/postIntradayData");
+
+app.use("/post-daily", postDailyData);
+app.use("/post-company-info", postCompanyInfo);
+app.use("/post-intraday", postIntradayData);
+
+/* AUTH | Swagger */
+app.use("/auth", kakaoAuth);
 app.use("/swagger", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
 // error handler
