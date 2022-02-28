@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const db = require("../app.js");
+const db = require("../../app.js");
 
 //  let sql = `select id from sequence where t_name = "daily"`;
 

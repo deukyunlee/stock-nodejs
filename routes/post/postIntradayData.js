@@ -1,8 +1,8 @@
 const router = require("express").Router();
-const db = require("../app.js");
-const crawling = require("./crawling");
+const db = require("../../app.js");
+const crawling = require("../crawling");
 const axios = require("axios");
-const delayFunc = require("./delayFuncs");
+const delayFunc = require("../delayFuncs");
 const API_KEY = process.env.ALPHAVANTAGEAPI;
 
 router.post("/", function (req, res) {

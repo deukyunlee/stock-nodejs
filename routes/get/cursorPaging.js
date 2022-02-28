@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const db = require("../app.js");
+const db = require("../../app.js");
 // const crawling = require("./crawling");
 // const axios = require("axios");
 // const delayFunc = require("./delayFuncs");

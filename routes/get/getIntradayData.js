@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const db = require("../app.js");
+const db = require("../../app.js");
 
 router.get("/:symbol", function (req, res) {
   const symbol = req.params.symbol;
