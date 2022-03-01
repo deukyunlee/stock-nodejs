@@ -51,11 +51,19 @@ router.post("/", function (req, res, next) {
           const array = [symbol, date, open, high, low, close, volume];
           db.query(sql, [array], function (err, rows, fields) {});
         });
-        let sql = `select max(timestamp) from daily where symbol = 'a'`;
+        sql = `select max(timestamp) as max from daily where symbol = 'a'`;
         db.query(sql, function (err, rows, fields) {
-          sql = `INSERT INTO company_info(updatedAt) VALUES(?) ON DUPLICATE KEY UPDATE updatedAt = ?`;
-
-          db.query(sql);
+          console.log(rows[0].max);
+          let max = rows[0].max;
+          sql = `UPDATE company_info SET updatedAt = ? where symbol = "a";`;
+          db.query(sql, max, function (err, rows, fields) {
+            sql = `SELECT symbol from daily GROUP BY symbol having max(timestamp)<'${max}'`;
+            db.query(sql, function (err, rows, fields) {
+              for (var i in rows) {
+                console.log(rows[i].symbol);
+              }
+            });
+          });
         });
 
         // console.log(id);

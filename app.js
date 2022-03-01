@@ -45,6 +45,7 @@ const db = mysql.createConnection({
   database: dbName,
   port: dbPort,
   multipleStatements: true,
+  dateStrings: "date",
   //socketPath: socket_path,
 });
 
