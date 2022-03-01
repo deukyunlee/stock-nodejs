@@ -14,7 +14,8 @@ router.post("/", function (req, res, next) {
   let resApi;
   let resData;
   let content;
-
+  let count;
+  let id = 0;
   let url = [];
   async function getDaily() {
     url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&outputsize=compact&apikey=${API_KEY}`;
@@ -61,12 +62,14 @@ router.post("/", function (req, res, next) {
           let max = rows[0].max;
           sql = `UPDATE company_info SET updatedAt = ? where symbol = "a";`;
           db.query(sql, max, function (err, rows, fields) {
-            console.log(rows);
             sql = `SELECT symbol from company_info where updatedAt<'${max}' OR updatedAt IS null`;
             db.query(sql, async function (err, rows, fields) {
               for (var i in rows) {
                 let symbol = rows[i].symbol;
                 await delayFunc.sleep(12050);
+                count = rows.length - id;
+                id += 1;
+                // console.log(count);
                 console.log(symbol);
 
                 if (symbol) {
@@ -99,7 +102,9 @@ router.post("/", function (req, res, next) {
 
                   let sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
 
-                  console.log(symbol + " inserted into database : ");
+                  console.log(
+                    `${symbol} inserted into database : ${count} symbols left`
+                  );
 
                   keys.forEach(function (key, index) {
                     const row = content[key];
@@ -120,14 +125,12 @@ router.post("/", function (req, res, next) {
                     ];
                     db.query(sql, [array], function (err, rows, fields) {
                       if (err) console.log(err);
-                      else console.log(rows);
                     });
                   });
 
                   let sql2 = `UPDATE company_info SET updatedAt='${max}' where symbol = ?`;
                   db.query(sql2, symbol, function (err, rows, fields) {
                     if (err) console.log("2");
-                    else console.log(rows);
                   });
 
                   // console.log(id);
