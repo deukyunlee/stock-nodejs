@@ -130,7 +130,7 @@ router.post("/", function (req, res, next) {
 
                   let sql2 = `UPDATE company_info SET updatedAt='${max}' where symbol = ?`;
                   db.query(sql2, symbol, function (err, rows, fields) {
-                    if (err) console.log("2");
+                    if (err) console.log(err);
                   });
 
                   // console.log(id);
