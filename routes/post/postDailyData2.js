@@ -8,6 +8,8 @@ const API_KEY = process.env.ALPHAVANTAGEAPI;
 
 //sql = `select LEAD(symbol, ${id}) over (order by symbol) from daily group by symbol;`;
 
+
+// 이미지 url 또는 사진으로
 router.post("/", function (req, res, next) {
   async function SymbolExists(curId) {
     let count = 500;

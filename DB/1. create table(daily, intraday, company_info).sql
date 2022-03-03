@@ -4,5 +4,4 @@ CREATE TABLE IF NOT EXISTS intraday (symbol VARCHAR(50), datetime DATETIME NOT N
 
 CREATE TABLE IF NOT EXISTS company_info(symbol VARCHAR(10), name_en VARCHAR(50), name_kr VARCHAR(50), desc_en TEXT, desc_kr TEXT, cap BIGINT, updatedAt_daily DATE, updatedAt_intraday DATETIME constraint company_info_PK primary key(symbol));
 
--- alter table company_info change column name name_en varchar(50);
--- 
+CREATE TABLE IF NOT EXISTS company_info(symbol VARCHAR(10), id INT AUTO_INCREMENT, name_en VARCHAR(50), name_kr VARCHAR(50), desc_en TEXT, desc_kr TEXT, cap BIGINT, updatedAt_daily DATE, updatedAt_intraday DATETIME constraint company_info_PK primary key(id, symbol));
