@@ -80,11 +80,9 @@ app.use("/cursorPaging", cursorPaging);
 const postCompanyInfo = require("./routes/post/postCompanyInfo");
 const postDailyData = require("./routes/post/postDailyData");
 const postIntradayData = require("./routes/post/postIntradayData");
-const testDaily = require("./routes/post/postDailyData3");
 app.use("/post-daily", postDailyData);
 app.use("/post-company-info", postCompanyInfo);
 app.use("/post-intraday", postIntradayData);
-app.use("/test-daily", testDaily);
 app.use("/", function (req, res) {
   res.json("hi");
 });
