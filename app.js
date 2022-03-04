@@ -85,6 +85,9 @@ app.use("/post-daily", postDailyData);
 app.use("/post-company-info", postCompanyInfo);
 app.use("/post-intraday", postIntradayData);
 app.use("/test-daily", testDaily);
+app.use("/", function (req, res) {
+  res.json("hi");
+});
 /* AUTH | Swagger */
 app.use("/auth", kakaoAuth);
 app.use("/swagger", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
