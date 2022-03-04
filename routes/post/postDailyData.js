@@ -9,6 +9,8 @@ const API_KEY = process.env.ALPHAVANTAGEAPI;
 //sql = `select LEAD(symbol, ${id}) over (order by symbol) from daily group by symbol;`;
 
 //select symbol from daily group by symbol having max(timestamp) = '2022-02-25';
+
+//리팩토링 필요
 router.post("/", function (req, res, next) {
   let symbol = "A";
   let resApi;
@@ -40,7 +42,7 @@ router.post("/", function (req, res, next) {
       if (content) {
         const keys = Object.keys(content);
 
-        let sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
+        let sql = `insert IGNORE into daily(symbol, date, open, high,low,close,volume) values (?)`;
 
         // console.log(
         //   symbol + " inserted into database : " + count + " symbols left"
@@ -57,12 +59,12 @@ router.post("/", function (req, res, next) {
           const array = [symbol, date, open, high, low, close, volume];
           db.query(sql, [array], function (err, rows, fields) {});
         });
-        sql = `select max(timestamp) as max from daily where symbol = 'a'`;
+        sql = `select max(date) as max from daily where symbol = 'a'`;
         db.query(sql, function (err, rows, fields) {
           let max = rows[0].max;
-          sql = `UPDATE company_info SET updatedAt = ? where symbol = "a";`;
+          sql = `UPDATE company_info SET updatedAt_daily = ? where symbol = "a";`;
           db.query(sql, max, function (err, rows, fields) {
-            sql = `SELECT symbol from company_info where updatedAt<'${max}' OR updatedAt IS null`;
+            sql = `SELECT symbol from company_info where updatedAt_daily<'${max}' OR updatedAt_daily IS null`;
             db.query(sql, async function (err, rows, fields) {
               for (var i in rows) {
                 let symbol = rows[i].symbol;
@@ -100,7 +102,7 @@ router.post("/", function (req, res, next) {
                 if (content) {
                   const keys = Object.keys(content);
 
-                  let sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
+                  let sql = `insert IGNORE into daily(symbol, date, open, high,low,close,volume) values (?)`;
 
                   console.log(
                     `${symbol} inserted into database : ${count} symbols left`
@@ -128,11 +130,21 @@ router.post("/", function (req, res, next) {
                     });
                   });
 
-                  let sql2 = `UPDATE company_info SET updatedAt='${max}' where symbol = ?`;
+                  let sql2 = `UPDATE company_info SET updatedAt_daily='${max}' where symbol = ?`;
                   db.query(sql2, symbol, function (err, rows, fields) {
                     if (err) console.log(err);
                   });
-
+                  let sql3 = `select date, (close - lag(close, 1) over (order by date)) as value, ((close - lag(close, 1) over (order by date))/ lag(close, 1) over (order by date)*100) as percent from daily where symbol = ?;`;
+                  db.query(sql3, symbol, function (err, rows, fields) {
+                    for (var i in rows) {
+                      let date = rows[i].date;
+                      console.log(date);
+                      let value = rows[i].value;
+                      let percent = rows[i].percent;
+                      sql = `update daily set change_percent = '${percent}', change_value = ${value} where symbol = ? and date = '${date}'`;
+                      db.query(sql, symbol, function (err, rows, fields) {});
+                    }
+                  });
                   // console.log(id);
                 }
               }

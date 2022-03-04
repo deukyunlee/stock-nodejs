@@ -5,3 +5,6 @@ CREATE TABLE IF NOT EXISTS intraday (symbol VARCHAR(50), datetime DATETIME NOT N
 CREATE TABLE IF NOT EXISTS company_info(symbol VARCHAR(10), name_en VARCHAR(50), name_kr VARCHAR(50), desc_en TEXT, desc_kr TEXT, cap BIGINT, updatedAt_daily DATE, updatedAt_intraday DATETIME constraint company_info_PK primary key(symbol));
 
 CREATE TABLE IF NOT EXISTS company_info(symbol VARCHAR(10), id INT AUTO_INCREMENT, name_en VARCHAR(50), name_kr VARCHAR(50), desc_en TEXT, desc_kr TEXT, cap BIGINT, updatedAt_daily DATE, updatedAt_intraday DATETIME constraint company_info_PK primary key(id, symbol));
+
+
+-- daily, intraday 내의 change_value, change_percent 컬럼 decimal(10,4)로 변경
