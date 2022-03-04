@@ -138,7 +138,6 @@ router.post("/", function (req, res, next) {
                   db.query(sql3, symbol, function (err, rows, fields) {
                     for (var i in rows) {
                       let date = rows[i].date;
-                      console.log(date);
                       let value = rows[i].value;
                       let percent = rows[i].percent;
                       sql = `update daily set change_percent = '${percent}', change_value = ${value} where symbol = ? and date = '${date}'`;

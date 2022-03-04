@@ -7,7 +7,7 @@ const db = require("../../app.js");
 
 router.get("/full-data/:symbol", function (req, res) {
   const symbol = req.params.symbol;
-  const sql = `SELECT * from daily where symbol = ?`;
+  const sql = `SELECT * from daily where symbol = ? and change_percent is not null`;
   db.query(sql, symbol, function (err, rows, fields) {
     // res.json(rows);
     try {
