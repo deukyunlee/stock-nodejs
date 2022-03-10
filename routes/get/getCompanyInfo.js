@@ -10,7 +10,7 @@ router.get("/list/:symbol", function (req, res) {
 });
 
 router.get("/full-data", function (req, res) {
-  const sql = `SELECT rank() over (order by cap DESC) as number, symbol, name, description from company_info`;
+  const sql = `SELECT rank() over (order by cap DESC) as rank, symbol, name_en, name_kr, desc_en, desc_kr from company_info`;
   db.query(sql, function (err, rows, fields) {
     res.json(rows);
   });
