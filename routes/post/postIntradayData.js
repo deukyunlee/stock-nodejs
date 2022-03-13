@@ -140,8 +140,8 @@ router.post("/", function (req, res, next) {
                       let date = rows[i].timestamp;
                       let value = rows[i].value;
                       let percent = rows[i].percent;
-                      sql = `update intraday set change_percent = '${percent}', change_value = ${value} where symbol = ? and timestamp = '${date}'`;
-                      db.query(sql, symbol, function (err, rows, fields) {});
+                      sql = `update intraday set change_percent = ${percent}, change_value = ${value} where symbol = '${symbol}' and timestamp = ?`;
+                      db.query(sql, date, function (err, rows, fields) {});
                     }
                   });
                   // console.log(id);
