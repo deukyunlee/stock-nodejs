@@ -15,14 +15,30 @@ passport.use(
       callbackURL: "/auth/kakao/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
+      console.log(accessToken);
+      console.log(refreshToken);
       const provider = profile.provider;
       const email = profile._json.kakao_account.email;
       const data = [provider, refreshToken, email];
       db.query(
-        "insert into user(provider, refresh_token, email) values (?)",
-        [data],
-        (err, rows) => {
-          if (err) console.log(err);
+        "select refresh_token from user where email = ?",
+        email,
+        (err, rows, fields) => {
+          if (rows[0]) {
+            console.log(refreshToken);
+            console.log(rows[0].refresh_token == refreshToken);
+            if (rows[0].refresh_token == refreshToken) {
+              console.log("exists");
+            }
+          } else {
+            db.query(
+              "insert into user(provider, refresh_token, email) values (?)",
+              [data],
+              (err, rows) => {
+                if (err) console.log(err);
+              }
+            );
+          }
         }
       );
     }
