@@ -49,10 +49,10 @@ const db = mysql.createConnection({
   //socketPath: socket_path,
 });
 
-db.connect(function (err) {
-  if (err) throw err;
-  console.log("DB connected successfully");
-});
+// db.connect(function (err) {
+//   if (err) throw err;
+//   console.log("DB connected successfully");
+// });
 
 module.exports = db;
 
