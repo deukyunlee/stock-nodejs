@@ -11,7 +11,8 @@ const API_KEY = process.env.ALPHAVANTAGEAPI;
 //select symbol from daily group by symbol having max(timestamp) = '2022-02-25';
 
 //리팩토링 필요
-router.post("/", function (req, res, next) {
+router.get("/", function (req, res, next) {
+  console.log("insert");
   let symbol = "A";
   let resApi;
   let resData;
