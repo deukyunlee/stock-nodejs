@@ -134,16 +134,6 @@ router.post("/", function (req, res, next) {
                   db.query(sql2, symbol, function (err, rows, fields) {
                     if (err) console.log(err);
                   });
-                  let sql3 = `select timestamp, (close - lag(close, 1) over (order by timestamp)) as value, ((close - lag(close, 1) over (order by timestamp))/ lag(close, 1) over (order by timestamp)*100) as percent from intraday where symbol = ?;`;
-                  db.query(sql3, symbol, function (err, rows, fields) {
-                    for (var i in rows) {
-                      let date = rows[i].timestamp;
-                      let value = rows[i].value;
-                      let percent = rows[i].percent;
-                      sql = `update intraday set change_percent = ${percent}, change_value = ${value} where symbol = '${symbol}' and timestamp = ?`;
-                      db.query(sql, date, function (err, rows, fields) {});
-                    }
-                  });
                   // console.log(id);
                 }
               }

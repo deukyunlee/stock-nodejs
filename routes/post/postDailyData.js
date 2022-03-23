@@ -42,7 +42,7 @@ router.post("/", function (req, res, next) {
       if (content) {
         const keys = Object.keys(content);
 
-        let sql = `insert IGNORE into daily(symbol, date, open, high,low,close,volume) values (?)`;
+        let sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
 
         // console.log(
         //   symbol + " inserted into database : " + count + " symbols left"
@@ -59,7 +59,7 @@ router.post("/", function (req, res, next) {
           const array = [symbol, date, open, high, low, close, volume];
           db.query(sql, [array], function (err, rows, fields) {});
         });
-        sql = `select max(date) as max from daily where symbol = 'a'`;
+        sql = `select max(timestamp) as max from daily where symbol = 'a'`;
         db.query(sql, function (err, rows, fields) {
           let max = rows[0].max;
           sql = `UPDATE company_info SET updatedAt_daily = ? where symbol = "a";`;
@@ -102,7 +102,7 @@ router.post("/", function (req, res, next) {
                 if (content) {
                   const keys = Object.keys(content);
 
-                  let sql = `insert IGNORE into daily(symbol, date, open, high,low,close,volume) values (?)`;
+                  let sql = `insert IGNORE into daily(symbol, timestamp, open, high,low,close,volume) values (?)`;
 
                   console.log(
                     `${symbol} inserted into database : ${count} symbols left`
@@ -134,13 +134,13 @@ router.post("/", function (req, res, next) {
                   db.query(sql2, symbol, function (err, rows, fields) {
                     if (err) console.log(err);
                   });
-                  let sql3 = `select date, (close - lag(close, 1) over (order by date)) as value, ((close - lag(close, 1) over (order by date))/ lag(close, 1) over (order by date)*100) as percent from daily where symbol = ?;`;
+                  let sql3 = `select timestamp, (close - lag(close, 1) over (order by timestamp)) as value, ((close - lag(close, 1) over (order by timestamp))/ lag(close, 1) over (order by timestamp)*100) as percent from daily where symbol = ?;`;
                   db.query(sql3, symbol, function (err, rows, fields) {
                     for (var i in rows) {
                       let date = rows[i].date;
                       let value = rows[i].value;
                       let percent = rows[i].percent;
-                      sql = `update daily set change_percent = '${percent}', change_value = ${value} where symbol = ? and date = '${date}'`;
+                      sql = `update daily set change_percent = '${percent}', change_value = ${value} where symbol = ? and timestamp = '${date}'`;
                       db.query(sql, symbol, function (err, rows, fields) {});
                     }
                   });
