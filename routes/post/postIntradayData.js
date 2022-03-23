@@ -76,7 +76,7 @@ router.post("/", function (req, res, next) {
 
                 if (symbol) {
                   try {
-                    url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=5min&apikey=${API_KEY}`;
+                    url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=5min&outputsize=full&apikey=${API_KEY}`;
                     // console.log(url);
                   } catch {
                     console.log("symbol or url not found");

@@ -49,6 +49,10 @@ const db = mysql.createConnection({
   //socketPath: socket_path,
 });
 
+setInterval(function () {
+  maria.query("SELECT 1");
+}, 5000);
+
 // db.connect(function (err) {
 //   if (err) throw err;
 //   console.log("DB connected successfully");
