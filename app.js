@@ -50,7 +50,7 @@ const db = mysql.createConnection({
 });
 
 setInterval(function () {
-  maria.query("SELECT 1");
+  db.query("SELECT 1");
 }, 5000);
 
 // db.connect(function (err) {
