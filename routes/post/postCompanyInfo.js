@@ -11,12 +11,9 @@ router.post("/", function (req, res) {
     let symbol;
     let count = 500;
     const data = await crawling.crawlSymbol();
-    // data2 = fs.readFileSync("./symbol.json")
-    // parsedData = JSON.stringify(parsedData)
+
     for (var key in data) {
-      //console.log(data);
       url = new Array();
-      //   console.log(data[key].title);
       symbol = data[key].symbol;
       url[
         key

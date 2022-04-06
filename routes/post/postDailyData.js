@@ -27,7 +27,7 @@ router.post("/", function (req, res, next) {
         method: "get",
         url: url,
       });
-      // console.log(resApi);
+      console.log(resApi);
     } catch {
       console.log("axios failed");
     }

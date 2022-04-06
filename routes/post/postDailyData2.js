@@ -8,7 +8,6 @@ const API_KEY = process.env.ALPHAVANTAGEAPI;
 
 //sql = `select LEAD(symbol, ${id}) over (order by symbol) from daily group by symbol;`;
 
-
 // 이미지 url 또는 사진으로
 router.post("/", function (req, res, next) {
   async function SymbolExists(curId) {
@@ -34,7 +33,6 @@ router.post("/", function (req, res, next) {
             if (symbol) {
               try {
                 url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&outputsize=compact&apikey=${API_KEY}`;
-                // console.log(url);
               } catch {
                 console.log("symbol or url not found");
               }
@@ -44,7 +42,6 @@ router.post("/", function (req, res, next) {
                 method: "get",
                 url: url,
               });
-              // console.log(resApi);
             } catch {
               console.log("axios failed");
             }
@@ -83,13 +80,10 @@ router.post("/", function (req, res, next) {
 
                 let sql2 = `UPDATE sequence SET id = ${id}, symbol = '${symbol}' where t_name = "daily";`;
                 db.query(sql2, function (err, rows, fields) {});
-
-                // console.log(id);
               }
             } catch {
               console.log("sql error");
             }
-            // console.log(array);
           }
         } else {
           DbQuery();
@@ -181,7 +175,6 @@ router.post("/", function (req, res, next) {
       } catch {
         console.log("sql error");
       }
-      // console.log(array);
     }
   }
   function DbQuery() {
