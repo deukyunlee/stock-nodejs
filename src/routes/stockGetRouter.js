@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const controller = require("../controllers/stockGetController");
-const controller2 = require("../funcs/insertStockData");
+const controller2 = require("../controllers/companyInsertController");
 router.get("/company/specific/:symbol", controller.stock_company_specific_get);
 
 router.get("/company/full-data/", controller.stock_company_fully_get);

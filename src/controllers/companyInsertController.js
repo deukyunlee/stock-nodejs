@@ -1,14 +1,15 @@
 const db = require("../../app.js");
 const axios = require("axios");
-const delayFunc = require("./delayFuncs");
+const delayFunc = require("../funcs/delayFuncs");
 const API_KEY = process.env.ALPHAVANTAGEAPI;
 module.exports.insert_company_cap = async function getSymbol() {
   sql = `select symbol from company_info`;
-  let data = [];
+
+  var data;
   db.query(sql, (err, result) => {
-    for (var i in result) data = result[i].symbol;
+    console.log(result[0].symbol);
   });
-  console.log(data);
+  //   console.log(data);
   //   let symbol;
   //   let count = 500;
   //   const data = await crawling.crawlSymbol();
