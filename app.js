@@ -67,34 +67,39 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 /*GET*/
-const searchData = require("./routes/get/searchData");
-const getDailyData = require("./routes/get/getDailyData");
-const getIntradayData = require("./routes/get/getIntradayData");
-const getCompanyInfo = require("./routes/get/getCompanyInfo");
-const kakaoAuth = require("./routes/kakao/auth");
-const cursorPaging = require("./routes/get/cursorPaging");
+// const searchData = require("./routes/get/searchData");
+// const getDailyData = require("./routes/get/getDailyData");
+// const getIntradayData = require("./routes/get/getIntradayData");
+// const getCompanyInfo = require("./routes/get/getCompanyInfo");
+// const kakaoAuth = require("./routes/kakao/auth");
+// const cursorPaging = require("./routes/get/cursorPaging");
 
-app.use("/searchData", searchData);
-app.use("/daily", getDailyData);
-app.use("/intraday", getIntradayData);
-app.use("/company-info", getCompanyInfo);
-app.use("/cursorPaging", cursorPaging);
+// app.use("/searchData", searchData);
+// app.use("/daily", getDailyData);
+// app.use("/intraday", getIntradayData);
+// app.use("/company-info", getCompanyInfo);
+// app.use("/cursorPaging", cursorPaging);
 
 /*POST*/
-const postCompanyInfo = require("./routes/post/postCompanyInfo");
-const postDailyData = require("./routes/post/postDailyData");
-const postIntradayData = require("./routes/post/postIntradayData");
+// const postCompanyInfo = require("./routes/post/postCompanyInfo");
+// const postDailyData = require("./routes/post/postDailyData");
+// const postIntradayData = require("./routes/post/postIntradayData");
 // const postImage = require("./routes/post/postImage");
 
-app.use("/post-daily", postDailyData);
-app.use("/post-company-info", postCompanyInfo);
-app.use("/post-intraday", postIntradayData);
+// app.use("/post-daily", postDailyData);
+// app.use("/post-company-info", postCompanyInfo);
+// app.use("/post-intraday", postIntradayData);
 // app.use("/post-image", postImage);
 // app.use("/", function (req, res) {
 //   res.json("hi");
 // });
+
+const stock_get = require("./src/routes/stockGetRouter");
+
+app.use("/stock", stock_get);
+
 /* AUTH | Swagger */
-app.use("/auth", kakaoAuth);
+// app.use("/auth", kakaoAuth);
 app.use("/swagger", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
 // error handler

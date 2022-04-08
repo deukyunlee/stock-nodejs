@@ -144,14 +144,11 @@ router.post("/", function (req, res, next) {
                       db.query(sql, date, function (err, rows, fields) {});
                     }
                   });
-                  // console.log(id);
                 }
               }
             });
           });
         });
-
-        // console.log(id);
       }
     } catch {
       console.log("sql error");
