@@ -1,94 +1,13 @@
 const router = require("express").Router();
-const db = require("../app.js");
-const crawling = require("./crawling");
-const axios = require("axios");
-const delayFunc = require("./delayFuncs");
-const API_KEY = process.env.ALPHAVANTAGEAPI;
+const db = require("../../app.js");
 
-const sql = `select symbol from (select symbol, rank() over (order by cap desc) as 'ranking' from company_info) ranked where ranked.ranking <=100;`;
-// 500개의 데이터 중 시총 순으로 100개만 정렬해서 DB에 들어감
-// select symbol from daily;
-// .then 블럭 async/await으로 리팩토링 필요
-async function getSymbol(countResult) {
-  let symbol;
-  let count = 100;
+//  let sql = `select id from sequence where t_name = "daily"`;
 
-  for (var i in countResult) {
-    await delayFunc.sleep(12050).then(() => {
-      symbol = new Promise((resolve, reject) => {
-        // console.log(countResult[i].symbol);
-        if (countResult[i].symbol) {
-          resolve(countResult[i].symbol);
-        } else {
-          reject("no symbol");
-        }
-      }).then((symbol) => {
-        let url = [];
-        console.log(i);
-        url = new Promise((resolve, reject) => {
-          for (var i in symbol) {
-            url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${API_KEY}`;
-          }
-          if (url) {
-            resolve(url);
-          } else {
-            reject("no url");
-          }
-        }).then((url) => {
-          axios({
-            method: "get",
-            url: url,
-          }).then((res) => {
-            //   console.log(res.data);
-            let res2 = res.data;
-            const content = res2["Global Quote"];
-            const sy = content["01. symbol"];
-            const open = content["02. open"];
-            const high = content["03. high"];
-            const low = content["04. low"];
-            const close = content["05. price"];
-            const volume = content["06. volume"];
-            const ltd = content["07. latest trading day"];
-            const change = content["09. change"];
-            const changePercent = content["10. change percent"];
-            if (sy) {
-              const sql = `insert IGNORE into daily(symbol, open, high, low, close, volume, last_trading_day, change_value, change_percent) values (?)`;
-              count -= 1;
-              console.log(
-                symbol + " inserted into database : " + count + " symbols left"
-              );
-              const array = [
-                sy,
-                open,
-                high,
-                low,
-                close,
-                volume,
-                ltd,
-                change,
-                changePercent,
-              ];
-              console.log(array);
-              db.query(sql, [array], function (err, rows, fields) {});
-            }
-          });
-        });
-      });
-    });
-  }
-}
-
-db.query(sql, (err, countResult) => {
-  try {
-    getSymbol(countResult);
-  } catch (exception) {
-    console.log(exception);
-  }
-});
+//sql = `select LEAD(symbol, ${id}) over (order by symbol) from daily group by symbol;`;
 
 router.get("/full-data/:symbol", function (req, res) {
   const symbol = req.params.symbol;
-  const sql = `SELECT * from daily where symbol = ?`;
+  const sql = `SELECT * from daily where symbol = ? and change_percent is not null`;
   db.query(sql, symbol, function (err, rows, fields) {
     // res.json(rows);
     try {
