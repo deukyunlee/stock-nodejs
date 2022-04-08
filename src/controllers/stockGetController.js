@@ -50,7 +50,7 @@ module.exports.stock_intraday_fully_get = (req, res, next) => {
   });
 };
 module.exports.stock_company_fully_get = (req, res, next) => {
-  const sql = `SELECT rank() over (order by cap DESC) as rank, symbol, name_en, name_kr,change_percent natural join daily`;
+  const sql = `SELECT rank() over (order by cap DESC) as rank, symbol, name_en, name_kr,change_percent,img natural join daily`;
   db.query(sql, function (err, rows, fields) {
     res.json(rows);
   });
@@ -58,7 +58,7 @@ module.exports.stock_company_fully_get = (req, res, next) => {
 
 module.exports.stock_company_specific_get = (req, res, next) => {
   const symbol = req.params.symbol;
-  const sql = `SELECT * from company_info where symbol = ?`;
+  const sql = `SELECT symbol, name_en, name_kr, desc_en,desc_kr,img,shareout from company_info where symbol = ?`;
   db.query(sql, symbol, function (err, rows, fields) {
     res.json(rows);
   });
