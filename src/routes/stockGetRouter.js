@@ -12,14 +12,18 @@ router.get(
 
 router.get(
   "/daily/specific/interval/:symbol",
-  controller.stock_daily_fully_get
+  controller.stock_daily_interval_get
 );
 
 router.get(
-  "/intraday/specific/full-data/:symbol",
+  "/company/specific/full-data/:symbol",
   controller.stock_company_fully_get
 );
 
+router.get(
+  "/intraday/specific/for-daily/:symbol",
+  controller.stock_intraday_daily_get
+);
 router.get("/daily", controller2.insert_company_cap);
 
 module.exports = router;

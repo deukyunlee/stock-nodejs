@@ -49,6 +49,20 @@ module.exports.stock_intraday_fully_get = (req, res, next) => {
     res.json(rows);
   });
 };
+
+// for daily
+module.exports.stock_intraday_daily_get = (req, res, next) => {
+  const symbol = req.params.symbol;
+  const sql1 = `SELECT MAX(date(datetime)) as max_date from intraday where symbol = ?`;
+  db.query(sql1, symbol, function (err, rows, fields) {
+    const max_date = rows[0].max_date;
+    const sql2 = `SELECT * from intraday where symbol ="${symbol}" and date(datetime)=?`;
+    db.query(sql2, max_date, function (err, rows, fields) {
+      res.json(rows);
+    });
+  });
+};
+
 module.exports.stock_company_fully_get = (req, res, next) => {
   const sql = `SELECT rank() over (order by cap DESC) as rank, symbol, name_en, name_kr,change_percent,img natural join daily`;
   db.query(sql, function (err, rows, fields) {
