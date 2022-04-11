@@ -24,6 +24,11 @@ router.get(
   "/intraday/specific/for-daily/:symbol",
   controller.stock_intraday_daily_get
 );
+
+router.get(
+  "/intraday/specific/for-weekly/:symbol",
+  controller.stock_intraday_weekly_get
+);
 router.get("/daily", controller2.insert_company_cap);
 
 module.exports = router;
