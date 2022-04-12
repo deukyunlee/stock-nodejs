@@ -32,7 +32,12 @@ router.get(
 
 router.get(
   "/intraday/specific/for-monthly/:symbol",
-  controller.stock_intraday_weekly_get
+  controller.stock_daily_monthly_get
+);
+
+router.get(
+  "/intraday/specific/for-3monthly/:symbol",
+  controller.stock_daily_monthly_3_get
 );
 router.get("/daily", controller2.insert_company_cap);
 
