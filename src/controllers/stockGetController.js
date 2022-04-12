@@ -81,15 +81,11 @@ module.exports.stock_intraday_weekly_get = (req, res, next) => {
   });
 };
 
-module.exports.stock_intraday_daily_get = (req, res, next) => {
+module.exports.stock_intraday_monthly_get = (req, res, next) => {
   const symbol = req.params.symbol;
-  const sql1 = `SELECT MAX(date(datetime)) as max_date from intraday where symbol = ?`;
+  const sql1 = `select * from daily where symbol = "aapl" order by date desc limit 30;`;
   db.query(sql1, symbol, function (err, rows, fields) {
-    const max_date = rows[0].max_date;
-    const sql2 = `SELECT * from intraday where symbol ="${symbol}" and date(datetime)=?`;
-    db.query(sql2, max_date, function (err, rows, fields) {
-      res.json(rows);
-    });
+    res.json(rows);
   });
 };
 
