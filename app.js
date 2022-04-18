@@ -7,10 +7,9 @@ const fs = require("fs");
 const mysql = require("mysql");
 const swaggerUI = require("swagger-ui-express");
 const swaggerJSDoc = require("swagger-jsdoc");
+const config = require("./src/config/index");
 var app = express();
-// const stockCron = require("./routes/stock2")
-// stockCron
-// view engine setup
+
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
@@ -30,20 +29,12 @@ const swaggerSpec = swaggerJSDoc({
   apis: ["./api-doc/**/*.yaml"],
 });
 
-require("dotenv").config();
-
-const dbHost = process.env.DBHOST;
-const dbUser = process.env.DBUSER;
-const dbPassword = process.env.DBPASSWORD;
-const dbName = process.env.DBNAME;
-const dbPort = process.env.DBPORT;
-
 const db = mysql.createConnection({
-  host: dbHost,
-  user: dbUser,
-  password: dbPassword,
-  database: dbName,
-  port: dbPort,
+  host: config.dbhost,
+  user: config.dbuser,
+  password: config.dbpassword,
+  database: config.dbname,
+  port: config.dbport,
   multipleStatements: true,
   dateStrings: "date",
   //socketPath: socket_path,
@@ -52,11 +43,6 @@ const db = mysql.createConnection({
 setInterval(function () {
   db.query("SELECT 1");
 }, 5000);
-
-// db.connect(function (err) {
-//   if (err) throw err;
-//   console.log("DB connected successfully");
-// });
 
 module.exports = db;
 
@@ -97,7 +83,9 @@ app.use(express.static(path.join(__dirname, "public")));
 const stock_get = require("./src/routes/stockGetRouter");
 
 app.use("/stock", stock_get);
-
+app.use("/", function (req, res) {
+  res.json("homepage");
+});
 /* AUTH | Swagger */
 // app.use("/auth", kakaoAuth);
 app.use("/swagger", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
@@ -108,8 +96,9 @@ app.use(function (err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get("env") === "development" ? err : {};
 
+  console.log(`error status: ${err.status}`);
   // render the error page
-  res.status(err.status || 500);
+  res.status(err.status || 500).json({ err: err.stack });
   res.render("error");
 });
 

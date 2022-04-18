@@ -142,7 +142,7 @@ module.exports.insert_intraday_data = async function getIntraday() {
   let id = 0;
   let url = [];
 
-  url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=5min&apikey=${API_KEY}`;
+  url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=5min&outputsize=full&apikey=${API_KEY}`;
   try {
     resApi = await axios({
       method: "get",
